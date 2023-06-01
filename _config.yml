@@ -29,7 +29,7 @@ footer:
     - name: LinkedIn
       link: https://www.linkedin.com/in/dongsulee/
     - name: GitHub
-      link: http://github.com/DonguLeeTech
+      link: http://github.com/DongsuLeeTech
 #    - name: Dribbble
 #      link: https://dribbble.com/YourDribbbleUsername
 #    - name: RSS
@@ -60,7 +60,7 @@ version: 1
 
 remote_theme : eliottvincent/bay
 
-url : "https://DonguLeeTech.github.io"
+url : "https://DongsuLeeTech.github.io"
 baseurl : ""
 
 # Analytics
