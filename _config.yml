@@ -9,15 +9,14 @@ header:
     - name: Home
       slug: /
     - name: Work
-      slug: /
 #    - name: Blog
 
 footer:
   show_powered_by: false
   contact:
     - name: Email
-      value: movementwater@soongsil.ac.kr
-      link: mailto:movementwater@soongsil.ac.kr
+      value: m o v e m e n t w a t e r @ s o o n g s i l . a c . k r
+      link: mailto: m o v e m e n t w a t e r @ s o o n g s i l . a c . k r
 #    - name: WeChat
 #      value: YourWeChatUsername
 #      link: "#"
