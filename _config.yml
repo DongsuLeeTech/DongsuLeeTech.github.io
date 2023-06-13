@@ -9,6 +9,7 @@ header:
     - name: Home
       slug: /
     - name: Work
+      slug: /
 #    - name: Blog
 
 footer:
