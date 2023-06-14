@@ -61,6 +61,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.06.** Got a <span style="color:red">2023 Hyundai On-dream Future Industrial Talent Scholarship</span>.
+
   **2023.05.** Presented our seven patent at Industrial Technology R&D Symposium  <a href="https://www.youtube.com/watch?v=XDxyolmgXG8">[youtube]</a>
   
   **2023.01.** Won the Haedong Best Paper Award at <span style="color:red">KICS 2023 Winter Conference</span>, South Korea.
