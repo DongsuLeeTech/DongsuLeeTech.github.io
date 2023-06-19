@@ -35,8 +35,10 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
+  [AI-W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "Can Expert Demonstration Guarantee Offline Performance in Sparse Reward Environment?," **ICML Workshop on Data-centric Machine Learning Research**, June 2023.
+
   [AI-W1] Dongsu Lee, Minhae Kwon, “Stability Analysis in Mixed-Autonomous Traffic with Deep Reinforcement Learning,” 
-  **Conference on Neural Information Processing Systems (NeurIPS) Deep Reinforcement Learning (DeepRL) Workshop**, 
+  **Neural Information Processing Systems (NeurIPS) Deep Reinforcement Learning (DeepRL) Workshop**, 
   December 2021. 
   <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EC%9D%98%EC%83%9D%EB%AA%85%EC%8B%9C%EC%8A%A4%ED%85%9C%ED%95%99%EB%B6%80-%EC%9D%B4%EB%8F%99%EC%88%98-%ED%95%99%EC%83%9D-%EC%84%B8%EA%B3%84-%EC%B5%9C%EA%B3%A0-%EA%B6%8C%EC%9C%84-ai-%ED%95%99%ED%9A%8C&f=all&keyword=%EC%9D%B4%EB%8F%99%EC%88%98">
   [Media]</a> 
@@ -61,6 +63,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.06.**  Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "Can Expert Demonstration Guarantee Offline Performance in Sparse Reward Environment?," <span style="color:red">ICML Workshop on Data-centric Machine Learning Research</span>.
+
   **2023.06.** Got a <span style="color:red">2023 Hyundai On-dream Future Industrial Talent Scholarship</span>.
 
   **2023.05.** Presented our seven patent at Industrial Technology R&D Symposium  <a href="https://www.youtube.com/watch?v=XDxyolmgXG8">[youtube]</a>
