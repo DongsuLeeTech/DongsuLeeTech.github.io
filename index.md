@@ -69,6 +69,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.06.** Presented at <span style="color:red">EIRIC</span> Seminar <a href="https://www.eiric.or.kr/community/webinar_detail.php?Seq=118&totalCnt=107&searchBy=&searchWord=&SnxFlag=&pg=1">[Web]</a>
+
   **2023.06.** Accepted four papers in <span style="color:red">2023 ICML Workshop</span>.
 
   **2023.06.** Got a <span style="color:red">2023 Hyundai On-dream Future Industrial Talent Scholarship</span>.
