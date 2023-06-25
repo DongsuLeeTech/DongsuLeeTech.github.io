@@ -10,20 +10,20 @@ profile_picture:
   (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
   My present research topic is a Reinforcement Learning algorithm inspired by Cognitive Neuroscience concept.
   
-  I am currently interested in all field of RL (e.g., Offline RL, Imitation Learning, Inverse RL, and so on), 
-  Federated learning, Cognitive science (or psychology), Neuroscience. In detail, Decision-making system of autonomous 
+  I am currently interested in all fields of RL (e.g., Offline RL, Imitation Learning, Inverse RL, and so on), 
+  Federated learning, Cognitive science (or psychology), and Neuroscience. In detail, the decision-making system of autonomous 
   mobile devices (vehicles, drones, etc.). 
   
-  Previously, I majored in **Biotechnology** and **Bioinformatics** in **School of Systems Biomedical Science** 
-  at Soongsil Univ in Seoul, South Korea. Additionally, I had double major in **Big Data Computing** System. 
+  Previously, I majored in **Biotechnology** and **Bioinformatics** at the **School of Systems Biomedical Science** 
+  at Soongsil Univ in Seoul, South Korea. Additionally, I had a double major in **Big Data Computing** Systems. 
   
-  I had interned at <a href="https://sites.google.com/site/sskimb/">**Post-Genome Informatics Lab**</a> (Prof. Sangsoo Kim) 
-  at School of Systems Biomedical Science, Soongsil University.
+  I interned at <a href="https://sites.google.com/site/sskimb/">**Post-Genome Informatics Lab**</a> (Prof. Sangsoo Kim) 
+  at the School of Systems Biomedical Science, Soongsil University.
   
   Be able to confirm my <a href="https://drive.google.com/file/d/1Ug_2G5_srmvw6Mw-ZsO90djHS_xLr6iY/view">CV</a> if you want. 
-  
-  Be able to confirm more detailed information about me (e.g., presentations, photos, domestic publications, and developments) at another
-  <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want.
+
+<!--   Be able to confirm more detailed information about me (e.g., presentations, photos, domestic publications, and developments) at another
+  <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication</h3> 
   [AI-J2] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
