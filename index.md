@@ -34,6 +34,8 @@ profile_picture:
   [AI-J1] Dongsu Lee, Minhae Kwon, “<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
+
+  [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" IEEE ITSC, Accepted, July, 2023.
  
   [AI-W5] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
@@ -69,6 +71,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.07.** Accepted conference papers in <span style="color:red">2023 IEEE ITSC</span>. 
+
   **2023.06.** Presented at <span style="color:red">EIRIC</span> Seminar <a href="https://www.eiric.or.kr/community/webinar_detail.php?Seq=118&totalCnt=107&searchBy=&searchWord=&SnxFlag=&pg=1">[Web]</a>
 
   **2023.06.** Accepted four papers in <span style="color:red">2023 ICML Workshop</span>.
