@@ -71,55 +71,57 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
-  **2023.07.** Accepted conference papers in <span style="color:red">2023 IEEE ITSC</span>. 
+  **2023.07.** Our domestic journal paper, **Autonomous Driving Strategy for Bottleneck Traffic with Prioritized Experience Replay**, is selected as **Best paper** in <span style="color:red">J-KICS</span> <a href="https://journal.kics.or.kr/digital-library/50681">[Web]</a>  
+
+  **2023.07.** Accepted conference papers in <span style="color:red">2023 IEEE ITSC</span>
 
   **2023.06.** Presented at <span style="color:red">EIRIC</span> Seminar <a href="https://www.eiric.or.kr/community/webinar_detail.php?Seq=118&totalCnt=107&searchBy=&searchWord=&SnxFlag=&pg=1">[Web]</a>
 
-  **2023.06.** Accepted four papers in <span style="color:red">2023 ICML Workshop</span>.
+  **2023.06.** Accepted four papers in <span style="color:red">2023 ICML Workshop</span>
 
-  **2023.06.** Got a <span style="color:red">2023 Hyundai On-dream Future Industrial Talent Scholarship</span>.
+  **2023.06.** Got a <span style="color:red">2023 Hyundai On-dream Future Industrial Talent Scholarship</span>
 
   **2023.05.** Presented our seven patent at Industrial Technology R&D Symposium  <a href="https://www.youtube.com/watch?v=XDxyolmgXG8">[youtube]</a>
   
-  **2023.01.** Won the Haedong Best Paper Award at <span style="color:red">KICS 2023 Winter Conference</span>, South Korea.
+  **2023.01.** Won the Haedong Best Paper Award at <span style="color:red">KICS 2023 Winter Conference</span>, South Korea
 
   **2022.10.** Issued Korean patent Dongsu Lee, Minhae Kwon, "Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles, 
   Recording medium and device for performing this the method" <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   **2022.10.** Accepted Dongsu Lee, Minhae Kwon, "Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning" to
-  <span style="color:red">IEEE Transactions on Vehicular Technology (TVT)</span>.
+  <span style="color:red">IEEE Transactions on Vehicular Technology (TVT)</span>
 
-  **2022.07.** Joined in Qualcomm IT Tour as 18th group member. See you in San Diego, California, USA in August 2022.
+  **2022.07.** Joined in Qualcomm IT Tour as 18th group member. See you in San Diego, California, USA in August 2022
 
   **2022.05.** Accepted Dongsu Lee, Minhae Kwon, "ADAS-RL: Safety Learning Approach for Stable Autonomous Driving" to 
-  <span style="color:red">ICT express</span>.
+  <span style="color:red">ICT express</span>
 
   **2022.04.** Invited by 2022 AI Week hosted by 
   <a href="https://www.amii.ca/your-business/?utm_source=google-ads&utm_medium=cpc&utm_campaign=be-more-BMH-generic&utm_term=companies%20for%20machine%20learning&utm_campaign=SC+%7C+S+%7C+Be+MORE+BMH+Generic&utm_source=adwords&utm_medium=ppc&hsa_acc=6591753441&hsa_cam=18275130181&hsa_grp=142413166313&hsa_ad=620530101987&hsa_src=g&hsa_tgt=kwd-812766861496&hsa_kw=companies%20for%20machine%20learning&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3cH29i--vbXjzHyBWRFDVGBnynvrdDT3j_Ilzpk-2fBnRhY1UiHnnMaAoYJEALw_wcB">
-  AMII</a>, Edmonton, Canada.   
+  AMII</a>, Edmonton, Canada
   
-  **2022.03.** Graduate Admission, School of Electronic Engineering, Soongsil Graduate School, Seoul, South Korea.
+  **2022.03.** Graduate Admission, School of Electronic Engineering, Soongsil Graduate School, Seoul, South Korea
 
-  **2022.02.** Won the Best Paper Award at <span style="color:red">KICS 2022 Winter Conference</span>, South Korea.
+  **2022.02.** Won the Best Paper Award at <span style="color:red">KICS 2022 Winter Conference</span>, South Korea
 
-  **2022.02.** Graduated researcher, Brain and Machine Intelligence Lab, School of Electronic Engineering, Soongsil University, Seoul, South Korea. 
+  **2022.02.** Graduated researcher, Brain and Machine Intelligence Lab, School of Electronic Engineering, Soongsil University, Seoul, South Korea
   
-  **2021.11.** Won the Soongsil Patent Competition.
+  **2021.11.** Won the Soongsil Patent Competition
 
   **2021.10.** Accepted Dongsu Lee, Minhae Kwon, "Stability Analysis in Mixed-Autonomous Traffic with Deep Reinforcement Learning,
-  to <span style="color:red">NeurIPS DeepRL Workshop</span>.
+  to <span style="color:red">NeurIPS DeepRL Workshop</span>
 
   **2021.10.** Published Dongsu Lee, Minhae Kwon, "Combating Stop-and-Go Wave Problem at a Ring Road Using Deep Reinforcement Learning Based Autonomous Vehicles"
-  to <span style="color:red">JKICS</span>.
+  to <span style="color:red">JKICS</span>
   
-  **2021.09.** Joined in Huawei Seeds for the Future 2021 (ICT Talent Nurturing Program) as a member.
+  **2021.09.** Joined in Huawei Seeds for the Future 2021 (ICT Talent Nurturing Program) as a member
 
-  **2021.06.** Won the ICT Service Idea Competition hosted by KICS with Hyoseon Kye and Miru Kim.
+  **2021.06.** Won the ICT Service Idea Competition hosted by KICS with Hyoseon Kye and Miru Kim
 
-  **2020.12.** Undergraduate Intern, Brain and Machine Intelligence Lab, School of Electronic Engineering, Soongsil University, Seoul, South Korea.
+  **2020.12.** Undergraduate Intern, Brain and Machine Intelligence Lab, School of Electronic Engineering, Soongsil University, Seoul, South Korea
 
-  **2019.01.** Undergraduate Intern, Post-Genome Informatics Lab, School of Systems Biomedical Science, Soongsil University, Seoul, South Korea.  
+  **2019.01.** Undergraduate Intern, Post-Genome Informatics Lab, School of Systems Biomedical Science, Soongsil University, Seoul, South Korea
 
-  **2016.03.** Undergraduate Admission, School of Systems Biomedical Science, Soongsil University, Seoul, South Korea.
+  **2016.03.** Undergraduate Admission, School of Systems Biomedical Science, Soongsil University, Seoul, South Korea
 
 
