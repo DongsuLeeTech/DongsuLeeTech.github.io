@@ -71,6 +71,13 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.09.** Applied two korea patents "**Curriculum reinforcement learning method and apparatus for UAV-based network recovery**" and "**Offline reinforcement learning method and apparatus for UAV-based network recovery**," Minhae Kwon, Jeyeon Eo, and Dongsu Lee.  
+  
+  **2023.08.** Applied two korea patents "**Offline reinforcement learning based foresighted decision-making method and apparatus for multi-agents interaction**" and "**Traffic
+  control method and apparatus with autonomous vehicle based on adaptive reward**," Minhae Kwon, Dongsu Lee, and Chanin Eom.
+  
+  **2023.08.** Completed Resarch Grants (joined as Practice Responsibility) with Hyundai Motor Company (Hyundai NGV) and Accepted domestic Journal (J-KICS) "**Survey on Practical Reinforcement Learning: from Imitation Learning to Offline Reinforcement Learning**," Dongsu Lee, Chanin Eom, Sungwoo Choi, Sungkwan Kim, and Minhae Kwon.
+
   **2023.07.** Our domestic journal paper, **Autonomous Driving Strategy for Bottleneck Traffic with Prioritized Experience Replay**, is selected as **Best paper** in <span style="color:red">J-KICS</span> <a href="https://journal.kics.or.kr/digital-library/50681">[Web]</a>  
 
   **2023.07.** Accepted conference papers in <span style="color:red">2023 IEEE ITSC</span>
