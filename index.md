@@ -73,7 +73,7 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
-  **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**.
+  **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**. Dongsu Lee, Chanin Eom, Jaehwi Lee
 
   **2023.09.** Applied two korea patents "**Curriculum reinforcement learning method and apparatus for UAV-based network recovery**" and "**Offline reinforcement learning method and apparatus for UAV-based network recovery**," Minhae Kwon, Jeyeon Eo, and Dongsu Lee.  
   
