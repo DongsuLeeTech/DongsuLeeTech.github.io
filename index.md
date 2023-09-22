@@ -60,7 +60,7 @@ profile_picture:
 
   <h3>Travel and Grant</h3>
   
-  I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**.
+  I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**. (2023/08/15~)
 
   I am a group member of <a href="http://qcitour.co.kr/index.php?mid=members&member_list_filter=18">**18th Qualcomm IT Tour**</a>,
   and you can check our travels in San Diego, California, USA (2022/08/15~21), 
