@@ -59,6 +59,8 @@ profile_picture:
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   <h3>Travel and Grant</h3>
+  
+  I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**.
 
   I am a group member of <a href="http://qcitour.co.kr/index.php?mid=members&member_list_filter=18">**18th Qualcomm IT Tour**</a>,
   and you can check our travels in San Diego, California, USA (2022/08/15~21), 
@@ -71,6 +73,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.09.** Won the ICT Challenge 2023 held by **Institute for Information & communication Technology Planning & evaluation (IITP)**
+
   **2023.09.** Applied two korea patents "**Curriculum reinforcement learning method and apparatus for UAV-based network recovery**" and "**Offline reinforcement learning method and apparatus for UAV-based network recovery**," Minhae Kwon, Jeyeon Eo, and Dongsu Lee.  
   
   **2023.08.** Applied two korea patents "**Offline reinforcement learning based foresighted decision-making method and apparatus for multi-agents interaction**" and "**Traffic
