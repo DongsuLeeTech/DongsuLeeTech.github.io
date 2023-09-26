@@ -35,7 +35,7 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
-  [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Confernece (ITSC)**, Accepted, July, 2023.
+  [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Confernece (ITSC)**, Accepted, July, 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
  
   [AI-W5] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
