@@ -25,7 +25,10 @@ profile_picture:
 <!--   Be able to confirm more detailed information about me (e.g., presentations, photos, domestic publications, and developments) at another
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
-  <h3>Publication</h3> 
+  <h3>Publication</h3>
+  [AI-J3] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks,"
+  **IEEE Communication Letters**, accepted, November 2023. 
+
   [AI-J2] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning</a>," **IEEE Transactions 
   on Vehicular Technology**, accepted, October 2022. (IF 6.239, Rank 38/276, Top 13.59%) 
@@ -73,6 +76,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.11.** Accepted our letter to <span style="color:red">IEEE Communication Letters (CL)</span>
+  
   **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**. Dongsu Lee, Chanin Eom, Jaehwi Lee
   <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EB%B3%B8%EA%B5%90-ai%EB%B3%B4%EC%95%88%EC%97%B0%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9D%B4%EB%8F%99%EC%88%98%C2%B7%EC%97%84%EC%B0%AC%EC%9D%B8%C2%B7%EC%9D%B4%EC%9E%AC%ED%9C%98-%ED%95%99%EC%83%9D-ict&f&keyword">[media]</a>
 
