@@ -69,7 +69,7 @@ profile_picture:
   through <a href="https://www.instagram.com/qcittour_teamb/">**Instagram-Team b**</a>.
   
   I had invited two times at 2022/2024 AI Conference hosted by 
-  **Alberta Machine Intelligence Institute (AMII)**</a>, Edmonton, Canada (2022/05/22~29 and 2024/05/20~25).
+  **Alberta Machine Intelligence Institute (AMII)**, Edmonton, Canada (2022/05/22~29 and 2024/05/20~25).
   
   I had completed at 2021 Huawei Seeds for the Future 
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
