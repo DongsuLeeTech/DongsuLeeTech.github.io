@@ -62,6 +62,8 @@ profile_picture:
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   <h3>Travel and Grant</h3>
+    I had invited at 2024 AI Week hosted by <a href="https://www.amii.ca/your-business/?utm_source=google-ads&utm_medium=cpc&utm_campaign=be-more-BMH-generic&utm_term=companies%20for%20machine%20learning&utm_campaign=SC+%7C+S+%7C+Be+MORE+BMH+Generic&utm_source=adwords&utm_medium=ppc&hsa_acc=6591753441&hsa_cam=18275130181&hsa_grp=142413166313&hsa_ad=620530101987&hsa_src=g&hsa_tgt=kwd-812766861496&hsa_kw=companies%20for%20machine%20learning&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3eZPviV38B02ejUh4jZRMUhYtYKjnJ9JVnzcpnonuy1q0SdRUlCTB4aAtZfEALw_wcB">
+  **Alberta Machine Intelligence Institute (AMII)**</a>, Edmonton, Canada (2022/05/22~29).
   
   I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**. (2023/08/15~)
 
@@ -69,13 +71,15 @@ profile_picture:
   and you can check our travels in San Diego, California, USA (2022/08/15~21), 
   through <a href="https://www.instagram.com/qcittour_teamb/">**Instagram-Team b**</a>.
   
-  I had invited at 2022 AI Week hosted by <a href="https://www.amii.ca/your-business/?utm_source=google-ads&utm_medium=cpc&utm_campaign=be-more-BMH-generic&utm_term=companies%20for%20machine%20learning&utm_campaign=SC+%7C+S+%7C+Be+MORE+BMH+Generic&utm_source=adwords&utm_medium=ppc&hsa_acc=6591753441&hsa_cam=18275130181&hsa_grp=142413166313&hsa_ad=620530101987&hsa_src=g&hsa_tgt=kwd-812766861496&hsa_kw=companies%20for%20machine%20learning&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3eZPviV38B02ejUh4jZRMUhYtYKjnJ9JVnzcpnonuy1q0SdRUlCTB4aAtZfEALw_wcB">
-  **Alberta Machine Intelligence Institute (AMII)**</a>, Edmonton, Canada (2022/05/22~29).
+  I had invited two times at 2022/2024 AI Conference hosted by 
+  **Alberta Machine Intelligence Institute (AMII)**</a>, Edmonton, Canada (2022/05/22~29 and 2024/05/20~25).
   
   I had completed at 2021 Huawei Seeds for the Future 
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2023.12.** Invited by 2024 AI Conference hosted by <a href="https://www.upperbound.ai/get-involved/">AMII</a>, Edmonton, Canada.
+  
   **2023.11.** Accepted our letter to <span style="color:red">IEEE Communications Letters (CL)</span>. This letter's main idea is my own.
   
   **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**. Dongsu Lee, Chanin Eom, Jaehwi Lee
