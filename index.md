@@ -75,6 +75,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.01.** Won the Best Paper Award at <span style="color:red">KICS 2023 Fall Conference</span>, South Korea
+  
   **2023.12.** Invited by 2024 AI Conference hosted by <a href="https://www.upperbound.ai/get-involved/">AMII</a>, Edmonton, Canada.
   
   **2023.11.** Accepted our letter to <span style="color:red">IEEE Communications Letters (CL)</span>. This letter's main idea is my own.
