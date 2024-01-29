@@ -38,7 +38,9 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
-  [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Confernece (ITSC)**, Accepted, July, 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
+  [AI-C1] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE Intelligent Transportation System Confernece (ICRA)**, Accepted, January, 2024. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
+  
+  [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE International Conference on Robotics and Automation (ICRA)**, Accepted, July, 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
  
   [AI-W5] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
@@ -75,6 +77,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.01.** Accepted conference paper in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
+  
   **2024.01.** Won the Best Paper Award at <span style="color:red">KICS 2023 Fall Conference</span>, South Korea
   
   **2023.12.** Invited by 2024 AI Conference hosted by <a href="https://www.upperbound.ai/get-involved/">AMII</a>, Edmonton, Canada.
