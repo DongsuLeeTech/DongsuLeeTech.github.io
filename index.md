@@ -42,11 +42,9 @@ profile_picture:
   
   [AI-C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Accepted, July 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
  
-  [AI-W5] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
+  [AI-W4] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
-  [AI-W4] Dongsu Lee, Minhae Kwon, “How Can AI Reason Your Character?,” **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/aihci/home">Workshop on Artificial Intelligence and Human-Computer Interaction</a>**, July 2023. 
-  
-  [AI-W3] Dongsu Lee, Minhae Kwon, "Why Don’t We Focus on Episodic Future Reasoning, Not Only Counterfactual?," **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/counterfactuals-icml/home">Workshop on Counterfactuals in Mind and Machines</a>**, July 2023. 
+  [AI-W3] Dongsu Lee, Minhae Kwon, “How Can AI Reason Your Character?,” **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/aihci/home">Workshop on Artificial Intelligence and Human-Computer Interaction</a>**, July 2023. 
 
   [AI-W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "Can Expert Demonstration Guarantee Offline Performance in Sparse Reward Environment?," **International Conference on Machine Learning (ICML) <a href="https://dmlr.ai/cfp/">Workshop on Data-centric Machine Learning Research</a>**, July 2023.
 
