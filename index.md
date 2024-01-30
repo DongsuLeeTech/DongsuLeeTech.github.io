@@ -76,6 +76,8 @@ profile_picture:
 
   <h3>News</h3>
   **2024.01.** Accepted conference paper in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
+
+  **2024.01.** Our domestic journal paper, **Online Curriculum Reinforcement Learning Based UAVTrainingfor Disaster Network Recover**, is selected as **Best paper** in   <span style="color:red">J-KICS</span> <a href="[https://journal.kics.or.kr/digital-library/50681](https://journal.kics.or.kr/digital-library/90287)">[Web]</a>  
   
   **2024.01.** Won the Best Paper Award at <span style="color:red">KICS 2023 Fall Conference</span>, South Korea
   
