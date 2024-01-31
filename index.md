@@ -8,7 +8,7 @@ profile_picture:
 
   I am a graduate researcher at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> 
   (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
-  My present research topic is a Reinforcement Learning algorithm inspired by Cognitive Neuroscience concept.
+  My present research topic is a Reinforcement Learning algorithm inspired by the Cognitive Neuroscience concept.
   
   I am currently interested in all fields of RL (e.g., Offline RL, Imitation Learning, Inverse RL, and so on), 
   Federated learning, Cognitive science (or psychology), and Neuroscience. In detail, the decision-making system of autonomous 
@@ -68,10 +68,10 @@ profile_picture:
   and you can check our travels in San Diego, California, USA (2022/08/15~21), 
   through <a href="https://www.instagram.com/qcittour_teamb/">**Instagram-Team b**</a>.
   
-  I had invited two times at 2022/2024 AI Conference hosted by 
+  I was invited two times to the 2022/2024 AI Conference hosted by 
   **Alberta Machine Intelligence Institute (AMII)**, Edmonton, Canada (2022/05/22~29 and 2024/05/20~25).
   
-  I had completed at 2021 Huawei Seeds for the Future 
+  I have completed 2021 Huawei Seeds for the Future 
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
@@ -87,13 +87,8 @@ profile_picture:
   
   **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**. Dongsu Lee, Chanin Eom, Jaehwi Lee
   <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EB%B3%B8%EA%B5%90-ai%EB%B3%B4%EC%95%88%EC%97%B0%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9D%B4%EB%8F%99%EC%88%98%C2%B7%EC%97%84%EC%B0%AC%EC%9D%B8%C2%B7%EC%9D%B4%EC%9E%AC%ED%9C%98-%ED%95%99%EC%83%9D-ict&f&keyword">[media]</a>
-
-  **2023.09.** Applied two korea patents "**Curriculum reinforcement learning method and apparatus for UAV-based network recovery**" and "**Offline reinforcement learning method and apparatus for UAV-based network recovery**," Minhae Kwon, Jeyeon Eo, and Dongsu Lee.  
   
-  **2023.08.** Applied two korea patents "**Offline reinforcement learning based foresighted decision-making method and apparatus for multi-agents interaction**" and "**Traffic
-  control method and apparatus with autonomous vehicle based on adaptive reward**," Minhae Kwon, Dongsu Lee, and Chanin Eom.
-  
-  **2023.08.** Completed Resarch Grants (joined as Practice Responsibility) with Hyundai Motor Company (Hyundai NGV) and Accepted domestic Journal (J-KICS) "**Survey on Practical Reinforcement Learning: from Imitation Learning to Offline Reinforcement Learning**," Dongsu Lee, Chanin Eom, Sungwoo Choi, Sungkwan Kim, and Minhae Kwon.
+  **2023.08.** Completed Research Grants (joined as Practice Responsibility) with Hyundai Motor Company (Hyundai NGV) and Accepted domestic Journal (J-KICS) "**Survey on Practical Reinforcement Learning: from Imitation Learning to Offline Reinforcement Learning**," Dongsu Lee, Chanin Eom, Sungwoo Choi, Sungkwan Kim, and Minhae Kwon.
 
   **2023.07.** Our domestic journal paper, **Autonomous Driving Strategy for Bottleneck Traffic with Prioritized Experience Replay**, is selected as **Best paper** in <span style="color:red">J-KICS</span> <a href="https://journal.kics.or.kr/digital-library/50681">[Web]</a>  
 
@@ -138,7 +133,7 @@ profile_picture:
   **2021.10.** Published Dongsu Lee, Minhae Kwon, "Combating Stop-and-Go Wave Problem at a Ring Road Using Deep Reinforcement Learning Based Autonomous Vehicles"
   to <span style="color:red">JKICS</span>
   
-  **2021.09.** Joined in Huawei Seeds for the Future 2021 (ICT Talent Nurturing Program) as a member
+  **2021.09.** Joined Huawei Seeds for the Future 2021 (ICT Talent Nurturing Program) as a member
 
   **2021.06.** Won the ICT Service Idea Competition hosted by KICS with Hyoseon Kye and Miru Kim
 
