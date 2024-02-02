@@ -40,7 +40,7 @@ profile_picture:
 
   [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Accepted, January 2024. [[project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)]
   
-  [C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Accepted, July 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)]
+  [C1] Dongsu Lee, Minhae Kwon, "Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Accepted, July 2023. [[pdf](https://drive.google.com/file/d/1ep1U_7f1lzPw0MPOG-ddBx9fibB2oaGz/view?usp=sharing)] [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
  
   [W4] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
