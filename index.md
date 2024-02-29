@@ -59,6 +59,10 @@ profile_picture:
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
   <h3>Issued Patents</h3>
+  숭실대학교 산학협력단 “자율주행차량을 위한 심층강화학습 기반 차선 변경 방법, 이를 수행하기 위한 기록 매체 및 장치,” Korean Patent, filed on Sep 06, 
+  2021 (Application no. 10-2021-0118540), issued on January 25, 2024. (Patent no. 10-2631402) Developer: Minhae Kwon, Dongsu Lee
+  <a href="http://kpat.kipris.or.kr/kpat/biblioa.do?method=biblioFrame&start=biblio&searchFg=N&KeyWord=1020210118540&applno=1020210118540&Gubun=1&sCurrPage=1&searchFg=N&expression=1020210118540&openPageId=View01&isMyConcern=N&isMyFolder=N&config=/main/sharePage_KR.jsp,%20className=jeus_jspwork._main._700_sharePage_5fKR_5fjsp,%20jspUri=%27/main/sharePage_KR.jsp">[PDF]</a>
+  
   숭실대학교 산학협력단, “심층강화학습기반 자율주행차량을 이용한 정체 현상 해결 방법, 이를 수행하기 위한 기록 매체 및 장치,” Korean Patent, filed on July 13, 
   2021 (Application no. 10-2021-0091665), issued on October 19, 2022. (Patent no. 10-2457914) Developer: Minhae Kwon, Dongsu Lee 
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
@@ -77,6 +81,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.02.**  Issued Korean patent Dongsu Lee, Minhae Kwon, “METHOD OF LANE CHANGE FOR AUTONOMOUS VEHICLES BASED DEEP REINFORCEMENT LEARNING, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE METHOD”
+  
   **2024.01.** Accepted conference paper in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
 
   **2024.01.** Our domestic journal paper, **Online Curriculum Reinforcement Learning Based UAVTrainingfor Disaster Network Recover**, is selected as **Best paper** in   <span style="color:red">J-KICS</span> <a href="https://journal.kics.or.kr/digital-library/90287">[Web]</a>  
