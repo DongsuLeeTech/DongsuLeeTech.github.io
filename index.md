@@ -81,13 +81,13 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
-  **2024.02.**  Issued Korean patent Dongsu Lee, Minhae Kwon, “METHOD OF LANE CHANGE FOR AUTONOMOUS VEHICLES BASED DEEP REINFORCEMENT LEARNING, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE METHOD”
+  **2024.02.** Issued Korean patent Dongsu Lee, Minhae Kwon, “METHOD OF LANE CHANGE FOR AUTONOMOUS VEHICLES BASED DEEP REINFORCEMENT LEARNING, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE METHOD”
   
   **2024.01.** Accepted conference paper in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
 
   **2024.01.** Our domestic journal paper, **Online Curriculum Reinforcement Learning Based UAVTrainingfor Disaster Network Recover**, is selected as **Best paper** in   <span style="color:red">J-KICS</span> <a href="https://journal.kics.or.kr/digital-library/90287">[Web]</a>  
   
-  **2024.01.** Won the Best Paper Award at <span style="color:red">KICS 2023 Fall Conference</span>, South Korea
+  **2024.01.** Won the Best Paper Award at <span style="color:red">KICS 2023 Fall Conference</span>, South Korea <a href="https://www.kics.or.kr/html/?pmode=BExcellentPapers&page=1&smode=view&seq=4199&searchValue=&searchTitle=strTitle">[interview]</a>
   
   **2023.12.** Invited by 2024 AI Conference hosted by <a href="https://www.upperbound.ai/get-involved/">AMII</a>, Edmonton, Canada.
   
