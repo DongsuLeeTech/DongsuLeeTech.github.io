@@ -68,6 +68,8 @@ profile_picture:
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   <h3>Travel and Grant</h3>  
+  I am sponsored by IITP & Sogang Univ. for **AI Intensive Program at Carnegie Mellon University** (USD 41K; 2024/08~2025/02) 
+  
   I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**. (2023/08/15~)
 
   I am a group member of <a href="http://qcitour.co.kr/index.php?mid=members&member_list_filter=18">**18th Qualcomm IT Tour**</a>,
@@ -81,6 +83,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.03.** Won AI Intensive Program at Carnegie Mellon University sponsored by IITP & Sogang Univ. (USD 41K) 
+  
   **2024.02.** Issued Korean patent Dongsu Lee, Minhae Kwon, “METHOD OF LANE CHANGE FOR AUTONOMOUS VEHICLES BASED DEEP REINFORCEMENT LEARNING, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE METHOD”
   
   **2024.01.** Accepted conference paper in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
