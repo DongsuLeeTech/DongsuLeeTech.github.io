@@ -83,6 +83,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.04.** Won 2024 ICRA Travel Grant (USD 0.5K)
+  
   **2024.03.** Won AI Intensive Program at Carnegie Mellon University sponsored by IITP & Sogang Univ. (USD 41K) 
   
   **2024.02.** Issued Korean patent Dongsu Lee, Minhae Kwon, “METHOD OF LANE CHANGE FOR AUTONOMOUS VEHICLES BASED DEEP REINFORCEMENT LEARNING, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE METHOD”
