@@ -10,9 +10,8 @@ profile_picture:
   (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
   My present research topic is a Reinforcement Learning algorithm inspired by the Cognitive Neuroscience concept.
   
-  I am currently interested in all fields of RL (e.g., Offline RL, Imitation Learning, Inverse RL, and so on), 
-  Federated learning, Cognitive science (or psychology), and Neuroscience. In detail, the decision-making system of autonomous 
-  mobile devices (vehicles, drones, etc.). 
+  I am currently interested in all fields of learning-based control (e.g., Online RL, Offline RL, Imitation Learning, Inverse RL, and so on), Cognitive science (or 
+  psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). 
   
   Previously, I majored in **Biotechnology** and **Bioinformatics** at the **School of Systems Biomedical Science** 
   at Soongsil Univ in Seoul, South Korea. Additionally, I had a double major in **Big Data Computing** Systems. 
