@@ -83,6 +83,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.05.** Won the Haedong Best Paper Award at KICS 2024 Summer Conference, South Korea
+  
   **2024.04.** Won 2024 ICRA Travel Grant (USD 0.5K)
   
   **2024.03.** Won AI Intensive Program at Carnegie Mellon University sponsored by IITP & Sogang Univ. (USD 41K) 
