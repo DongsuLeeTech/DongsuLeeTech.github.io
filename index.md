@@ -41,6 +41,8 @@ profile_picture:
   
   [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
  
+  [W5] Chanin Eom, Dongsu Lee, Minhae Kwon, "Efficient Online Reinforcement Learning with Selective Imitation of Prior Datasets," **IEEE International Conference on Robotics and Automation (IEEE ICRA) <a href="https://sites.google.com/view/icra24-physical-hri">Physical Human-robot Interaction Workshop</a>**, May 2024.
+  
   [W4] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
   [W3] Dongsu Lee, Minhae Kwon, “How Can AI Reason Your Character?,” **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/aihci/home">Workshop on Artificial Intelligence and Human-Computer Interaction</a>**, July 2023. 
@@ -82,6 +84,8 @@ profile_picture:
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>
+  **2024.05.** Accepted five workshop papers in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
+  
   **2024.05.** Won the Haedong Best Paper Award at KICS 2024 Summer Conference, South Korea
   
   **2024.04.** Won 2024 ICRA Travel Grant (USD 0.5K)
