@@ -8,7 +8,7 @@ profile_picture:
 
   I am a graduate researcher at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> 
   (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
-  My present research topic is a Reinforcement Learning algorithm inspired by the Cognitive Neuroscience concept.
+  My present research topic is a reinforcement learning algorithm development.
   
   I am currently interested in all fields of learning-based control (e.g., Online RL, Offline RL, Imitation Learning, Inverse RL, and so on), Cognitive science (or 
   psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). 
