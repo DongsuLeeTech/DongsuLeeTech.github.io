@@ -26,11 +26,11 @@ profile_picture:
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
   [J3] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
-  **IEEE Communications Letters**, accepted, November 2023. 
+  **IEEE Communications Letters**, vol. 28, no. 5, May 2024. 
 
   [J2] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning</a>," **IEEE Transactions 
-  on Vehicular Technology**, accepted, October 2022. (IF 6.239, Rank 38/276, Top 13.59%) 
+  on Vehicular Technology**, vol 72, no. 3, pp. 2848 – 2862, March 2023. (IF 6.239, Rank 38/276, Top 13.59%) 
   <a href="https://n.news.naver.com/article/003/0011509292?sid=102">[Media]</a>
  
   [J1] Dongsu Lee, Minhae Kwon, “<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
