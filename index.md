@@ -69,8 +69,6 @@ profile_picture:
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   <h3>Travel and Grant</h3>  
-  I am sponsored by NRF for **Graduate Research Fellowship from the National Research Foundation of Korea** (USD 36K; 2024/09~2026/08)
-  
   I am sponsored by IITP & Sogang Univ. for **AI Intensive Program at Carnegie Mellon University** (USD 41K; 2024/08~2025/02) 
   
   I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**. (2023/08/15~)
@@ -85,9 +83,7 @@ profile_picture:
   I have completed 2021 Huawei Seeds for the Future 
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
-  <h3>News</h3>
-  **2024.06.** Won the Graduate Research Fellowship from the National Research Foundation of Korea sponsored by NRF (USD 36K).
-  
+  <h3>News</h3>  
   **2024.05.** Accepted five workshop papers in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
   
   **2024.05.** Won the Haedong Best Paper Award at KICS 2024 Summer Conference, South Korea.
