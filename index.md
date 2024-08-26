@@ -59,6 +59,23 @@ profile_picture:
 
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
+<h3>Under Review</h3>
+Dongsu Lee, Minhae Kwon, “Offline Reinforcement Learning on Foresighted Decision-making for Autonomous Driving System,” under review.
+
+Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Reinforcement Learning in Mixed-autonomous Traffic,” under review.
+
+Dongsu Lee, Minhae Kwon, “Offline-to-Online Reinforcement Learning for UAV-aided Emergency Communication Networks,” under review.
+
+Chanin Eom, Dongsu Lee, Minhae Kwon, “Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data,” under review.
+
+Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” under revision.
+
+Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” under review.
+
+Dongsu Lee, Minhae Kwon, Anonymous submission – multi-agent reinforcement learning, Top AI Conference, under review.
+
+Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning, Top AI Conference, under review.
+
   <h3>Issued Patents</h3>
   숭실대학교 산학협력단 “자율주행차량을 위한 심층강화학습 기반 차선 변경 방법, 이를 수행하기 위한 기록 매체 및 장치,” Korean Patent, filed on Sep 06, 
   2021 (Application no. 10-2021-0118540), issued on January 25, 2024. (Patent no. 10-2631402) Developer: Minhae Kwon, Dongsu Lee
