@@ -25,6 +25,8 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
+  [J4] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://ieeexplore.ieee.org/document/10343100">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, accepted.
+  
   [J3] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
   **IEEE Communications Letters**, vol. 28, no. 5, May 2024. 
 
@@ -66,8 +68,6 @@ Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Re
 
 Dongsu Lee, Minhae Kwon, “Offline-to-Online Reinforcement Learning for UAV-aided Emergency Communication Networks,” **under review**.
 
-Chanin Eom, Dongsu Lee, Minhae Kwon, “Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data,” **under review**.
-
 Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” **under revision**.
 
 Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” **under review**.
@@ -101,6 +101,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>  
+  **2024.08.** Accepted our letter to <span style="color:red">ICT Express</span>. 
+  
   **2024.05.** Accepted five workshop papers in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
   
   **2024.05.** Won the Haedong Best Paper Award at KICS 2024 Summer Conference, South Korea.
@@ -119,7 +121,7 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   
   **2023.12.** Invited by 2024 AI Conference hosted by <a href="https://www.upperbound.ai/get-involved/">AMII</a>, Edmonton, Canada.
   
-  **2023.11.** Accepted our letter to <span style="color:red">IEEE Communications Letters (CL)</span>. This letter's main idea is my own.
+  **2023.11.** Accepted our letter to <span style="color:red">IEEE Communications Letters (CL)</span>.
   
   **2023.09.** Won the **President’s Award of IITP** (Institute for Information & communication Technology Planning & evaluation) at **ICT Challenge 2023**. Dongsu Lee, Chanin Eom, Jaehwi Lee
   <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EB%B3%B8%EA%B5%90-ai%EB%B3%B4%EC%95%88%EC%97%B0%EA%B5%AC%EC%84%BC%ED%84%B0-%EC%9D%B4%EB%8F%99%EC%88%98%C2%B7%EC%97%84%EC%B0%AC%EC%9D%B8%C2%B7%EC%9D%B4%EC%9E%AC%ED%9C%98-%ED%95%99%EC%83%9D-ict&f&keyword">[media]</a>
