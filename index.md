@@ -25,15 +25,18 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
-  [J4] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, accepted.
+  [J4, W5] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, vol. 11, no. 2, 2025.
   
-  [J3] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
-  **IEEE Communications Letters**, vol. 28, no. 5, May 2024. 
+  [J3, W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
+  **IEEE Communications Letters**, vol. 28, no. 5, May 2024. <a href="https://dmlr.ai/cfp/">ICML DMLR Workshop</a>**.
 
-  [J2] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
+  [J2, W1] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning</a>," **IEEE Transactions 
   on Vehicular Technology**, vol 72, no. 3, pp. 2848 – 2862, March 2023. (IF 6.239, Rank 38/276, Top 13.59%) 
-  <a href="https://n.news.naver.com/article/003/0011509292?sid=102">[Media]</a>
+  <a href="https://n.news.naver.com/article/003/0011509292?sid=102">[Media]</a> NeurIPS DeepRL Workshop <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EC%9D%98%EC%83%9D%EB%AA%85%EC%8B%9C%EC%8A%A4%ED%85%9C%ED%95%99%EB%B6%80-%EC%9D%B4%EB%8F%99%EC%88%98-%ED%95%99%EC%83%9D-%EC%84%B8%EA%B3%84-%EC%B5%9C%EA%B3%A0-%EA%B6%8C%EC%9C%84-ai-%ED%95%99%ED%9A%8C&f=all&keyword=%EC%9D%B4%EB%8F%99%EC%88%98">
+  [Media]</a> 
+  <a href="https://slideslive.com/38971018/stability-analysis-in-mixedautonomous-traffic-with-deep-reinforcement-learning?ref=account-folder-92642-folders">
+  [Video]</a>
  
   [J1] Dongsu Lee, Minhae Kwon, “<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
@@ -43,21 +46,9 @@ profile_picture:
   
   [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
  
-  [W5] Chanin Eom, Dongsu Lee, Minhae Kwon, "Efficient Online Reinforcement Learning with Selective Imitation of Prior Datasets," **IEEE International Conference on Robotics and Automation (IEEE ICRA) <a href="https://sites.google.com/view/icra24-physical-hri">Physical Human-robot Interaction Workshop</a>**, May 2024.
-  
   [W4] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
  
   [W3] Dongsu Lee, Minhae Kwon, “How Can AI Reason Your Character?,” **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/aihci/home">Workshop on Artificial Intelligence and Human-Computer Interaction</a>**, July 2023. 
-
-  [W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "Can Expert Demonstration Guarantee Offline Performance in Sparse Reward Environment?," **International Conference on Machine Learning (ICML) <a href="https://dmlr.ai/cfp/">Workshop on Data-centric Machine Learning Research</a>**, July 2023.
-
-  [W1] Dongsu Lee, Minhae Kwon, “Stability Analysis in Mixed-Autonomous Traffic with Deep Reinforcement Learning,” 
-  **Neural Information Processing Systems (NeurIPS) <a href="https://sites.google.com/view/deep-rl-workshop-neurips2021">Deep Reinforcement Learning (DeepRL) Workshop</a>**, 
-  December 2021. 
-  <a href="https://scatch.ssu.ac.kr/%eb%89%b4%ec%8a%a4%ec%84%bc%ed%84%b0/%ec%a3%bc%ec%9a%94%eb%89%b4%ec%8a%a4/?slug=%EC%9D%98%EC%83%9D%EB%AA%85%EC%8B%9C%EC%8A%A4%ED%85%9C%ED%95%99%EB%B6%80-%EC%9D%B4%EB%8F%99%EC%88%98-%ED%95%99%EC%83%9D-%EC%84%B8%EA%B3%84-%EC%B5%9C%EA%B3%A0-%EA%B6%8C%EC%9C%84-ai-%ED%95%99%ED%9A%8C&f=all&keyword=%EC%9D%B4%EB%8F%99%EC%88%98">
-  [Media]</a> 
-  <a href="https://slideslive.com/38971018/stability-analysis-in-mixedautonomous-traffic-with-deep-reinforcement-learning?ref=account-folder-92642-folders">
-  [Video]</a>
 
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
