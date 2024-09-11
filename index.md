@@ -25,7 +25,7 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
-  [J5, W4] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” IEEE Transactions on Consumer Electronics, accepted. <a href="https://sites.google.com/view/aihci">ICML AIHCI Workshop</a>.
+  [J5, W4] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” **IEEE Transactions on Consumer Electronics**, accepted. <a href="https://sites.google.com/view/aihci">ICML AIHCI Workshop</a>.
   
   [J4, W5] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, vol. 11, no. 2, 2025.
   
