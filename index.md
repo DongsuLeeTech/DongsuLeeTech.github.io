@@ -90,6 +90,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>  
+  **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
+  
   **2024.08.** Accepted our letter to <span style="color:red">ICT Express</span>. 
   
   **2024.05.** Accepted five workshop papers in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
