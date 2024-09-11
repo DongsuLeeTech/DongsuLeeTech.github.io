@@ -25,12 +25,12 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
-  [J5, W4] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” IEEE Transactions on Consumer Electronics, accepted. ICML AIHCI Workshop.
+  [J5, W4] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” IEEE Transactions on Consumer Electronics, accepted. <a href="https://sites.google.com/view/aihci">ICML AIHCI Workshop</a>.
   
   [J4, W5] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, vol. 11, no. 2, 2025.
   
   [J3, W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
-  **IEEE Communications Letters**, vol. 28, no. 5, May 2024. <a href="https://dmlr.ai/cfp/">ICML DMLR Workshop</a>**.
+  **IEEE Communications Letters**, vol. 28, no. 5, May 2024. <a href="https://dmlr.ai/cfp/">ICML DMLR Workshop</a>.
 
   [J2, W1] Dongsu Lee, Minhae Kwon, "<a href="https://linkinghub.elsevier.com/retrieve/pii/S240595952200073X">
   Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning</a>," **IEEE Transactions 
