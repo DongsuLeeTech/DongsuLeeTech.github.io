@@ -25,6 +25,8 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
+  [J5, W4] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” IEEE Transactions on Consumer Electronics, accepted. ICML AIHCI Workshop.
+  
   [J4, W5] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, vol. 11, no. 2, 2025.
   
   [J3, W2] Jeyeon Eo, Dongsu Lee, and Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10343100">The Impact of Dataset on Offline Reinforcement Learning Performance in UAV-based Emergency Network Recovery Tasks</a>,"
@@ -46,9 +48,7 @@ profile_picture:
   
   [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
  
-  [W4] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
- 
-  [W3] Dongsu Lee, Minhae Kwon, “How Can AI Reason Your Character?,” **International Conference on Machine Learning (ICML) <a href="https://sites.google.com/view/aihci/home">Workshop on Artificial Intelligence and Human-Computer Interaction</a>**, July 2023. 
+  [W3] Dongsu Lee, Minhae Kwon, "How to Make Social Decisions in a Heterogeneous Society?," **International Conference on Machine Learning (ICML) <a href="https://tomworkshop.github.io/#cfp">Workshop on Theory of Mind Workshop</a>**, July 2023.
 
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
@@ -58,8 +58,6 @@ Dongsu Lee, Minhae Kwon, “Offline Reinforcement Learning on Foresighted Decisi
 Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Reinforcement Learning in Mixed-autonomous Traffic,” **under review**.
 
 Dongsu Lee, Minhae Kwon, “Offline-to-Online Reinforcement Learning for UAV-aided Emergency Communication Networks,” **under review**.
-
-Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” **under revision**.
 
 Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” **under review**.
 
