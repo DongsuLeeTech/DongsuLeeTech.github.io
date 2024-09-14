@@ -57,9 +57,9 @@ Dongsu Lee, Minhae Kwon, “Offline Reinforcement Learning on Foresighted Decisi
 
 Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Reinforcement Learning in Mixed-autonomous Traffic,” **under review**.
 
-Dongsu Lee, Minhae Kwon, “Offline-to-Online Reinforcement Learning for UAV-aided Emergency Communication Networks,” **under review**.
-
 Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” **under review**.
+
+Dongsu Lee, Minhae Kwon, Anonymous submission - multi-task reinforcement learning, **Top AI Conference**, under review.
 
 Dongsu Lee, Minhae Kwon, Anonymous submission – multi-agent reinforcement learning, **Top AI Conference**, under review.
 
