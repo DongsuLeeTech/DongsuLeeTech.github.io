@@ -66,6 +66,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – multi-agent reinforcement lear
 Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning, **Top AI Conference**, under review.
 
   <h3>Issued Patents</h3>
+  Dongsu Lee, Minhae Kwon, “Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles, Recording medium and device for performing this the method,” US Patent, Nov 27, 2021. (Application no. US 17/535567), issued on September 17, 2024. (Patent no. US 12,091,025)
+  
   숭실대학교 산학협력단 “자율주행차량을 위한 심층강화학습 기반 차선 변경 방법, 이를 수행하기 위한 기록 매체 및 장치,” Korean Patent, filed on Sep 06, 
   2021 (Application no. 10-2021-0118540), issued on January 25, 2024. (Patent no. 10-2631402) Developer: Minhae Kwon, Dongsu Lee
   <a href="http://kpat.kipris.or.kr/kpat/biblioa.do?method=biblioFrame&start=biblio&searchFg=N&KeyWord=1020210118540&applno=1020210118540&Gubun=1&sCurrPage=1&searchFg=N&expression=1020210118540&openPageId=View01&isMyConcern=N&isMyFolder=N&config=/main/sharePage_KR.jsp,%20className=jeus_jspwork._main._700_sharePage_5fKR_5fjsp,%20jspUri=%27/main/sharePage_KR.jsp">[PDF]</a>
