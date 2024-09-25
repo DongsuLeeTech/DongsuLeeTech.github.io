@@ -44,7 +44,7 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
-  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Reinforcement Learning for Social Decision-making" **Conference on Neural Information Processing Systems (NeurIPS)**, Vancouver, Canada, December, 2024.
+  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Reinforcement Learning for Social Decision-making" **Conference on Neural Information Processing Systems (NeurIPS)**, Vancouver, Canada, December 2024 (**Acceptance rate 25.8%**).
 
   [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Yokohama, Japan, May 2024. [[project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)] [[pre-print](https://arxiv.org/abs/2404.02429)]
   
