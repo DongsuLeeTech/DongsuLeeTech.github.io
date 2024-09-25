@@ -44,7 +44,7 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
-  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Reinforcement Learning for Social Decision-making" **Conference on Neural Information Processing Systems (NeurIPS)**, December, 2024.
+  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Reinforcement Learning for Social Decision-making" **Conference on Neural Information Processing Systems (NeurIPS)**, Vancouver, Canada, December, 2024.
 
   [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Yokohama, Japan, May 2024. [[project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)] [[pre-print](https://arxiv.org/abs/2404.02429)]
   
@@ -62,8 +62,6 @@ Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Re
 Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” **under review**.
 
 Dongsu Lee, Minhae Kwon, Anonymous submission - multi-task reinforcement learning, **Top AI Conference**, under review.
-
-Dongsu Lee, Minhae Kwon, Anonymous submission – multi-agent reinforcement learning, **Top AI Conference**, under review.
 
 Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning, **Top AI Conference**, under review.
 
@@ -94,7 +92,7 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>  
-  **2024.09.** Accepted our conference paper to Conference on <span style="color:red">Neural Information Processing Systems (NeurIPS)</span>.
+  **2024.09.** Accepted conference paper in <span style="color:red">Conference on Neural Information Processing Systems (NeurIPS)</span>, Vancouver, Canada.
   
   **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
 
