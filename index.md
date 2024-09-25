@@ -11,7 +11,7 @@ profile_picture:
   My present research topic is a reinforcement learning algorithm development.
   
   I am currently interested in all fields of learning-based control (e.g., Online RL, Offline RL, Imitation Learning, Inverse RL, and so on), Cognitive science (or 
-  psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). Additionally, I am interning at the <a href="https://safeai-lab.github.io/">SAFE AI Lab</a> (Prof. Ding Zhao), focusing on solving to safe decision making problems (coworking with <a href="https://hhlin.info/">Haohong Lin</a>).
+  psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). Additionally, I am interning at the <a href="https://safeai-lab.github.io/">**SAFE AI Lab**</a> (Prof. Ding Zhao), **Carnegie Mellon University**, USA, focusing on solving to safe decision making problems (coworking with <a href="https://hhlin.info/">Haohong Lin</a>).
   
   Previously, I majored in **Biotechnology** and **Bioinformatics** at the **School of Systems Biomedical Science** 
   at Soongsil Univ in Seoul, South Korea. Additionally, I had a double major in **Big Data Computing** Systems. 
