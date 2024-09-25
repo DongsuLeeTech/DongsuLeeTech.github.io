@@ -5,13 +5,13 @@ profile_picture:
   alt: website picture
 ---
   Welcome, everybody!
-
-  I am a graduate researcher at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> 
+  
+  I am a graduate student at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> 
   (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
   My present research topic is a reinforcement learning algorithm development.
   
   I am currently interested in all fields of learning-based control (e.g., Online RL, Offline RL, Imitation Learning, Inverse RL, and so on), Cognitive science (or 
-  psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). 
+  psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). Additionally, I am interning at the <a href="https://safeai-lab.github.io/">SAFE AI Lab</a> (Prof. Ding Zhao), focusing on solving to safe decision making problems (coworking with <a href="https://hhlin.info/">Haohong Lin</a>).
   
   Previously, I majored in **Biotechnology** and **Bioinformatics** at the **School of Systems Biomedical Science** 
   at Soongsil Univ in Seoul, South Korea. Additionally, I had a double major in **Big Data Computing** Systems. 
@@ -93,7 +93,9 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
 
   <h3>News</h3>  
   **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
-  
+
+  **2024.08.** Joined <span style="color:red">SAFE AI Laboratory</span> (<a href="https://safeai-lab.github.io/">Prof. Ding Zhao</a>) as 6-month intern.
+   
   **2024.08.** Accepted our letter to <span style="color:red">ICT Express</span>. 
   
   **2024.05.** Accepted five workshop papers in <span style="color:red">IEEE ICRA</span>, Yokohama, Japan.
