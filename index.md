@@ -44,6 +44,8 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
+  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Reinforcement Learning for Social Decision-making" **Conference on Neural Information Processing Systems (NeurIPS)**, December, 2024.
+
   [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Yokohama, Japan, May 2024. [[project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)] [[pre-print](https://arxiv.org/abs/2404.02429)]
   
   [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
@@ -92,6 +94,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>  
+  **2024.09.** Accepted our conference paper to Conference on <span style="color:red">Neural Information Processing Systems (NeurIPS)</span>.
+  
   **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
 
   **2024.08.** Joined <span style="color:red">SAFE AI Laboratory</span> (<a href="https://safeai-lab.github.io/">Prof. Ding Zhao</a>) as 6-month intern.
