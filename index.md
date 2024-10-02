@@ -77,7 +77,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://drive.google.com/file/d/134v6IJLRIdXse0I_QNWHjByx1JSmy15p/view?usp=sharing">[PDF]</a>
 
   <h3>Travel and Grant</h3>  
-  I am sponsored by IITP & Sogang Univ. for **AI Intensive Program at Carnegie Mellon University** (USD 41K; 2024/08~2025/02) 
+  I am sponsored by IITP & Sogang Univ. for **AI Intensive Program at Carnegie Mellon University** (USD 41K; 2024/08~2025/02),
+  and you can check our daily in Pittsburgh, PA, USA, through through <a href="https://www.instagram.com/5744_woodmont/">**5744_woodmont**</a>.
   
   I am receiving **Future Industrial Talent scholarship** support from **CMK Hyundai Group**. (2023/08/15~)
 
