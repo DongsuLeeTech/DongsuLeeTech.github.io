@@ -93,6 +93,8 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   <a href="https://www.koit.co.kr/news/articleView.html?idxno=88156">[media]</a>, Virtual.
 
   <h3>News</h3>  
+  **2024.10.** Won NeurIPS 2024 Scholar Award (Full conference registration and accommodations).
+  
   **2024.09.** Accepted conference paper in <span style="color:red">Conference on Neural Information Processing Systems (NeurIPS)</span>, Vancouver, Canada.
   
   **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
