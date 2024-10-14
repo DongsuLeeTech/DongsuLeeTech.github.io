@@ -99,7 +99,7 @@ Dongsu Lee, Minhae Kwon, Anonymous submission – offline reinforcement learning
   
   **2024.09.** Accepted our journal to <span style="color:red">IEEE Transactions on Consumer Electronics</span>. 
 
-  **2024.08.** Joined <span style="color:red">SAFE AI Laboratory</span> (<a href="https://safeai-lab.github.io/">Prof. Ding Zhao</a>) as 6-month intern.
+  <!-- **2024.08.** Joined <span style="color:red">SAFE AI Laboratory</span> (<a href="https://safeai-lab.github.io/">Prof. Ding Zhao</a>) as 6-month intern. -->
    
   **2024.08.** Accepted our letter to <span style="color:red">ICT Express</span>. 
   
