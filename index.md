@@ -46,11 +46,11 @@ profile_picture:
   ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</a>,” 
   **ICT Express**, vol.8, no.3, September 2022. (IF 4.317, Rank 22/91, Top 23.26%)
 
-  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning" **Conference on Neural Information Processing Systems (NeurIPS)**, Vancouver, Canada, December 2024 (**Acceptance rate 25.8%**) [[project page](https://sites.google.com/view/eftm-neurips2024-dongsulee)][[pre-print](https://arxiv.org/abs/2410.17373)][[5min presentation](https://recorder-v3.slideslive.com/?share=95230&s=c903f231-ad2f-4cf2-b9c1-1fb3b2a70b34)].
+  [C3] Dongsu Lee, Minhae Kwon, "Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning" **Conference on Neural Information Processing Systems (NeurIPS)**, Vancouver, Canada, December 2024 (**Acceptance rate 25.8%**) [project page](https://sites.google.com/view/eftm-neurips2024-dongsulee)|[pre-print](https://arxiv.org/abs/2410.17373)|[talk (5min)](https://recorder-v3.slideslive.com/?share=95230&s=c903f231-ad2f-4cf2-b9c1-1fb3b2a70b34).
 
-  [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Yokohama, Japan, May 2024. [[project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)] [[pre-print](https://arxiv.org/abs/2404.02429)]
+  [C2] Dongsu Lee, Chanin Eom, Minhae Kwon, "AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset" **IEEE International Conference on Robotics and Automation (ICRA)**, Yokohama, Japan, May 2024. [project page](https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha)|[pre-print](https://arxiv.org/abs/2404.02429)|[talk (5min)](https://www.youtube.com/watch?v=DGoxmBJrNRc)
   
-  [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [[project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)]
+  [C1] Dongsu Lee, Minhae Kwon, "<a href="https://ieeexplore.ieee.org/document/10421808">Foresighted Decisions for Inter-vehicle Interactions: A Offline Reinforcement Learning Approach</a>" **IEEE Intelligent Transportation System Conference (IEEE ITSC)**, Bilbao, Spain, September 2023. [project papge](https://sites.google.com/view/eft-pomdpieeeitsc2023/%ED%99%88)|[talk (10min)](https://youtu.be/ocdnWtSJ0yM?feature=shared)
 
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
