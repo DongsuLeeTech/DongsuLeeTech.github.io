@@ -6,17 +6,15 @@ profile_picture:
 ---
   Welcome, everybody!
   
-  I am a graduate student at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> 
-  (Prof. Minhae Kwon), **Soongsil Graduate School** in Seoul, South Korea. 
-  My present research topic is a reinforcement learning algorithm development.
+  I am looking for a PhD position. My present research topic is a reinforcement learning algorithm development.
   
   I am currently interested in all fields of learning-based control (e.g., Online RL, Offline RL, Imitation Learning, Inverse RL, and so on), Cognitive science (or 
   psychology), and Neuroscience. In detail, the decision-making system of autonomous mobile devices (vehicles, drones, etc.). 
   
   <!--   Additionally, I am interning at the <a href="https://safeai-lab.github.io/">**SAFE AI Lab**</a> (Prof. Ding Zhao), **Carnegie Mellon University**, USA, focusing on solving to safe decision making problems (coworking with <a href="https://hhlin.info/">Haohong Lin</a>). -->
   
-  Previously, I majored in **Biotechnology** and **Bioinformatics** at the **School of Systems Biomedical Science** 
-  at Soongsil Univ in Seoul, South Korea. Additionally, I had a double major in **Big Data Computing** Systems. 
+  I worked at <a href="https://brainmil.wordpress.com/">**Brain and Machine Intelligence Lab (BMIL)**</a> (Prof. Minhae Kwon)
+  at the **Soongsil University** in Seoul, South Korea.
   
   I interned at <a href="https://sites.google.com/site/sskimb/">**Post-Genome Informatics Lab**</a> (Prof. Sangsoo Kim) 
   at the School of Systems Biomedical Science, Soongsil University.
@@ -27,7 +25,9 @@ profile_picture:
   <a href="https://le2dongso0.wixsite.com/website">homepage</a> if you want. -->
 
   <h3>Publication (J: Journal; C: Conference; W: Workshop; T: Thesis)</h3>
-  [J5] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” **IEEE Transactions on Consumer Electronics**, accepted. <!--  <a href="https://sites.google.com/view/aihci">ICML AIHCI Workshop</a>. -->
+  [J6] Dongsu Lee, Minhae Kwon, "Offline Reinforcement Learning on Foresighted Decision-making for Autonomous Driving System," **IEEE Internet of Things Journal**, accepted.
+  
+  [J5] Dongsu Lee, Minhae Kwon, “Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning,” **IEEE Transactions on Consumer Electronics**, September 2024.
   
   [J4] Chanin Eom, Dongsu Lee, Minhae Kwon, “<a href="https://www.sciencedirect.com/science/article/pii/S2405959524001048">Selective Imitation for Efficient Online Reinforcement Learning with Pre-collected Data</a>,” **ICT Express**, vol. 11, no. 2, 2025.
   
@@ -55,10 +55,6 @@ profile_picture:
   [T-BS] Dongsu Lee, Chayoung Lee, Expression Quantitative Trait Loci for CCR4-NOT Complex that Regulate Global Gene Expression, Soongsil University, 2022. <a href="https://drive.google.com/file/d/11Zy2rXY9klRQn7kbsgLQcazkLHS78LcB/view?usp=sharing">[pdf]</a>
 
 <h3>Under Review</h3>
-Dongsu Lee, Minhae Kwon, “Offline Reinforcement Learning on Foresighted Decision-making for Autonomous Driving System,” **under review**.
-
-Chanin Eom, Dongsu Lee, Minhae Kwon, “Price of the Autonomous Strategy with Reinforcement Learning in Mixed-autonomous Traffic,” **under review**.
-
 Dongsu Lee, Minhae Kwon, “Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning,” **under review**.
 
 Dongsu Lee, Minhae Kwon, Anonymous submission - multi-task reinforcement learning, **Top AI Conference**, under review.
