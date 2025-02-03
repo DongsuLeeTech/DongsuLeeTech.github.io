@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/eftm/EFTM_files/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/eftm/EFTM_files/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/eftm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/eftm/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="3503000" />
+      <workItem from="1738595373494" duration="5608000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1667724625223</created>
@@ -385,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738598320284</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update">
+      <created>1738599100871</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1738599100876</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
