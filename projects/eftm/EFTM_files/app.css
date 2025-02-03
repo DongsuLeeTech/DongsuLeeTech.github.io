@@ -42,7 +42,7 @@ h3 {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #598be7, #9b46d0);
+  background: linear-gradient(to right, #FFA500, #FF512F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
