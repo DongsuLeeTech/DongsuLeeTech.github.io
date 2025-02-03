@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,300i,400,400i,600,600i,700,700i&display=swap");
 
 a, a:focus {
-    color: #598be7;
+    color: #FFA500;
     text-decoration: none;
 }
 
@@ -15,12 +15,12 @@ a:hover {
     color: #000000;
 }
 
-.seohong-link {
+.dongsu-link {
     font-weight: 700;
     color: #000000;
 }
 
-.seohong-codeforces, .seohong-codeforces:focus, .seohong-codeforces:hover {
+.dongsu-codeforces, .dongsu-codeforces:focus, .dongsu-codeforces:hover {
     color: red;
 }
 

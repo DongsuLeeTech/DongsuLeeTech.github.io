@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/projects/eftm/EFTM_files/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/projects/eftm/EFTM_files/stylesheet.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +116,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="2399000" />
+      <workItem from="1738595373494" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1667724625223</created>
@@ -368,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738597776918</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Update">
+      <created>1738597970766</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1738597970766</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
