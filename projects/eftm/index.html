@@ -977,6 +977,7 @@ mjx-c.mjx-c2E::before {
                 </li>
             </ul>
         </div>
+
         <div class="col-md-12">
             <h4>Meta-character Agent</h4>
         </div>
@@ -999,6 +1000,27 @@ mjx-c.mjx-c2E::before {
                 <li> Specifically, the meta-character policy uses a local observation and character parameters, as input, and outputs an action. In the training phase, the agent randomly samples a character parameter at every episode.</li>
             </ul>
         </div>
+
+        <div class="col-md-12">
+            <h4>Character Inference</h4>
+        </div>
+        <div class="col-md-12">
+            <ul>
+                <li> Once the meta-character policy is fully trained, the agent can infer others' character according to their trajectory.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+                <p>
+                    <img src="./EFTM_files/character_inference.png" style="width: 100%;">
+                </p>
+        </div>
+        <div class="col-md-12">
+            <ul>
+                <li> Character inference is a process to find a character that explains the observation-action pair of a target agent best. Methodology for character inference is a maximum likelihood estimation with stochastic gradient ascent.</li>
+                <li> Complete knowledge about the reward components of the target agent may not always be possible. Our primary purpose is to interpret the behavioral pattern of the target agent by inferring character coefficients about the sketched reward function.</li>
+            </ul>
+        </div>
+
         </div>
     <hr>
 
