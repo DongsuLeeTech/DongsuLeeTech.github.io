@@ -7,7 +7,7 @@ a, a:focus {
 }
 
 a:hover {
-    color: #f54254;
+    color: red;
     text-decoration: none;
 }
 
@@ -45,13 +45,18 @@ strong {
 }
 
 .text-heading {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 300;
 }
 
 .text-papertitle {
     font-size: 21px;
     font-weight: 400;
+}
+
+.text-patenttitle {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .text-conference {
