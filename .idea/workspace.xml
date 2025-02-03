@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/projects/eftm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/eftm/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap(1).min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/tex-mml-chtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,6 +57,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
+      <recent name="$PROJECT_DIR$/projects/vq-gatco" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
@@ -116,28 +129,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="14010000" />
-    </task>
-    <task id="LOCAL-00012" summary="minor Update">
-      <created>1687183775207</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1687183775207</updated>
-    </task>
-    <task id="LOCAL-00013" summary="minor Update">
-      <created>1687221354393</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1687221354393</updated>
-    </task>
-    <task id="LOCAL-00014" summary="minor Update">
-      <created>1687237655999</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1687237655999</updated>
+      <workItem from="1738595373494" duration="15089000" />
     </task>
     <task id="LOCAL-00015" summary="minor Update">
       <created>1687420755112</created>
@@ -461,7 +453,28 @@
       <option name="project" value="LOCAL" />
       <updated>1738617750979</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Update">
+      <created>1738617844191</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1738617844194</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Update">
+      <created>1738617956274</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1738617956275</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Update">
+      <created>1738618117126</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1738618117146</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
