@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap(1).min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files/tex-mml-chtml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,14 +116,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="15089000" />
-    </task>
-    <task id="LOCAL-00015" summary="minor Update">
-      <created>1687420755112</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1687420755112</updated>
+      <workItem from="1738595373494" duration="15730000" />
     </task>
     <task id="LOCAL-00016" summary="minor Update">
       <created>1687690759315</created>
@@ -474,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738618117146</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Update">
+      <created>1738618883552</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1738618883555</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

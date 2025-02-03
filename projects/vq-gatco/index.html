@@ -952,6 +952,9 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12">
             <br>
             <div class="col-md-8 col-md-offset-2">
+                <p>
+                    <img src="./VQ-GATCo_files/RQ.png" style="width: 100%;">
+                </p>
             </div>
         </div>
         <div class="col-md-12">
@@ -967,83 +970,6 @@ mjx-c.mjx-c2E::before {
     </div>
     <hr>
 
-        <div class="row">
-        <div class="col-md-12">
-            <h2>VQ-GATCo: Episodic Future Thinking Mechanism</h2>
-        </div>
-        <div class="col-md-12">
-            <br>
-            <div class="col-md-10 col-md-offset-1">
-                <p>
-                    <img src="./VQ-GATCo_files/overview.png" style="width: 100%;">
-                </p>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li>
-                    The VQ-GATCo framework couples character inference and upcoming future prediction.
-                    Thanks to this framework, robot agents can coordinate their decision-making adaptively by considering others' characters and upcoming actions.
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-md-12">
-            <h4>Meta-character Agent</h4>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li>
-                    This work introduces the <b>character</b>, as the parameterization of reward function, in RL formulation, as follows:
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-                <p>
-                    <img src="./VQ-GATCo_files/character_reward.png" style="width: 100%;">
-                </p>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li> Characters evaluate differently the importance of each reward term and make the behavioral pattern diversified. </li>
-                <li> An agent learns the meta-character policy that can emulate the behavioral pattern of a given character by capturing a set of possible character-conditioned policies. </li>
-                <li> Specifically, the meta-character policy uses a local observation and character parameters, as input, and outputs an action. In the training phase, the agent randomly samples a character parameter at every episode.</li>
-            </ul>
-        </div>
-
-        <div class="col-md-12">
-            <h4>Character Inference</h4>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li> Once the meta-character policy is fully trained, the agent can infer others' character according to their trajectory.</li>
-            </ul>
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-                <p>
-                    <img src="./VQ-GATCo_files/character_inference.png" style="width: 100%;">
-                </p>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li> Character inference is a process to find a character that explains the observation-action pair of a target agent best. Methodology for character inference is a maximum likelihood estimation with stochastic gradient ascent.</li>
-                <li> Complete knowledge about the reward components of the target agent may not always be possible. Our primary purpose is to interpret the behavioral pattern of the target agent by inferring character coefficients about the sketched reward function.</li>
-            </ul>
-        </div>
-        <div class="col-md-8 col-md-offset-2">
-                <p>
-                    <img src="./VQ-GATCo_files/ci_exp.png" style="width: 100%;">
-                </p>
-        </div>
-        <div class="col-md-12">
-            <h4>Future Thinking and Decision-making</h4>
-        </div>
-        <div class="col-md-12">
-            <ul>
-                <li> After inferring the character of a target agent, the agent is easily predicting the upcoming action of a target agent based on meta-character policy and inferred character.</li>
-                <li> Next, the agent leverages learned dynamic model or principle-based dynamic model to foresight the upcoming future, and then make a decision at a predicted upcoming future observation.</li>
-            </ul>
-        </div>
         <div class="col-md-12">
             <hr>
             <h1> Citation</h1>
@@ -1058,8 +984,6 @@ mjx-c.mjx-c2E::before {
 } </code> </pre>
         </div>
         </div>
-    <hr>
-
 
     <div class="row">
         <div class="col-md-12">
