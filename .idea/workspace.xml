@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/projects/vq-gatco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,21 +118,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="17015000" />
-    </task>
-    <task id="LOCAL-00018" summary="minor Update">
-      <created>1689671280880</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1689671280880</updated>
-    </task>
-    <task id="LOCAL-00019" summary="minor Update">
-      <created>1689686785609</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1689686785609</updated>
+      <workItem from="1738595373494" duration="17443000" />
     </task>
     <task id="LOCAL-00020" summary="minor Update">
       <created>1695116339962</created>
@@ -461,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1738625607025</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Update">
+      <created>1738626007953</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1738626007956</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Update">
+      <created>1738626078094</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1738626078095</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
