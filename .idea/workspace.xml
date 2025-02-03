@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/projects/eftm/EFTM_files/character_inference.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/eftm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/eftm/index.html" afterDir="false" />
     </list>
@@ -118,21 +117,7 @@
       <workItem from="1727958361517" duration="8000" />
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
-      <workItem from="1738595373494" duration="10608000" />
-    </task>
-    <task id="LOCAL-00003" summary="minor Update">
-      <created>1670286749175</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1670286749175</updated>
-    </task>
-    <task id="LOCAL-00004" summary="minor Update">
-      <created>1685657995862</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1685657995863</updated>
+      <workItem from="1738595373494" duration="12715000" />
     </task>
     <task id="LOCAL-00005" summary="minor Update">
       <created>1685660476600</created>
@@ -463,7 +448,21 @@
       <option name="project" value="LOCAL" />
       <updated>1738613320459</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Update">
+      <created>1738614413415</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1738614413417</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update">
+      <created>1738614841464</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1738614841467</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
