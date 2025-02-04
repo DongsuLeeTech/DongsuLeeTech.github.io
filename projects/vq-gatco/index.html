@@ -1047,7 +1047,7 @@ mjx-c.mjx-c2E::before {
         </div>
         <div class="col-md-12">
             <ul>
-                <li>Our solution can be adopted with off-the-shelf MARL algorithm, and this work consider MAPPO (<a href="https://arxiv.org/abs/2103.01955">C. Yu et al., 2022</a>>)</li>
+                <li>Our solution can be adopted with off-the-shelf MARL algorithm, and this work consider MAPPO (<a href="https://arxiv.org/abs/2103.01955">C. Yu et al., 2022</a>)</li>
                 <li>Objective functions for policy and value funciton are as follows: </li>
             </ul>
         </div>
@@ -1056,10 +1056,22 @@ mjx-c.mjx-c2E::before {
                 <img src="./VQ-GATCo_files/policy.png" alt="Image 1" class="img-fluid" style="max-width: 100%;">
                 <p>Policy Network</p>
             </div>
-        <div class="col-md-6">
-            <img src="./VQ-GATCo_files/value.png" alt="Image 2" class="img-fluid" style="max-width: 100%;">
-            <p>Value Network</p>
+            <div class="col-md-6">
+                <img src="./VQ-GATCo_files/value.png" alt="Image 2" class="img-fluid" style="max-width: 100%;">
+                <p>Value Network</p>
+            </div>
         </div>
+        <div class="col-md-12">
+            <ul>
+                <li>We consider a Residual VQ loss to the message embedding in both the actor and critic networks since
+                    we discretize messages through a vector-quantized bottleneck, encouraging the learned embeddings to
+                    align closely with the codebook entries.</li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6 col-md-offset-3">
+                <img src="./VQ-GATCo_files/vq.png" alt="Image 3" class="img-fluid" style="max-width: 100%;">
+            </div>
         </div>
 
 
