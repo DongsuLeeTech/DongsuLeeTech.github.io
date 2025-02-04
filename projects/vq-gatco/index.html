@@ -1030,7 +1030,7 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12">
             <h4>Communication Processor</h4>
         </div>
-            <div class="col-md-12">
+        <div class="col-md-12">
             <ul>
                 <li>Our communication processor comprises two main stages to facilitate the mapping between the input,
                     observation embedding vector with the generated graph, and the output, message vector.</li>
@@ -1038,13 +1038,30 @@ mjx-c.mjx-c2E::before {
                     efficient parallelization, we replace the additive attention used in GAT with the scaled dot-product attention mechanism
                     from Transformers.</li>
                 <li>After obtaining each continuous message vector from the Transformer-based processing layer,
-                    we convert it into a discrete representation via residual vector quantization.</li>
+                    we convert it into a discrete representation via <b>residual vector quantization</b>>.</li>
             </ul>
         </div>
 
         <div class="col-md-12">
             <h4>RL networks</h4>
         </div>
+        <div class="col-md-12">
+            <ul>
+                <li>Our solution can be adopted with off-the-shelf MARL algorithm, and this work consider MAPPO (<a href="https://arxiv.org/abs/2103.01955">C. Yu et al., 2022</a>>)</li>
+                <li>Objective functions for policy and value funciton are as follows: </li>
+            </ul>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <img src="./VQ-GATCo_files/policy.png" alt="Image 1" class="img-fluid" style="max-width: 100%;">
+                <p>Policy Network</p>
+            </div>
+        <div class="col-md-6">
+            <img src="./GATCo_files/value.png" alt="Image 2" class="img-fluid" style="max-width: 100%;">
+            <p>Value Network</p>
+        </div>
+        </div>
+
 
         <div class="col-md-12">
             <hr>
