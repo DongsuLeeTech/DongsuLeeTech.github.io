@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/projects/vq-gatco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +49,9 @@
       <recent name="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
       <recent name="$PROJECT_DIR$/projects/vq-gatco" />
       <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/eftm/EFTM_files" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,14 +122,7 @@
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
       <workItem from="1738595373494" duration="18567000" />
-      <workItem from="1738683787474" duration="318000" />
-    </task>
-    <task id="LOCAL-00023" summary="minor Update">
-      <created>1695398336726</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1695398336726</updated>
+      <workItem from="1738683787474" duration="685000" />
     </task>
     <task id="LOCAL-00024" summary="minor Update">
       <created>1695398434494</created>
@@ -462,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1738627303452</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Update">
+      <created>1738684136670</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684136671</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
