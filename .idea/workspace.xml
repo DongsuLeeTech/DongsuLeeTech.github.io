@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,10 +49,6 @@
       <recent name="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
       <recent name="$PROJECT_DIR$/projects/vq-gatco" />
       <recent name="$PROJECT_DIR$/data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
-      <recent name="$PROJECT_DIR$/projects/eftm/EFTM_files" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,7 +119,27 @@
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
       <workItem from="1738595373494" duration="18567000" />
-      <workItem from="1738683787474" duration="2220000" />
+    </task>
+    <task id="LOCAL-00023" summary="minor Update">
+      <created>1695398336726</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695398336726</updated>
+    </task>
+    <task id="LOCAL-00024" summary="minor Update">
+      <created>1695398434494</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695398434494</updated>
+    </task>
+    <task id="LOCAL-00025" summary="minor Update">
+      <created>1695715439131</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1695715439131</updated>
     </task>
     <task id="LOCAL-00026" summary="minor Update">
       <created>1696484200953</created>
@@ -445,28 +463,7 @@
       <option name="project" value="LOCAL" />
       <updated>1738627303452</updated>
     </task>
-    <task id="LOCAL-00072" summary="Update">
-      <created>1738684136670</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1738684136671</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Update">
-      <created>1738684742182</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1738684742183</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Update">
-      <created>1738685931740</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1738685931740</updated>
-    </task>
-    <option name="localTasksCounter" value="75" />
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
