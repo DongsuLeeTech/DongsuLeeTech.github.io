@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/tempdata/TempDATA_files" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,6 +46,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/tempdata/TempDATA_files" />
+      <recent name="$PROJECT_DIR$/projects/tempdata" />
       <recent name="$PROJECT_DIR$/projects/vq-gatco/VQ-GATCo_files" />
       <recent name="$PROJECT_DIR$/projects/vq-gatco" />
       <recent name="$PROJECT_DIR$/data" />
@@ -122,13 +124,8 @@
       <workItem from="1738585710430" duration="6003000" />
       <workItem from="1738591821171" duration="1641000" />
       <workItem from="1738595373494" duration="18567000" />
-    </task>
-    <task id="LOCAL-00026" summary="minor Update">
-      <created>1696484200953</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1696484200953</updated>
+      <workItem from="1746659727675" duration="319000" />
+      <workItem from="1746787941425" duration="1218000" />
     </task>
     <task id="LOCAL-00027" summary="minor Update">
       <created>1701313539632</created>
@@ -466,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746285010635</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Update">
+      <created>1746659907265</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1746659907266</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
