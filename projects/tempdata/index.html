@@ -34,7 +34,13 @@
     <script src="./TempDATA_files/jquery.min.js"></script>
     <script src="./TempDATA_files/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async="" src="./TempDATA_files/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            loader: {load: ['[tex]/color']},
+            tex: {packages: {'[+]': ['color']}}
+        };
+    </script>
 
     <script src="./TempDATA_files/app.js"></script>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
@@ -1029,10 +1035,10 @@ mjx-c.mjx-c2E::before {
                 <li>
                     <b>Latent dynamics</b> \zeta(z'|z,a) is trained with following loss.
                     <span class="text-center text-equation desktop-only">
-                        \mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]$$
                     </span>
                     <span class="text-center text-equation mobile-only">
-                        \mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]$$
                     </span>
                 </li>
                 <li>
