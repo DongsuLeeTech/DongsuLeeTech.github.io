@@ -5,6 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/TempDATA_files/Table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/Calvin_1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/Calvin_2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-large-diverse.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-large-play.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-medium-diverse.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-medium-play.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-ultra-diverse.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/antmaze-ultra-play.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/kitchen-mixed.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/kitchen-partial.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/visualkitchen-mixed.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/tempdata/video/visualkitchen-partial.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/tempdata/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/tempdata/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,21 +140,7 @@
       <workItem from="1738595373494" duration="18567000" />
       <workItem from="1746659727675" duration="319000" />
       <workItem from="1746787941425" duration="3141000" />
-      <workItem from="1747746508652" duration="4243000" />
-    </task>
-    <task id="LOCAL-00033" summary="Update">
-      <created>1738592305499</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1738592305499</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Update">
-      <created>1738592477431</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1738592477431</updated>
+      <workItem from="1747746508652" duration="5081000" />
     </task>
     <task id="LOCAL-00035" summary="Update">
       <created>1738592546738</created>
@@ -471,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1747750583423</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Update">
+      <created>1747750868337</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1747750868338</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Update">
+      <created>1747751028453</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1747751028454</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
