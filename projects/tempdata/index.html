@@ -982,7 +982,7 @@ mjx-c.mjx-c2E::before {
                 </li>
                 <li>
                     <b>Remark (Modularity of representation space)</b>:
-                    <div class="block-takeaway">
+                    <div class="info-block">
                         Our autoencoder is fully compatible with any off-the-shelf model-free or model-based RL algorithm. Moreover, its latent dynamics support a wide array of downstream objectives, including RL, skill RL, and GCRL, without requiring any modifications to the core encoding or planning modules.
                     </div>
 
@@ -1027,25 +1027,25 @@ mjx-c.mjx-c2E::before {
                     <span class="text-center text-equation desktop-only">
                         $$\begin{aligned}
                         \underbrace{\mathbb{E}_{s \sim \mathcal D}\Big[|| s - h \circ f(s;\theta)||\Big]}_{\texttt{Reconstruction}}
-                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}},
-                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}},
+                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}}
+                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}}.
                         \end{aligned}$$
                     </span>
                     <span class="text-center text-equation mobile-only">
                         $$\begin{aligned}
                         \underbrace{\mathbb{E}_{s \sim \mathcal D}\Big[|| s - h \circ f(s;\theta)||\Big]}_{\texttt{Reconstruction}}
-                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}},
-                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}},
+                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}}
+                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}}.
                         \end{aligned}$$
                     </span>
                 </li>
                 <li>
                     <b>Latent dynamics</b> \(\zeta(z'|z,a)\) is trained with following loss:
                     <span class="text-center text-equation desktop-only">
-                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]$$
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big].$$
                     </span>
                     <span class="text-center text-equation mobile-only">
-                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]$$
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big].$$
                     </span>
                 </li>
                 <li>
