@@ -923,6 +923,35 @@ mjx-c.mjx-c2E::before {
     <div class="row">
         <div class="col-md-12">
             <hr>
+            <h2>Why does prior offline MBRL fail in long-horizon tasks?</h2>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2 bottom10">
+                <p>
+                    <img src="TempDATA_files/Motivation.jpg" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12 top10">
+            <ul>
+                <li>
+                    <b>Inaccurate Value Estimation in Sparse Reward Settings</b>. Sparse rewards in long-horizon tasks lead to flat or noisy value estimates across distant states. This undermines the critic's ability to reflect meaningful progress, distorting temporal distance signals.
+                </li>
+                <li>
+                    <b>Unstable Policy Optimization</b>. When value targets are unreliable, policy gradients become erratic or misleading. This results in suboptimal or unstable policy updates during training.
+                </li>
+                <li>
+                    <b>Model Overgeneralization and Geometric Bias in Rollouts</b>. Learned models often overgeneralize in underexplored regions, generating unrealistic transitions. As a result, agents exploit geometrically short but temporally infeasible paths during planning.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
             <p class="text-justify">
                 The website template was borrowed from <a href="http://seohong.me/">Seohong Park</a>, <a href="http://mgharbi.com/">Michaël Gharbi</a>, and <a href="https://jonbarron.info/">Jon Barron</a>.
             </p>
