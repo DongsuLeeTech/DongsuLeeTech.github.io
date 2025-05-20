@@ -877,8 +877,7 @@ mjx-c.mjx-c2E::before {
     <div class="row">
         <h1 class="col-md-12 text-center text-title top20">
             <b>
-                Temporal Distance-aware Transition Augmentation<br>
-                for Offline Model-based Reinforcement Learning
+                Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning
             </b><br>
             <small>
                 <b>ICML 2025</b>
@@ -985,29 +984,32 @@ mjx-c.mjx-c2E::before {
             <h2>TempDATA Framework</h2>
         </div>
         <div class="col-md-12">
-            <div class="col-md-8 col-md-offset-2 bottom10">
+            <a data-toggle="collapse" href="#algo" aria-expanded="false" aria-controls="algo" id="toggle-link">
+                <h3 class="top10 bottom20" id="toggle-text">
+                    Show Pseudocode
+                </h3>
+            </a>
+
+            <div class="collapse col-md-6 col-md-offset-3" id="algo">
                 <p>
-                    <img src="TempDATA_files/Temporal%20Encoder.jpg" style="width: 100%;">
+                    <img src="TempDATA_files/algorithm.jpg" style="width: 100%;">
                 </p>
             </div>
         </div>
-        <div class="col-md-12 top10">
-            <ul>
-                <li>
-                    We propose a novel method to learn temporal distance representations from fixed offline data for transition augmentation in MBRL, which we dub <b>TempDATA</b>.
-                </li>
-                <li>
-                    Our key idea is <b>to build a latent space where distances reflect temporal separation</b>, enabling both trajectory-level and transition-level understanding of time.
-                </li>
-                <li>
-                    At the <b>trajectory level</b>, we approximate the temporal distance between two states by finding their closest alignment across dataset trajectories, capturing long-term structure.
-                </li>
-                <li>
-                    At the <b>transition level</b>, we control the latent space resolution by tuning a smoothing factor that defines the minimal unit of temporal or spatial progression captured between transitions.
-                </li>
-            </ul>
-        </div>
-    </div>
+        <script>
+            const toggleLink = document.getElementById('toggle-link');
+            const toggleText = document.getElementById('toggle-text');
+            const collapseTarget = document.getElementById('algo');
+
+            collapseTarget.addEventListener('show.bs.collapse', function () {
+                toggleText.textContent = 'Hide Pseudocode';
+            });
+
+            collapseTarget.addEventListener('hide.bs.collapse', function () {
+                toggleText.textContent = 'Show Pseudocode';
+            });
+        </script>
+
 
 
     <div class="row">
