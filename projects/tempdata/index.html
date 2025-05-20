@@ -1016,7 +1016,7 @@ mjx-c.mjx-c2E::before {
             <div class="col-md-12">
             <ul>
                 <li>
-                    <b>Autoencoder</b> \(f_\theta, h_\theta)\) is trained with the following loss:
+                    <b>Autoencoder</b> \(f_\theta, h_\theta\) is trained with the following loss:
                     <span class="text-center text-equation desktop-only">
                         $$\begin{aligned}
                         \underbrace{\mathbb{E}_{s \sim \mathcal D}\Big[|| s - h \circ f(s;\theta)||\Big]}_{\texttt{Reconstruction}}
@@ -1033,7 +1033,7 @@ mjx-c.mjx-c2E::before {
                     </span>
                 </li>
                 <li>
-                    <b>Latent dynamics</b> \zeta(z'|z,a) is trained with following loss.
+                    <b>Latent dynamics</b> \(\zeta(z'|z,a)\) is trained with following loss:
                     <span class="text-center text-equation desktop-only">
                         $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big]$$
                     </span>
