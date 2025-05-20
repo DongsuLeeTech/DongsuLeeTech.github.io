@@ -47,6 +47,17 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+.info-block {
+    background-color: #fedeaa;
+    border: 1px solid #FFA500;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
 @media screen and (min-width:992px) {
   .vertical-align {
     display: flex;
