@@ -30,12 +30,12 @@
 
 
 <style>
-  /* 1) inline으로 배치, 2) 밑줄·색상·버튼 스타일 제거, 3) 화살표(마커) 숨기기 */
-  details[open] summary::after {
-    /* 열렸을 때 뒤에 화살표 역방향 등 표시 싶으면 여기에 추가 */
+  details {
+    display: inline-block;
+    vertical-align: baseline;
   }
   details summary {
-    display: inline;
+    display: inline-block;
     margin: 0;
     padding: 0;
     cursor: pointer;
