@@ -28,6 +28,38 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/Ds.png">
 </head>
 
+
+<style>
+  /* 1) inline으로 배치, 2) 밑줄·색상·버튼 스타일 제거, 3) 화살표(마커) 숨기기 */
+  details[open] summary::after {
+    /* 열렸을 때 뒤에 화살표 역방향 등 표시 싶으면 여기에 추가 */
+  }
+  details summary {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: #FFA500;
+    text-decoration: none;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  /* 표준 ::marker 숨기기 */
+  details summary::marker {
+    display: none;
+  }
+  /* summary 호버 시에도 밑줄 금지 */
+  details summary:hover {
+    text-decoration: none;
+  }
+  /* 펼쳐진 내용은 약간 들여쓰기 */
+  details div {
+    margin-top: 0.5em;
+  }
+</style>
+
 <body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
 <table style="max-width: 800px;">
     <tbody>
@@ -39,14 +71,13 @@
                     <td style="padding: 20px; width: 75%; vertical-align: middle;">
                         <p style="margin-bottom: 0px; text-align: center;">
                             <span class="text-name">Dongsu Lee</span>
-                </p>
-                        <p>Hello! I am a PhD student at the University of Texas at Austin,
-                            where I'm supervised by Prof. Amy Zhang in the <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
-                        <details style="display: inline;">
-                        <summary style="cursor: pointer; color: #FFA500; text-decoration: underline; margin-left: 4px;">
-                                  Previous affiliation
-                        </summary>
-                        <div style="margin-top: 8px;">
+                <p>
+                      Hello! I am a PhD student at the University of Texas at Austin,
+                      where I'm supervised by Prof. Amy Zhang in the
+                      <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
+                      <details style="display: inline;">
+                        <summary>Previous affiliation</summary>
+                        <div style="margin-top: 0.5em;">
                           Previously, I collaborated with Prof. Ding Zhao in the
                           <a href="https://safeai-lab.github.io/">Safe AI Lab</a>,
                           Carnegie Mellon University (CMU); with Prof. Minhae Kwon in the
@@ -54,7 +85,7 @@
                           <a href="https://sites.google.com/site/sskimb/">Post-genome Informatics Lab</a> at Soongsil University in Seoul, South Korea.
                         </div>
                       </details>
-                </p>
+                    </p>
                         <p> Research statement: I focus on developing <b>efficient and scalable reinforcement learning (RL) algorithms.</b>
                             My main question is: <b>Are prior RL methods applicable in a realistic setting?</b>
                             The detailed problem formulation is partial observability, zero-shot coordination, and ad-hoc teamwork,
