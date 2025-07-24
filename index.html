@@ -101,12 +101,26 @@ function toggleCore(el) {
                                 </span>
                             </p>
 
-                        <p> I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
+                        <p> The research question I focus on is simple these days: <b>Will reinforcement learning (RL) methods be applicable for practical deployment in realistic settings?</b>
                                 <span class="toggle-trigger"
                                 onclick="toggleRes(this)">
                                 Full research statement.
                                 </span>
                                 <span class="toggle-content">
+                                I’m interested in real-world challenges, for example, partial observability, coordination with unseen partners, and human-robot collaboration.
+                                Then, I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
+                                So, I work on multi-agent RL, representation learning, and offline-online RL.
+
+                                <b>Test-time coordination with unseen agents</b>: <em>Can RL agents effectively coordinate with partners they've never encountered before?</em><br>
+                                Real-world applications frequently require agents to cooperate instantly with unfamiliar teammates. This coordination is challenging, especially when agents operate under partial observability and uncertainty about others' intentions. <br>
+                                Inspired by human cognition, I enable RL agents to predict future actions of unseen teammates by inferring their internal preferences from their observed behaviors (NeurIPS 2024). Recently, I have focused more on developing the generalization for zero-shot coordination. <br>
+                                Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments?
+
+                                <b>Communication multi-agent RL</b>: <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em><br>
+                                For teams of robots or virtual agents to succeed, communication is essential—yet it comes at a cost in the real world. Bandwidth constraints, noisy environments, and adversarial disruptions demand smarter, more efficient communication protocols. Ideally, agents should adaptively choose what information to share, with whom, and when, while minimizing the cost and complexity of messages.<br>
+
+                                <b>Efficient representation for RL</b>:
+
                                 </span>
                         </p>
                         <p>
