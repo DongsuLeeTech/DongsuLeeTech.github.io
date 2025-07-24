@@ -101,28 +101,30 @@ function toggleCore(el) {
                                 </span>
                             </p>
 
-                        <p> The research question I focus on is simple these days: <b>Will reinforcement learning (RL) methods be applicable for practical deployment in realistic settings?</b>
+                        <p> The research question I focus on is simple these days: <b>Will reinforcement learning (RL) methods be applicable for practical deployment in realistic settings?</b><br>
                                 <span class="toggle-trigger"
                                 onclick="toggleRes(this)">
                                 Full research statement.
-                                </span>
-                                <span class="toggle-content">
-                                I’m interested in real-world challenges, for example, partial observability, coordination with unseen partners, and human-robot collaboration.
+                                </span></p>
+                                <div class="toggle-content">
+                                <p> I’m interested in real-world challenges, for example, partial observability, coordination with unseen partners, and human-robot collaboration.
                                 Then, I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
-                                So, I work on multi-agent RL, representation learning, and offline-online RL.
+                                So, I work on multi-agent RL, representation learning, and offline-online RL.</p>
 
-                                <b>Test-time coordination with unseen agents</b>: <em>Can RL agents effectively coordinate with partners they've never encountered before?</em><br>
+                                <p><b>Test-time coordination with unseen agents</b>: <em>Can RL agents effectively coordinate with partners they've never encountered before?</em><br>
                                 Real-world applications frequently require agents to cooperate instantly with unfamiliar teammates. This coordination is challenging, especially when agents operate under partial observability and uncertainty about others' intentions. <br>
                                 Inspired by human cognition, I enable RL agents to predict future actions of unseen teammates by inferring their internal preferences from their observed behaviors (NeurIPS 2024). Recently, I have focused more on developing the generalization for zero-shot coordination. <br>
-                                Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments?
+                                Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments?</p>
 
-                                <b>Communication multi-agent RL</b>: <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em><br>
+                                <p><b>Communication multi-agent RL</b>: <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em><br>
                                 For teams of robots or virtual agents to succeed, communication is essential—yet it comes at a cost in the real world. Bandwidth constraints, noisy environments, and adversarial disruptions demand smarter, more efficient communication protocols. Ideally, agents should adaptively choose what information to share, with whom, and when, while minimizing the cost and complexity of messages.<br>
+                                To address these challenges, I have developed methods that optimize communication among agents via (1) vector quantization and (2) implicit communication (under submission). Through these methods, we allow agents to decide communication links and encode information under realistic limitations; allow coordination without explicit communication at deployment.<br>
+                                Open Challenge is: How can we further refine communication protocol to ensure reliable interaction between AI agents and humans, particularly when they have limited prior knowledge of each other's goals or capabilities?</p>
 
-                                <b>Efficient representation for RL</b>:
+                                <p><b>Efficient representation for RL</b>:
 
-                                </span>
-                        </p>
+                                    </p>
+                                </div>
                         <p>
                             <span class="toggle-trigger"
                                 onclick="toggleCore(this)">
