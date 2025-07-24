@@ -7,7 +7,7 @@ a, a:focus {
 }
 
 a:hover {
-    color: #f54254;
+    color: #72bf6a;
     text-decoration: none;
 }
 
@@ -21,7 +21,7 @@ a:hover {
 }
 
 .dongsu-codeforces, .dongsu-codeforces:focus, .dongsu-codeforces:hover {
-    color: red;
+    color: #72bf6a;
 }
 
 body {
