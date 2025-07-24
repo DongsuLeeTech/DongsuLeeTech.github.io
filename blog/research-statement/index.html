@@ -919,57 +919,65 @@ mjx-c.mjx-c2E::before {
                 So the big question is: <b>Why can’t we go beyond toy environments?</b>
             </p>
         </div>
-        <h2>Why Are Prior MARLs Stuck at the GUI-level Environment?</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h2>Why Are Prior MARLs Stuck at the GUI-level Environment? (ongoing)</h2>
             <p>
                We’ve seen breakthroughs in language models, vision, and even single-agent RL. So why is multi-agent RL still stuck playing capture-the-flag in a 2D grid?
                 </p>
             <p>
-                The truth is: most MARL methods just don’t scale well when the environment becomes too complex, the horizon too long, or the teammates too unpredictable.
-                </p>
-        <h2>Research Statement</h2>
-            <h3>Test-time coordination with unseen agents:
-                <em>Can RL agents effectively coordinate with partners they've never encountered before?</em> </h3>
-            <p> Real-world applications frequently require agents to cooperate instantly with unfamiliar teammates.
-                This coordination is challenging, especially when agents operate under partial observability and uncertainty about others' intentions.
-                Inspired by human cognition, I enable RL agents to predict future actions of unseen teammates
-                by inferring their internal preferences from their observed behaviors (<a href="https://dongsuleetech.github.io/projects/eftm/">NeurIPS 2024</a>).
-                Recently, I have focused more on developing the generalization for zero-shot coordination. <br>
-                </p>
-            <p> Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments? </p>
-
-            <h3> Communication multi-agent RL:
-                <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em></h3>
-            <p>
-                For teams of robots or virtual agents to succeed, communication is essential—yet it comes at a cost in the real world.
-                Bandwidth constraints, noisy environments, and adversarial disruptions demand smarter, more efficient communication protocols.
-                Ideally, agents should adaptively choose what information to share, with whom, and when, while minimizing the cost and complexity of messages.
-                </p>
-            <p>
-                To address these challenges, I have developed methods that optimize communication among agents via
-                (1) vector quantization and (2) implicit communication (under submission).
-                Through these methods, we allow agents to decide communication links and encode information under realistic limitations;
-                allow coordination without explicit communication at deployment.
-                </p>
-            <p> Open Challenge is: How can we further refine the communication protocol to ensure reliable interaction between AI agents and humans,
-                particularly when they have limited prior knowledge of each other's goals or capabilities? </p>
-
-            <h3> Efficient representation for RL:
-                <em>What is the most efficient way to represent complex environments to boost the effectiveness of RL algorithms?</em>
-                </h3>
-            <p> RL agents need effective internal representations of their complex surroundings to make decisions efficiently.
-                The right representation makes learning faster, generalization easier, and coordination smoother,
-                especially in multi-agent settings or challenging environments with sparse rewards and long horizons.
-                </p>
-            <p> My work introduced new methods for learning these compact yet powerful representations.
-                Specifically, TempDATA utilizes temporal distance-aware abstractions, enhancing agents' abilities to generalize across complex,
-                long-horizon tasks, significantly improving data efficiency in offline RL settings (<a href="https://dongsuleetech.github.io/projects/tempdata/">ICML 2025</a>).
-                Additionally, my research on representation for MARL demonstrated that latent representations capturing inter-agent relationships
-                and task-specific global states substantially improve multi-agent coordination.
-                </p>
-            <p> Open challenge is: How do we automatically discover representations that not only improve efficiency
-                but also generalize robustly across diverse, unseen environments and tasks?
-                </p>
+                The truth is: most MARL methods just don’t scale well when the environment becomes too complex, the horizon too long, or the teammates too unpredictable.</p>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Research Statement</h2>
+                <h3>Test-time coordination with unseen agents:<br>
+                    <em>Can RL agents effectively coordinate with partners they've never encountered before?</em> </h3>
+                <p> Real-world applications frequently require agents to cooperate instantly with unfamiliar teammates.
+                    This coordination is challenging, especially when agents operate under partial observability and uncertainty about others' intentions.
+                    Inspired by human cognition, I enable RL agents to predict future actions of unseen teammates
+                    by inferring their internal preferences from their observed behaviors (<a href="https://dongsuleetech.github.io/projects/eftm/">NeurIPS 2024</a>).
+                    Recently, I have focused more on developing the generalization for zero-shot coordination. <br>
+                    </p>
+                <p> Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments? </p>
+
+                <h3> Communication multi-agent RL:<br>
+                    <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em></h3>
+                <p>
+                    For teams of robots or virtual agents to succeed, communication is essential—yet it comes at a cost in the real world.
+                    Bandwidth constraints, noisy environments, and adversarial disruptions demand smarter, more efficient communication protocols.
+                    Ideally, agents should adaptively choose what information to share, with whom, and when, while minimizing the cost and complexity of messages.
+                    </p>
+                <p>
+                    To address these challenges, I have developed methods that optimize communication among agents via
+                    (1) vector quantization and (2) implicit communication (under submission).
+                    Through these methods, we allow agents to decide communication links and encode information under realistic limitations;
+                    allow coordination without explicit communication at deployment.
+                    </p>
+                <p> Open Challenge is: How can we further refine the communication protocol to ensure reliable interaction between AI agents and humans,
+                    particularly when they have limited prior knowledge of each other's goals or capabilities? </p>
+
+                <h3> Efficient representation for RL:<br>
+                    <em>What is the most efficient way to represent complex environments to boost the effectiveness of RL algorithms?</em>
+                    </h3>
+                <p> RL agents need effective internal representations of their complex surroundings to make decisions efficiently.
+                    The right representation makes learning faster, generalization easier, and coordination smoother,
+                    especially in multi-agent settings or challenging environments with sparse rewards and long horizons.
+                    </p>
+                <p> My work introduced new methods for learning these compact yet powerful representations.
+                    Specifically, TempDATA utilizes temporal distance-aware abstractions, enhancing agents' abilities to generalize across complex,
+                    long-horizon tasks, significantly improving data efficiency in offline RL settings (<a href="https://dongsuleetech.github.io/projects/tempdata/">ICML 2025</a>).
+                    Additionally, my research on representation for MARL demonstrated that latent representations capturing inter-agent relationships
+                    and task-specific global states substantially improve multi-agent coordination.
+                    </p>
+                <p> Open challenge is: How do we automatically discover representations that not only improve efficiency
+                    but also generalize robustly across diverse, unseen environments and tasks?
+                    </p>
+        </div>
+    </div>
 
     <script>
         if (navigator.userAgent.match(/Android/i)
