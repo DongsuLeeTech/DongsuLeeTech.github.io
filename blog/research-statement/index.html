@@ -919,25 +919,16 @@ mjx-c.mjx-c2E::before {
                 So the big question is: <b>Why can’t we go beyond toy environments?</b>
             </p>
         </div>
-
-    <div class="row top15 bottom30">
-        <div class="col-md-12">
-            <h2>Why Are Prior MARLs Stuck at the GUI-level Environment?</h2>
+        <h2>Why Are Prior MARLs Stuck at the GUI-level Environment?</h2>
             <p>
                We’ve seen breakthroughs in language models, vision, and even single-agent RL. So why is multi-agent RL still stuck playing capture-the-flag in a 2D grid?
                 </p>
             <p>
                 The truth is: most MARL methods just don’t scale well when the environment becomes too complex, the horizon too long, or the teammates too unpredictable.
                 </p>
-        </div>
-
-    <div class="row top15 bottom30">
-        <div class="col-md-12">
-            <h2>Research Statement</h2>
-            <p>
-               <b>Test-time coordination with unseen agents</b>:
-                <em>Can RL agents effectively coordinate with partners they've never encountered before?</em>
-                </p>
+        <h2>Research Statement</h2>
+            <h3>Test-time coordination with unseen agents:
+                <em>Can RL agents effectively coordinate with partners they've never encountered before?</em> </h3>
             <p> Real-world applications frequently require agents to cooperate instantly with unfamiliar teammates.
                 This coordination is challenging, especially when agents operate under partial observability and uncertainty about others' intentions.
                 Inspired by human cognition, I enable RL agents to predict future actions of unseen teammates
@@ -946,9 +937,8 @@ mjx-c.mjx-c2E::before {
                 </p>
             <p> Open challenge is: How can agents scale this inference capability efficiently to very large teams or continuously evolving environments? </p>
 
-            <p>
-                <b>Communication multi-agent RL</b>:
-                <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em></p>
+            <h3> Communication multi-agent RL:
+                <em>How can agents communicate efficiently under real-world constraints such as limited bandwidth or noisy environments?</em></h3>
             <p>
                 For teams of robots or virtual agents to succeed, communication is essential—yet it comes at a cost in the real world.
                 Bandwidth constraints, noisy environments, and adversarial disruptions demand smarter, more efficient communication protocols.
@@ -963,9 +953,9 @@ mjx-c.mjx-c2E::before {
             <p> Open Challenge is: How can we further refine the communication protocol to ensure reliable interaction between AI agents and humans,
                 particularly when they have limited prior knowledge of each other's goals or capabilities? </p>
 
-            <p> <b>Efficient representation for RL</b>:
+            <h3> Efficient representation for RL:
                 <em>What is the most efficient way to represent complex environments to boost the effectiveness of RL algorithms?</em>
-                </p>
+                </h3>
             <p> RL agents need effective internal representations of their complex surroundings to make decisions efficiently.
                 The right representation makes learning faster, generalization easier, and coordination smoother,
                 especially in multi-agent settings or challenging environments with sparse rewards and long horizons.
