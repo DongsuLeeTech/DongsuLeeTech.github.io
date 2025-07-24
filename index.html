@@ -36,13 +36,23 @@
     text-decoration: none;
   }
   .toggle-trigger:hover {
-    color: #27d570;         /* 마우스 올렸을 때 색 */
-    text-decoration: underline;  /* 호버 시 밑줄 넣고 싶으면 */
+    color: #72bf6a;         /* 마우스 올렸을 때 색 */
   }
   .toggle-content {
     display: none;
   }
 </style>
+
+<script defer>
+function toggleAff(el) {
+  const content = el.nextElementSibling;
+  const isVisible = content.style.display === 'inline';
+  content.style.display = isVisible ? 'none' : 'inline';
+  el.textContent = isVisible
+    ? 'Previous affiliation'
+    : 'Previously';
+}
+</script>
 
 <body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
 <table style="max-width: 800px;">
@@ -60,10 +70,7 @@
                               where I'm supervised by Prof. Amy Zhang in the
                               <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
                                 <span class="toggle-trigger"
-                                onclick="this.nextElementSibling.style.display =
-                                           this.nextElementSibling.style.display === 'inline'
-                                           ? 'none'
-                                           : 'inline';">
+                                onclick="toggleAff(this)">
                                 Previous affiliation
                                 </span>
                                 <span class="toggle-content">
