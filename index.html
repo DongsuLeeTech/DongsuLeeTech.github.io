@@ -50,8 +50,27 @@ function toggleAff(el) {
   content.style.display = isVisible ? 'none' : 'inline';
   el.textContent = isVisible
     ? 'Previous affiliation.'
-    : 'Previously,';
+    : 'Previously,';}
+
+function toggleRes(el) {
+  const content = el.nextElementSibling;
+  const isVisible = content.style.display === 'inline';
+  content.style.display = isVisible ? 'none' : 'inline';
+  el.textContent = isVisible
+    ? 'Full research statement.'
+    : 'More specifically,';
 }
+
+function toggleCore(el) {
+  const content = el.nextElementSibling;
+  const isVisible = content.style.display === 'inline';
+  content.style.display = isVisible ? 'none' : 'inline';
+  el.textContent = isVisible
+    ? 'My guiding ethos.'
+    : 'Hide my guiding ethos.';
+}
+
+
 </script>
 
 <body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
@@ -82,15 +101,25 @@ function toggleAff(el) {
                                 </span>
                             </p>
 
-                        <p> Research statement: I focus on developing <b>efficient and scalable reinforcement learning (RL) algorithms.</b>
-                            My main question is: <b>Are prior RL methods applicable in a realistic setting?</b>
-                            The detailed problem formulation is partial observability, zero-shot coordination, and ad-hoc teamwork,
-                            and I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
-                            So, I work on multi-agent RL, representation learning, and offline-online RL.
-                </p>
-                <p> <em>Speak truth, amid echoing scorn.<br>
-                    Embrace adventure, born of conviction.<br>
-                    Take responsibility, without retreat.</em> </p>
+                        <p> I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
+                                <span class="toggle-trigger"
+                                onclick="toggleRes(this)">
+                                Full research statement.
+                                </span>
+                                <span class="toggle-content">
+                                </span>
+                        </p>
+                        <p>
+                            <span class="toggle-trigger"
+                                onclick="toggleCore(this)">
+                                My guiding ethos.
+                                </span>
+                                <span class="toggle-content">
+                                    <em>Speak truth, amid echoing scorn.<br>
+                                    Embrace adventure, born of conviction.<br>
+                                    Take responsibility, without retreat.</em>
+                                </span>
+                        </p>
                 <p style="margin-bottom: 0px; text-align: center;">
                   <a href="mailto:dongsu.lee@utexas.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/CV/DongsuLee-CV.pdf">CV</a> &nbsp;/&nbsp;
