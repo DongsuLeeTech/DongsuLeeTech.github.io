@@ -30,33 +30,17 @@
 
 
 <style>
-  details {
-    display: inline-block;
-    vertical-align: baseline;
-  }
-  details summary {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+  .toggle-trigger {
     cursor: pointer;
-    color: #FFA500;
-    text-decoration: none;
-    list-style: none;
-  }
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-  /* 표준 ::marker 숨기기 */
-  details summary::marker {
-    display: none;
-  }
-  /* summary 호버 시에도 밑줄 금지 */
-  details summary:hover {
+    color: #FFA500;         /* 기본 텍스트 색 */
     text-decoration: none;
   }
-  /* 펼쳐진 내용은 약간 들여쓰기 */
-  details div {
-    margin-top: 0.5em;
+  .toggle-trigger:hover {
+    color: #27d570;         /* 마우스 올렸을 때 색 */
+    text-decoration: underline;  /* 호버 시 밑줄 넣고 싶으면 */
+  }
+  .toggle-content {
+    display: none;
   }
 </style>
 
@@ -75,16 +59,21 @@
                               Hello! I am a PhD student at the University of Texas at Austin,
                               where I'm supervised by Prof. Amy Zhang in the
                               <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
-                              <details>
-                                <summary>Previous affiliation</summary>
-                                <span class="aff-text">
+                                <span class="toggle-trigger"
+                                onclick="this.nextElementSibling.style.display =
+                                           this.nextElementSibling.style.display === 'inline'
+                                           ? 'none'
+                                           : 'inline';">
+                                Previous affiliation
+                                </span>
+                                <span class="toggle-content">
                                   Previously, I collaborated with Prof. Ding Zhao in the
                                   <a href="https://safeai-lab.github.io/">Safe AI Lab</a>,
                                   Carnegie Mellon University (CMU); with Prof. Minhae Kwon in the
                                   <a href="https://brainmil.wordpress.com/">BMIL</a>; and Prof. Sangsoo Kim in the
                                   <a href="https://sites.google.com/site/sskimb/">Post-genome Informatics Lab</a> at Soongsil University in Seoul, South Korea.
                                 </span>
-                              </details>
+                              </>
                             </p>
                         <p> Research statement: I focus on developing <b>efficient and scalable reinforcement learning (RL) algorithms.</b>
                             My main question is: <b>Are prior RL methods applicable in a realistic setting?</b>
