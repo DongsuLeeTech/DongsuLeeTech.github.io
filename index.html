@@ -49,8 +49,8 @@ function toggleAff(el) {
   const isVisible = content.style.display === 'inline';
   content.style.display = isVisible ? 'none' : 'inline';
   el.textContent = isVisible
-    ? 'Previous affiliation'
-    : 'Previously';
+    ? 'Previous affiliation.'
+    : 'Previously,';
 }
 </script>
 
@@ -71,17 +71,17 @@ function toggleAff(el) {
                               <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
                                 <span class="toggle-trigger"
                                 onclick="toggleAff(this)">
-                                Previous affiliation
+                                Previous affiliation.
                                 </span>
                                 <span class="toggle-content">
-                                  Previously, I collaborated with Prof. Ding Zhao in the
+                                  I collaborated with Prof. Ding Zhao in the
                                   <a href="https://safeai-lab.github.io/">Safe AI Lab</a>,
                                   Carnegie Mellon University (CMU); with Prof. Minhae Kwon in the
                                   <a href="https://brainmil.wordpress.com/">BMIL</a>; and Prof. Sangsoo Kim in the
                                   <a href="https://sites.google.com/site/sskimb/">Post-genome Informatics Lab</a> at Soongsil University in Seoul, South Korea.
                                 </span>
-                              </>
                             </p>
+
                         <p> Research statement: I focus on developing <b>efficient and scalable reinforcement learning (RL) algorithms.</b>
                             My main question is: <b>Are prior RL methods applicable in a realistic setting?</b>
                             The detailed problem formulation is partial observability, zero-shot coordination, and ad-hoc teamwork,

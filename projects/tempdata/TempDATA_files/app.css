@@ -38,11 +38,11 @@ h3 {
 }
 
 .text-myred {
-  color: #f54254;
+  color: #72bf6a;
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #FFA500, #FF512F);
+  background: linear-gradient(to right, #FFA500, #72bf6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
