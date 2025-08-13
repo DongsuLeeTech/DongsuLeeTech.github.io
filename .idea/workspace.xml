@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/vq-gatco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,21 +145,7 @@
       <workItem from="1753311893881" duration="12012000" />
       <workItem from="1753668886584" duration="1454000" />
       <workItem from="1754551940257" duration="18000" />
-      <workItem from="1755114440981" duration="308000" />
-    </task>
-    <task id="LOCAL-00093" summary="Update">
-      <created>1747753658335</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1747753658336</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Update">
-      <created>1747753759876</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1747753759877</updated>
+      <workItem from="1755114440981" duration="612000" />
     </task>
     <task id="LOCAL-00095" summary="Update">
       <created>1747753840978</created>
@@ -490,7 +476,21 @@
       <option name="project" value="LOCAL" />
       <updated>1755114664650</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Update">
+      <created>1755114888380</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1755114888380</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Update">
+      <created>1755114950382</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1755114950383</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
