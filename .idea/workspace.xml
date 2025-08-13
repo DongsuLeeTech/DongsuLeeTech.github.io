@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/projects/vq-gatco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/vq-gatco/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,14 +143,7 @@
       <workItem from="1753311893881" duration="12012000" />
       <workItem from="1753668886584" duration="1454000" />
       <workItem from="1754551940257" duration="18000" />
-      <workItem from="1755114440981" duration="612000" />
-    </task>
-    <task id="LOCAL-00095" summary="Update">
-      <created>1747753840978</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1747753840978</updated>
+      <workItem from="1755114440981" duration="1110000" />
     </task>
     <task id="LOCAL-00096" summary="Update">
       <created>1748091698668</created>
@@ -490,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1755114950383</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Update">
+      <created>1755115187405</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1755115187406</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
