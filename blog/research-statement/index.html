@@ -900,37 +900,58 @@ mjx-c.mjx-c2E::before {
         </div>
     </div>
 
-    <div class="row top15 bottom30">-->
+    <div class="row top15 bottom30">
         <div class="col-md-12 offset-md-2">
             <p>
                 For decades, machine learning has been absolutely crushing it
                 whenever massive datasets, scalable compute, novel training paradigms,
                 and advanced architectures come together. Just look at large language models,
                 such as <a href="https://chatgpt.com/">GPT</a>, <a href="https://gemini.google.com/app">Gemini</a>,
-                and <a href="https://grok.com/">Grok</a>>; they’ve completely redefined how we interact with AI,
+                and <a href="https://grok.com/">Grok</a>; they’ve completely redefined how we interact with AI,
                 from casual conversation to serious problem-solving. On the vision side,
                 <a href="https://arxiv.org/pdf/2403.09611?">multi-modal</a>
                 <a href="https://llava-vl.github.io/">models</a>
                 are pushing boundaries in image understanding and creative generation.
             </p>
-        </div>
-    </div>
-    <div class="row top15 bottom30">
-        <div class="col-md-12 offset-md-2">
-            <h4>But what about the control domain?</h4>
             <p>
-                Here the story changes. Despite years of research,
+                But what about the control domain?
+            </p>
+            <p>
+               Here the story changes. Despite years of research,
                 learning-based control hasn't had its "GPT moment." More recently, Sergey Levine highlights
                 in <a href="https://sergeylevine.substack.com/p/the-promise-of-generalist-robotic">The Promise of Generalist Robotic Policies</a>
                 that scaling to general-purpose control will require not only larger models, but also diverse,
                 cross-embodiment data and foundation-style training.
                 Following this instruction, we’ve seen exciting releases like
                 <a href="https://robotics-transformer-x.github.io/">RT-X</a> and
-                <a href="https://www.physicalintelligence.company/blog/pi0">$\pi_0$</a>, but so far
+                <a href="https://www.physicalintelligence.company/blog/pi0">\(\pi_0\)</a>, but so far
                 there’s no breakthrough that’s deeply embedded in everyday practice.
+            </p>
+            <p>
+                As several recent columns point out, this isn’t surprising.
+                <a href="https://ysymyth.github.io/The-Second-Half/">Second Half of AI</a> argues
+                that RL has long been constrained by benchmark-centric progress and limited
+                transfer to real-world impact. Silver and Sutton’s
+                <a href="https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf">
+                    Welcome to the Era of Experience</a> similarly highlights that the next leap will come
+                not from bigger datasets alone, but from agents that learn through their own interactions and experiences.
+                These perspectives capture precisely why learning-based control has lagged:
+                scaling model size or algorithmic tweaks isn’t enough
+                when the problem itself is about acting and adapting in complex, open environments.
+            </p>
+            <p>
+                I believe AI agents cannot be designed as isolated problem-solvers
+                built on strong assumptions if they are ever to integrate seamlessly into society.
+                The real world is inherently multi-agent system: environments are only partially observable,
+                agents constantly encounter diverse and unpredictable counterparts,
+                and the underlying dynamics are often ambiguous and shifting. Therefore, progress
+                in control won’t just come from scaling single-agent learning,
+                but from developing methods that let agents adapt, interact,
+                and evolve within the complex fabric of human society.
             </p>
         </div>
     </div>
+
 
 
 <!--    <div class="row top15 bottom30">-->
