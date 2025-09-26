@@ -1007,8 +1007,45 @@ mjx-c.mjx-c2E::before {
                 While some methods leverage one of these aspects in isolation,
                 there has been limited progress in integrating them into a unified representation
                 that captures the factors facilitating team coordination.
-                From this perspective, I envision several fruitful directions for future works as Call-for-Research:
+                I’d argue that discovering this kind of omni-representation
+                for MARL is the biggest missing piece in modern machine learning.
+                Crack that puzzle, and suddenly we’re not just talking about better robotics or smarter agents:
+                we’re talking about a framework that could fuel everything from collaborative robots
+                to adaptive language models to any system making decisions in the wild.
             </p>
+            <p>
+                To wrap things up,
+                I’d like to share a few thoughts on what it might take to make practical MARL with the reasoning
+                as sort of call for research.
+            </p>
+            <ul>
+                <li>How do we develop off-policy algorithm for multi-agent settings, instead of MAPPO, to leverage various datasets?
+                    Empirically, we have observed that MARL algorithms are mostly on-policy.
+                    We need to stop at this moment, and firstly,
+                    we should understand 'How comes?' to enhance its efficiency and practicality.
+                </li>
+                <li>
+                    How do we balance the trade-off between inference speed and expressiveness of multi-agent dataset's distributions?
+                    Although seminal research success to capture its expressiveness, but it requires heavy computation.
+                    To alleviate such trade-offs, I think it's the good start from one-step sampling of iterative methods,
+                    <i>e.g.</i>,
+                    <a href="https://arxiv.org/abs/2410.12557">shortcut diffusion</a>,
+                    <a href="https://arxiv.org/abs/2502.02538">flow Q-learning</a>,
+                    <a href="https://arxiv.org/abs/2505.13447">mean flow</a>.
+                </li>
+                <li>How can we leverage a representation learning framework from a single-agent to a multi-agent setting?
+                    Simple idea is a hierarchical representation,
+                    the lower level can serve each agent as an MDP-oriented embedding,
+                    while the higher level can be steered by inter-agent relational signals.
+                </li>
+                <li>Can we construct an omni-representation that jointly encodes diverse information in a scalable manner?
+                    Once we capture different information, we can combine them together in a unified space like world model.
+                    Good example is <a href="https://arxiv.org/pdf/2204.07120">dual encoder</a> or decoder pipeline.
+                </li>
+                <li>What information and mechanisms facilitate rapid role alignment and policy adaptation in multi-agent dynamics?
+                </li>
+            </ul>
+
         </div>
     </div>
 
