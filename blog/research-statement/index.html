@@ -971,9 +971,41 @@ mjx-c.mjx-c2E::before {
     <div class="row top15 bottom30">
         <div class="col-md-12 offset-md-2">
             <h2>
-                The core bottlenecks in MARL </h2>
+                The core bottlenecks of RL towards multi-agent systems </h2>
             <p>
-
+                Meanwhile, generalizability has been a key challenge in RL
+                and its promising workarounds are self-play and representation learning,
+                achieving notable success in scalable problems.
+                We have already seen its power in the single-agent setting.
+                For example, landmark achievements like
+                <a href="https://www.nature.com/articles/nature16961.epdf?author_access_token=P3HwdfhgethMkcPAapNCwdRgN0jAjWel9jnR3ZoTv0OivKk3lXs6SxMz535byYwHuxqGq5vmEcS5N5QBJ1slzccjly0jMlAcdnFE0xdmBJ2_dzS9DvjIyJuCKT5mGOqL">
+                    AlphaGo</a>,
+                <a href="https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"> AlphaZero</a>,
+                and <a href="https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/">MuZero</a>
+                reached impressive generalization across games largely thanks to on-policy self-play,
+                which explored and exploited complete information environments to policies.
+                A longside this, awave of research on representation for RL, <i>e.g.</i>,
+                <a href="https://arxiv.org/abs/1606.05312">successor</a> <a href="https://arxiv.org/abs/2411.19418">features</a>,
+                <a href="https://arxiv.org/abs/2103.07945">forward-backward</a> <a href="https://kvfrans.com/successor-representations-explained/">representations</a>,
+                <a href="https://arxiv.org/abs/2006.10742">bisimulation</a>,
+                <a href="https://arxiv.org/abs/2304.01203">Quasimetric</a>,
+                <a href="https://arxiv.org/abs/2402.15567">Hilbert</a>,
+                <a href="https://arxiv.org/abs/2505.13144">temporal distance</a>,
+                and <a href="https://arxiv.org/pdf/2206.07568">contrastive learning</a>.
+            </p>
+            <p>
+                Unfortunately, unlike single-agent RL, where
+                (i) the environment interact with a single agent and,
+                (ii) representations can be derived from fully observable dynamics,
+                extending this perspective to multi-agent systems is far from trivial.
+                That is because MARL requires
+                considering the more exploration and interactions as increase the number of agents (for i), and
+                handling diverse information such as inter-agent relationships, their role structures,
+                and shared world dynamics under a partially observable MDP (for ii).
+                While some methods leverage one of these aspects in isolation,
+                there has been limited progress in integrating them into a unified representation
+                that captures the factors facilitating team coordination.
+                From this perspective, we envision several meaningful directions for future research:
             </p>
         </div>
     </div>
