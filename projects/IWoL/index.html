@@ -1004,6 +1004,42 @@ mjx-c.mjx-c2E::before {
                 </li>
             </ul>
         </div>
+        <div class="col-md-12">
+            <h3>Architectural Overview.</h3>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                    <img src="./Fig/overview_arc.png" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <ul>
+                <li>
+                    <strong>Observational encoder</strong>:
+                    Each agent encodes its local observation into a latent via self-attention.
+                </li>
+                <li>
+                    <strong>Communication module</strong>:
+                    We employ communication module to learn inter-agent relationships via two steps:
+                    (i) additive self-attention and Gumbel softmax schedule whom to communication with, and
+                    (ii) Transformer block processes the messages what to communication.
+                    This can provide surrogate inter-agent relationship information into the IWoL encoder in training.
+                </li>
+                <li>
+                    <strong>RL networks</strong>:
+                    We consider individual policy and value function for each agent with a feed-forward layer.
+                    Herein, a policy network is set in a stochastic form.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <h3>Interactive World Latent (IWoL) Modeling.</h3>
+        </div>
+
+
     </div>
 
 
