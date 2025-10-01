@@ -1005,7 +1005,7 @@ mjx-c.mjx-c2E::before {
             </ul>
         </div>
         <div class="col-md-12">
-            <h3>Architectural Overview.</h3>
+            <h3>Architectural Overview</h3>
         </div>
         <div class="col-md-12">
             <br>
@@ -1036,7 +1036,7 @@ mjx-c.mjx-c2E::before {
             </ul>
         </div>
         <div class="col-md-12">
-            <h3>Interactive World Latent (IWoL) Modeling.</h3>
+            <h3>Interactive World Latent (IWoL)</h3>
         </div>
         <div class="col-md-12">
             <br>
@@ -1073,6 +1073,21 @@ mjx-c.mjx-c2E::before {
                 </li>
             </ul>
         </div>
+            <span class="text-center text-equation">
+                $$ \mathcal{L}_\pi^{\mathrm{Im}}({\phi_i}) = \mathcal{L}^{\mathrm{RL}}_\pi(\phi_i) +
+                \lambda_{\mathrm{W}}\mathcal{L}_{\mathrm{W}} + \lambda_{\mathrm{I}}\mathcal{L}_{\mathrm{I}}, \quad
+                \mathrm{where} \mathcal{L}_{\mathrm{W}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{W}}(z^t_i)-s^{t}_{i}\bigr\rVert^{2}_{2}
+                \mathrm{and} \mathcal{L}_{\mathrm{I}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{I}}(z^t_i)-m^{t}_{i}\bigr\rVert^{2}_{2}$$
+            </span>
+        <ul>
+            <li>
+                Here, \(\mathcal{L}^{\mathrm{RL}}_\pi(\phi_i)\) is the RL loss for policy network with parameters \(\phi_i\).
+            </li>
+            <li>
+                \(\lambda_{\mathrm{W}}\) and \(\lambda_{\mathrm{I}}\)
+                are the coefficients for the world and interactive losses, respectively.
+            </li>
+        </ul>
     </div>
 
 

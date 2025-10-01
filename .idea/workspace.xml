@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/projects/IWoL/Fig/iwol.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/IWoL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/IWoL/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,14 +152,7 @@
       <workItem from="1758311334014" duration="944000" />
       <workItem from="1758403424573" duration="7000" />
       <workItem from="1758639477348" duration="3737000" />
-      <workItem from="1758814488248" duration="29023000" />
-    </task>
-    <task id="LOCAL-00136" summary="Update">
-      <created>1753668943458</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1753668943460</updated>
+      <workItem from="1758814488248" duration="29323000" />
     </task>
     <task id="LOCAL-00137" summary="Update">
       <created>1753669336048</created>
@@ -500,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1759336199850</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Update">
+      <created>1759336747855</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1759336747856</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
