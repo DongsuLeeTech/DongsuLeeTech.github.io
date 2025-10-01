@@ -1072,7 +1072,6 @@ mjx-c.mjx-c2E::before {
                     encouraging \(z_i^t\) global signals beyond local observation.
                 </li>
             </ul>
-        </div>
             <span class="text-center text-equation">
                 $$ \mathcal{L}_\pi^{\mathrm{Im}}({\phi_i}) = \mathcal{L}^{\mathrm{RL}}_\pi(\phi_i) +
                 \lambda_{\mathrm{W}}\mathcal{L}_{\mathrm{W}} + \lambda_{\mathrm{I}}\mathcal{L}_{\mathrm{I}}, \quad
@@ -1088,11 +1087,56 @@ mjx-c.mjx-c2E::before {
                 are the coefficients for the world and interactive losses, respectively.
             </li>
         </ul>
+        </div>
+
+     <div class="row">
+        <div class="col-md-12">
+            <h1>Experiments (Cooperative MARL)</h1>
+        </div>
+        <div class="col-md-12">
+            <h3>Environments</h3>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                    <img src="./Fig/envs.png" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div>
+             <ul>
+                 For online cooperative MARL, we consider four challenging robotic environments, <i>including</i>
+                 <a href="https://arxiv.org/abs/2109.12674">MetaDrive</a>,
+                 <a href="https://arxiv.org/abs/1609.04730">Robotarium</a>,
+                 <a href="https://arxiv.org/pdf/2403.16015">Multi-agent Quadruped Environment (MQE)</a>,
+                 and <a href="https://arxiv.org/abs/2206.08686">Bi-DexHands</a>.
+             </ul>
+        </div>
+        <div class="col-md-12">
+            <h3>Experimental Results</h3>
+        </div>
+        <div class="col-md-12">
+            <br>
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                    <img src="./Fig/maintable.png" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div>
+             <ul>
+                 IWoL variants achieve the best or second-best performance and success rate on most tasks.
+             </ul>
+             <ul>
+                 In particular, our approach achieves up to \(48.2\%\) and \(20.0\%\)
+                 in MQE and Bi-DexHands, where previous baselines record near-zero success in three tasks
+                 (Go1Sheep, Go1Seesaw, and Two Catch Underarm).
+             </ul>
+        </div>
+     </div>
+
     </div>
-
-
-
-
 
     <div class="row">
         <div class="col-md-12">
