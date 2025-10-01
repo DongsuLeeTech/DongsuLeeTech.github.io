@@ -1038,8 +1038,41 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12">
             <h3>Interactive World Latent (IWoL) Modeling.</h3>
         </div>
-
-
+        <div class="col-md-12">
+            <br>
+            <div class="col-md-8 col-md-offset-2">
+                <p>
+                    <img src="./Fig/iwol.png" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            Our goal is to build an IWoL representation \(z_i^t \)
+            that captures inter-agent relationships and privileged world information.
+            For this, the IWoL includes the following three modules.
+            <span class="text-center text-equation">
+                $$ \underbrace{z_i^t = \mathrm{Encoder}_{\mathrm{IW}}(f_i^t)}_{\mathrm{Interactive~World~Encoder}} \quad
+                \underbrace{\hat{m}^t_i = \mathrm{Decoder}_{\mathrm{I}}(z_i^t)}_{\mathrm{Interactive~Decoder}} \quad
+                \underbrace{\hat{s}^t_i = \mathrm{Decoder}_{\mathrm{W}}(z_i^t)}_{\mathrm{World~Decoder}} $$
+            </span>
+            <ul>
+                <li>
+                    <strong>Interactive World Encoder</strong>:
+                    The encoder takes the encoded local observation \(f_i^t\) as input
+                    and produces the IWoL representation \(z_i^t\).
+                </li>
+                <li>
+                    <strong>Interactive Decoder</strong>:
+                    This reconstructs the messages \(m_i^t\) that agent \(i\) would receive from others,
+                    encouraging \(z_i^t\) to preserve inter-agent dependencies.
+                </li>
+                <li>
+                    <strong>World Decoder</strong>:
+                    This reconstructs the agent’s privileged state \(s_i^{t}\),
+                    encouraging \(z_i^t\) global signals beyond local observation.
+                </li>
+            </ul>
+        </div>
     </div>
 
 
