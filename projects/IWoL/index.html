@@ -1075,8 +1075,10 @@ mjx-c.mjx-c2E::before {
             <span class="text-center text-equation">
                 $$ \mathcal{L}_\pi^{\mathrm{Im}}({\phi_i}) = \mathcal{L}^{\mathrm{RL}}_\pi(\phi_i) +
                 \lambda_{\mathrm{W}}\mathcal{L}_{\mathrm{W}} + \lambda_{\mathrm{I}}\mathcal{L}_{\mathrm{I}}, \quad
-                \mathrm{where} \mathcal{L}_{\mathrm{W}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{W}}(z^t_i)-s^{t}_{i}\bigr\rVert^{2}_{2}
-                \mathrm{and} \mathcal{L}_{\mathrm{I}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{I}}(z^t_i)-m^{t}_{i}\bigr\rVert^{2}_{2}$$
+                \mathrm{where} ~~
+                \mathcal{L}_{\mathrm{W}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{W}}(z^t_i)-s^{t}_{i}\bigr\rVert^{2}_{2} ~~
+                \mathrm{and} ~~
+                \mathcal{L}_{\mathrm{I}} = \bigl\lVert\mathrm{Decoder}_{\mathrm{I}}(z^t_i)-m^{t}_{i}\bigr\rVert^{2}_{2}$$
             </span>
         <ul>
             <li>
@@ -1106,11 +1108,13 @@ mjx-c.mjx-c2E::before {
         </div>
         <div>
              <ul>
+                 <li>
                  For online cooperative MARL, we consider four challenging robotic environments, <i>including</i>
                  <a href="https://arxiv.org/abs/2109.12674">MetaDrive</a>,
                  <a href="https://arxiv.org/abs/1609.04730">Robotarium</a>,
                  <a href="https://arxiv.org/pdf/2403.16015">Multi-agent Quadruped Environment (MQE)</a>,
                  and <a href="https://arxiv.org/abs/2206.08686">Bi-DexHands</a>.
+                 </li>
              </ul>
         </div>
         <div class="col-md-12">
@@ -1126,12 +1130,14 @@ mjx-c.mjx-c2E::before {
         </div>
         <div>
              <ul>
-                 IWoL variants achieve the best or second-best performance and success rate on most tasks.
-             </ul>
-             <ul>
-                 In particular, our approach achieves up to \(48.2\%\) and \(20.0\%\)
-                 in MQE and Bi-DexHands, where previous baselines record near-zero success in three tasks
-                 (Go1Sheep, Go1Seesaw, and Two Catch Underarm).
+                 <li>
+                    IWoL variants achieve the best or second-best performance and success rate on most tasks.
+                 </li>
+                 <li>
+                    In particular, our approach achieves up to \(48.2\%\) and \(20.0\%\)
+                    in MQE and Bi-DexHands, where previous baselines record near-zero success in three tasks
+                    (Go1Sheep, Go1Seesaw, and Two Catch Underarm).
+                 </li>
              </ul>
         </div>
      </div>
