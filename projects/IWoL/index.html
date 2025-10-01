@@ -880,16 +880,12 @@ mjx-c.mjx-c2E::before {
 <body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
 <div class="container" id="main">
     <div class="row">
-        <h1 class="col-md-12 text-center text-title top20">
-            <b>
+        <div class="col-md-12">
+            <h1 class="col-md-12 text-center text-title top20">
                 Learning to Interact in World Latent for Team Coordination
-            </b><br>
-            <small>
-                <b>Preprint</b>
-            </small>
-        </h1>
+            </h1>
+        </div>
     </div>
-
     <div class="row">
         <div class="col-md-12 text-center">
             <ul class="list-inline">
@@ -914,15 +910,74 @@ mjx-c.mjx-c2E::before {
             </ul>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
             <ul class="list-inline">
                 <li>
-                    Equally advising from Prof. Amy Zhang and Prof. Ding Zhao.
+                    <a href="https://arxiv.org/abs/2509.25550"><h3 class="top10 text-toplink">Paper</h3></a>
+                </li>
+                <li>
+                    <a href="https://github.com/DongsuLeeTech/IWoL"><h3 class="top10 text-toplink">Code</h3></a>
                 </li>
             </ul>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h1>Question </h1>
+        </div>
+        <div class="col-md-12">
+            <ul>
+                <li>
+                    Imagine a team of robots collaborating to achieve a common goal, such as transporting materials in a warehouse or driving autonomously in shared traffic.
+                </li>
+                <li>
+                    What types of information should each robot require to effectively coordinate with its teammates under partial observability?
+                </li>
+                <li>
+                    While many factors may matter, we posit that two elements are likely crucial:
+                    <ul>
+                      <li><i>(i)</i> Inter-agent relations – who influences whom, and how their roles complement one another.</li>
+                      <li><i>(ii)</i> Task-specific world information – a compact surrogate of the global state that helps robot agents reason and understand their task.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h1>The IWoL Representation</h1>
+        </div>
+        <div class="col-md-12">
+            <ul>
+                <li>
+                    In this work, we propose IWoL, a novel representation learning framework for MARL, which capture inter-agent relations and task-specific world information.
+                </li>
+                <li>
+                    We would like to highlight key features of IWoL:
+                    <ul>
+                      <li><strong>IWoL is simple and practical</strong> for team coordination.
+                          Thanks to the simplicity of on-policy's end-to-end training scheme,
+                          IWoL representation can be captured via a single encoder and multiple decoders
+                          to learn inter-agent relations and task-specific world dynamics for team coordination.
+                          Learned representation can be used in deployment without additional modules, e.g., communication or estimation.
+                          </li>
+                      <li><strong>IWoL is compatible.</strong>
+                          It works as plug-and-play module that can be combined with existing MARL algorithms,
+                          improving their performance without altering their fundamental structure. </li>
+                      <li><strong>IWoL is scalable.</strong>
+                          It can be used in explicit and implicit communication settings
+                          by handling complex multi-agent coordination,
+                          achieving strong performance on a variety of challenging robotic tasks.
+                      </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
 
 
     <div class="row">
