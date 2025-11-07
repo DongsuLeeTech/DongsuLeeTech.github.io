@@ -30,16 +30,63 @@
 
 
 <style>
+  :root {
+    --frame-max-width: 980px;
+    --frame-radius: 12px;
+    --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    --bg-muted: #f6f8fb;
+    --myorange: #BF5700; /* RGB(191,87,0) */
+    --mygray: #9CADB7;  /* RGB(156,173,183) */
+  }
+  /* Typography and base */
+  body {
+    background: var(--bg-muted);
+    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    line-height: 1.6;
+  }
+  /* Ensure Palatino overrides external stack just for this page */
+  body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
+    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif !important;
+  }
+  /* Frame the main content */
+  #main {
+    max-width: var(--frame-max-width);
+    margin: 32px auto 56px auto !important;
+    background: #fff;
+    border-radius: var(--frame-radius);
+    box-shadow: var(--frame-shadow);
+    padding: 24px 28px;
+  }
+  /* Link colors: myorange */
+  #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
+  #main a:hover { color: #d66b00 !important; text-decoration: none; }
+  /* Name and section headings */
+  .text-name { letter-spacing: 0.2px; }
+  .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
+  /* Subhead look for any h3s present */
+  h3 { font-weight: 400; color: #222; margin-top: 22px; margin-bottom: 6px; }
+  /* Profile image polish */
+  img.profile-photo, td img[alt="profile photo"] {
+    border: 2px solid rgba(191,87,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  /* Inline toggles adopt myorange */
   .toggle-trigger {
     cursor: pointer;
-    color: #FFA500;         /* 기본 텍스트 색 */
+    color: var(--myorange);
     text-decoration: none;
   }
-  .toggle-trigger:hover {
-    color: #72bf6a;         /* 마우스 올렸을 때 색 */
-  }
-  .toggle-content {
-    display: none;
+  .toggle-trigger:hover { color: #d66b00; }
+  .toggle-content { display: none; }
+  /* Fine-tune tables used for layout on this page */
+  table { border-collapse: separate; }
+  .pub-description { background: #fafafa; border-radius: 8px; }
+  .pub-contents .text-papertitle { display: inline-block; margin-bottom: 6px; }
+  /* Caption helper */
+  .text-caption { color: var(--mygray); font-size: 90%; display: block; }
+  /* Slightly larger body text on desktop */
+  @media (min-width: 992px) {
+    body, p, a, td, th, tr, li { font-size: 18.5px !important; }
   }
 </style>
 
@@ -73,8 +120,8 @@ function toggleCore(el) {
 
 </script>
 
-<body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
-<table style="max-width: 800px;">
+<body>
+<table id="main" style="max-width: 980px;">
     <tbody>
     <tr style="padding: 0px;">
         <td style="padding: 0px;">
@@ -154,7 +201,7 @@ function toggleCore(el) {
             </tbody>
                <tr>
                     <td class="blog-contents">
-                        <span class="text-papertitle"><a href="https://dongsuleetech.github.io/blog/research-statement"></a>Research staetment: Towards generalizable MARL<small>(Oct 2025)</small></span>
+                        <span class="text-papertitle"><a href="https://dongsuleetech.github.io/blog/research-statement"></a>Research staetment: Towards generalizable MARL<small>(Aug 2025)</small></span>
                     </td>
                 </tr>
         </table>
