@@ -51,7 +51,10 @@
         --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
         --bg-muted: #f6f8fb;
       }
-      body { background: var(--bg-muted); }
+      body {
+        background: var(--bg-muted);
+        font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      }
       /* Make the main container a centered framed card */
       #main {
         max-width: var(--frame-max-width);
@@ -65,10 +68,16 @@
       #main .row + .row { margin-top: 16px; }
       .text-title { margin-top: 6px; margin-bottom: 2px; }
       .text-toplink { color: #2c3e50; }
+      /* Subheadings: slightly larger, no bold */
+      h2, h3, h4 { font-weight: 400; color: #222; }
+      h2 { font-size: 1.35rem; margin-top: 22px; }
+      h3 { font-size: 1.25rem; margin-top: 18px; }
       /* Subtle polish for images and code blocks */
       #main img { border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
       pre.codebox-pre { background: #0f111a; color: #e6e9ef; border-radius: 8px; padding: 16px; overflow-x: auto; }
       hr { border-top: 1px solid #eaecef; }
+      /* Captions in "mygray" (RGB 156,173,183) */
+      #main .text-caption-small { color: #9cadb7; }
     </style>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
 .CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
@@ -944,7 +953,7 @@ mjx-c.mjx-c2E::before {
                 And this complexity puts us in an awkward spot. Most existing approaches force you to choose between two bad options:
                 <ul>
                 <li>Capture the full multimodal structure, but suffer painfully slow inference </li>
-                <li>Inference quickly, but collapse to brittle, poorly coordinated behavior </li>
+                <li>Do inference quickly, but collapse to brittle, poorly coordinated behavior </li>
                 </ul>
                 This trade-off has been baked into multi-agent RL for a few years. But it doesn’t actually have to be.
             </p>
