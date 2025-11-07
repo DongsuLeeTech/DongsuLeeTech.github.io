@@ -1004,6 +1004,45 @@ mjx-c.mjx-c2E::before {
             </p>
             <p>The mistake is treating <i>expressive</i> representation and <i>fast</i> per-agent policy as the same object. They don’t have to be.</p>
 
+            <h2>Learn joint behavior first, then distill it</h2>
+            <p>
+                Here’s the nugget as my favorite part of this whole framing.
+                Learn the joint action distribution in its full, expressive glory,
+                then distill that knowledge into decentralized one-step policies.
+                In other words, front-load the complexity, and make execution cheap.
+            </p>
+            <div class="row">
+              <div class="col-md-12 no-padding-lr top15 bottom20">
+                  <p>
+                      <img src="assets/teaser.jpg" style="width: 85%;" alt="teaser">
+                  </p>
+                  <span class="text-center text-caption-small top5 bottom5">
+                      MAC-Flow first extract joint behaviors, which are multi-modal and complex, from offline data via flow-matching,
+                      and then distill them into fast individual policies using BC distillation.
+                  </span>
+              </div>
+            </div>
+            <p>
+                Thanks to the simple and efficient idea behind <b>flow matching</b>,
+                we can extract the expressiveness of complex multi-agent behavior without paying a heavy computational price.
+                Flow matching learns a continuous transformation between distributions, giving us a smooth ODE-based mapping from noise to actions.
+                This means we can model multi-modal joint action patterns without the iterative multi-step denoising loop that makes diffusion models slow.
+                Despite being lightweight, the method captures the diverse coordination modes present in offline multi-agent datasets,
+                effectively modeling the joint structure we actually care about.
+            </p>
+            <p>
+                Once this expressive joint policy is learned, the next step is to break it apart in a meaningful way.
+                Through flow distillation, we preserve the multi-modality and structure of the joint model while converting it into fast,
+                one-step policies for each agent. And with the help of the Individual-Global-Max (IGM) principle,
+                these per-agent policies remain aligned with the optimal joint behavior, even after decentralization.
+            </p>
+            <p>
+                The end result feels almost counterintuitive: the system understands complex group behavior
+                because it learned it in a rich joint space, yet each agent acts through a lightweight, single-step policy distilled from that knowledge.
+                Expressive during training, efficient at inference—exactly the combination we’ve been looking for.
+            </p>
+            <h2>Why is this idea good and matters?</h2>
+
 <!--            <div class="col-md-12">-->
 <!--            <hr>-->
 <!--            <h1> Citation</h1>-->
