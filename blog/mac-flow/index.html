@@ -924,16 +924,6 @@ mjx-c.mjx-c2E::before {
             </ul>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <ul class="list-inline">
-                <li>
-                    This work was done under supervision from Amy Zhang and Ding Zhao.
-                </li>
-            </ul>
-        </div>
-    </div>
     <div class="row top15 bottom30">
         <div class="col-md-12">
             <div class="row">
@@ -953,35 +943,44 @@ mjx-c.mjx-c2E::before {
             <p>
                 And this complexity puts us in an awkward spot. Most existing approaches force you to choose between two bad options:
                 <ul>
-                <li>Capture the full multimodal structure (but suffer painfully slow inference) </li>
-                <li>Run quickly (but collapse to brittle, poorly coordinated behavior) </li>
+                <li>Capture the full multimodal structure, but suffer painfully slow inference </li>
+                <li>Inference quickly, but collapse to brittle, poorly coordinated behavior </li>
                 </ul>
                 This trade-off has been baked into multi-agent RL for a few years. But it doesn’t actually have to be.
             </p>
             <div class="row">
               <div class="col-md-12 no-padding-lr top15 bottom20">
                   <p>
-                      <img src="assets/macflow-overview.png" style="width: 100%;" alt="Mac-Flow overview diagram">
+                      <img src="assets/teaser.png" style="width: 85%;" alt="teaser">
                   </p>
                   <span class="text-center text-caption-small top5 bottom5">
-                      We first extract joint behaviors, which are multi-modal and complex, from offline data via flow-matching,
-                      and then distill them into fast individual policies using BC distillation.
+                      A snapshot of the classic trade-off:
+                      faster methods tend to be less expressive,
+                      while more expressive models come with higher inference cost
                   </span>
               </div>
             </div>
-            <h2>Desiderata</h2>
+            <h2>Desiderata and Challenges</h2>
             <p>
-                When you think about deploying multi-agent systems in the control domain, you need both:
+                Offline MARL brings its own set of challenges.
+                Since you’re learning entirely from fixed demonstrations or logs,
+                the model really needs to capture the full range of behaviors present in the data, which are messy, diverse, and highly multi-modal.
+                If it can’t represent those different coordination patterns, you simply won’t see meaningful teamwork emerge.
             </p>
-            <ul>
-              <li>
-                  <b>Expressiveness</b>: a model that actually reflects what coordinated behavior looks like in real data.
-              </li>
-              <li>
-                  <b>Efficiency</b>: something that runs fast enough in the real world.
-              </li>
-            </ul>
-
+            <p>
+                But when it comes time to deploy a policy, the requirements flip.
+                Real systems need to act quickly within just a few milliseconds.
+                A method that requires dozens of iterative denoising steps, like diffusion-based policies,
+                just isn’t practical (for "low-level decision-making") in environments where timing matters.
+            </p>
+            <p>
+                So we end up with this tension: the training phase demands expressiveness, while the deployment phase demands speed.
+                Which naturally leads to a simple but important question:
+            </p>
+            <p>
+                Do these two goals really have to be tied together as a learning objective?
+                Or can we learn rich joint behavior first and then convert it into something that runs fast at test time?
+            </p>
 <!--            <div class="col-md-12">-->
 <!--            <hr>-->
 <!--            <h1> Citation</h1>-->
