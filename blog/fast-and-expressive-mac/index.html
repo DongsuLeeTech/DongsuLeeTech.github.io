@@ -54,6 +54,7 @@
       body {
         background: var(--bg-muted);
         font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        line-height: 1.7;
       }
       /* Ensure Palatino applies to common text elements overriding external styles */
       body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
@@ -68,20 +69,28 @@
         box-shadow: var(--frame-shadow);
         padding: 32px 28px;
       }
-      /* Tighter vertical rhythm between rows inside the frame */
-      #main .row + .row { margin-top: 16px; }
+      /* Section spacing */
+      #main .row + .row { margin-top: 24px; }
       .text-title { margin-top: 6px; margin-bottom: 2px; }
       .text-toplink { color: #2c3e50; }
       /* Subheadings: larger than body, no bold */
       h2, h3, h4 { font-weight: 400; color: #222; }
-      h2 { font-size: 1.6em; margin-top: 22px; }
-      h3 { font-size: 1.3em; margin-top: 18px; }
+      h2 { font-size: 1.6em; margin-top: 28px; margin-bottom: 6px; }
+      h3 { font-size: 1.3em; margin-top: 22px; margin-bottom: 4px; }
+      p { margin-bottom: 0.8em; }
       /* Subtle polish for images and code blocks */
       #main img { border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
       pre.codebox-pre { background: #0f111a; color: #e6e9ef; border-radius: 8px; padding: 16px; overflow-x: auto; }
       hr { border-top: 1px solid #eaecef; }
       /* Captions in "mygray" (RGB 156,173,183) */
       #main .text-caption-small { color: #9cadb7; }
+      /* Slightly larger body text (≈ +1pt) overrides external css */
+      @media screen and (min-width: 992px) {
+        body, p, a, td, th, tr, li { font-size: 19px !important; }
+      }
+      @media screen and (max-width: 991px) {
+        body, p, a, td, th, tr, li { font-size: 17px !important; }
+      }
     </style>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
 .CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
