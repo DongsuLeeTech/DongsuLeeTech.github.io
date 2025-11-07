@@ -63,8 +63,9 @@
   /* Name and section headings */
   .text-name { letter-spacing: 0.2px; }
   .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
-  /* Make Write-up section title match per-paper title size */
-  .section-writeup .text-heading { font-size: 21px; font-weight: 400; margin-top: 18px; margin-bottom: 8px; }
+  /* Badge for blog posts */
+  .badge { display: inline-block; padding: 2px 6px; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; vertical-align: middle; margin-right: 6px; }
+  .badge-blog { color: var(--myorange); border: 1px solid rgba(191,87,0,0.5); background: rgba(191,87,0,0.06); }
   /* Subhead look for any h3s present */
   h3 { font-weight: 400; color: #222; margin-top: 22px; margin-bottom: 6px; }
   /* Profile image polish */
@@ -89,6 +90,16 @@
   .patent-item .text-conference { font-weight: 400; color: #444; }
   /* Caption helper */
   .text-caption { color: var(--mygray); font-size: 90%; display: block; }
+  /* Theme toggle and dark theme */
+  .theme-toggle { position: sticky; top: 12px; float: right; border: 0; background: transparent; font-size: 20px; cursor: pointer; }
+  body[data-theme="dark"] { background: #0b0d10; color: #ffffff; }
+  body[data-theme="dark"] #main { background: #0f1117; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
+  body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, body[data-theme="dark"] p, body[data-theme="dark"] li, body[data-theme="dark"] td, body[data-theme="dark"] th, body[data-theme="dark"] small { color: #ffffff; }
+  body[data-theme="dark"] #main a, body[data-theme="dark"] #main a:visited, body[data-theme="dark"] #main a:focus { color: var(--myorange) !important; }
+  body[data-theme="dark"] #main a:hover { color: #ff7a1a !important; }
+  body[data-theme="dark"] .pub-description { background: #12141b; }
+  body[data-theme="dark"] .text-caption, body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
+  body[data-theme="dark"] .badge-blog { color: #ff9a3d; border-color: rgba(255,154,61,0.6); background: rgba(255,154,61,0.1); }
   /* Slightly larger body text on desktop */
   @media (min-width: 992px) {
     body, p, a, td, th, tr, li { font-size: 18.5px !important; }
@@ -123,6 +134,24 @@ function toggleCore(el) {
 }
 
 
+// Theme toggle with localStorage
+(function() {
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') document.body.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+  const btn = document.getElementById('themeToggle');
+  if (btn) {
+    const updateIcon = () => btn.textContent = document.body.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    updateIcon();
+    btn.addEventListener('click', () => {
+      const dark = document.body.getAttribute('data-theme') === 'dark';
+      if (dark) { document.body.removeAttribute('data-theme'); try { localStorage.setItem('theme','light'); } catch(e){} }
+      else { document.body.setAttribute('data-theme','dark'); try { localStorage.setItem('theme','dark'); } catch(e){} }
+      updateIcon();
+    });
+  }
+})();
 </script>
 
 <body>
@@ -130,6 +159,7 @@ function toggleCore(el) {
     <tbody>
     <tr style="padding: 0px;">
         <td style="padding: 0px;">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
             <table>
                 <tbody>
                 <tr style="padding: 0px;">
@@ -199,17 +229,25 @@ function toggleCore(el) {
                <tr>
                     <td class="pub-contents">
                         <span class="text-papertitle">
+                          <span class="badge badge-blog">Blog</span>
                           <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">Fast and Expressive Multi‑Agent Coordination</a>
                           <small>(Oct 2025)</small>
                         </span>
+                        <div class="pub-description">
+                          <span class="text-caption">Capturing rich joint behavior while keeping inference fast.</span>
+                        </div>
                     </td>
                </tr>
-                <tr>
+               <tr>
                     <td class="pub-contents">
                         <span class="text-papertitle">
+                          <span class="badge badge-blog">Blog</span>
                           <a href="https://dongsuleetech.github.io/blog/research-statement">Research Statement: Towards Generalizable Multi‑Agent Reinforcement Learning</a>
                           <small>(Aug 2025)</small>
                         </span>
+                        <div class="pub-description">
+                          <span class="text-caption">Control’s bottlenecks and a roadmap for generalizable MARL.</span>
+                        </div>
                     </td>
                </tr>
             </tbody>
@@ -229,7 +267,7 @@ function toggleCore(el) {
             <tbody>
                 <tr>
                     <td class="pub-contents">
-                        <span class="text-papertitle">Learning to Interact in World Latent for Team Coordination</span>
+                        <span class="text-papertitle">Multi-agent Coordination via Flow Matching</span>
                         <div class="pub-description">
                             <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
                             <a href="https://l2dulgi.github.io/" class="author-link">Daehee Lee</a>,
