@@ -82,6 +82,9 @@
   table { border-collapse: separate; }
   .pub-description { background: #fafafa; border-radius: 8px; }
   .pub-contents .text-papertitle { display: inline-block; margin-bottom: 6px; }
+  /* Patents: keep clean without shaded box */
+  .patent-item .pub-description { background: transparent; border-radius: 0; padding-left: 0; padding-right: 0; }
+  .patent-item .text-conference { font-weight: 400; color: #444; }
   /* Caption helper */
   .text-caption { color: var(--mygray); font-size: 90%; display: block; }
   /* Slightly larger body text on desktop */
@@ -192,8 +195,26 @@ function toggleCore(el) {
         <table>
             <tbody>
                <tr>
-                    <td class="blog-contents">
-                        <span class="text-papertitle"><a href="https://dongsuleetech.github.io/blog/research-statement">Research statement: Towards generalizable MARL</a> <small>(Oct 2025)</small></span> </td>
+                    <td class="pub-contents">
+                        <span class="text-papertitle">
+                          <a href="https://dongsuleetech.github.io/blog/research-statement">Research Statement: Towards Generalizable Multi‑Agent Reinforcement Learning</a>
+                          <small>(Oct 2025)</small>
+                        </span>
+                        <div class="pub-description">
+                          <span class="text-caption">Control’s bottlenecks and a roadmap for generalizable MARL.</span>
+                        </div>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="pub-contents">
+                        <span class="text-papertitle">
+                          <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">Fast and Expressive Multi‑Agent Coordination</a>
+                          <small>(Nov 2025)</small>
+                        </span>
+                        <div class="pub-description">
+                          <span class="text-caption">Capturing rich joint behavior while keeping inference fast.</span>
+                        </div>
+                    </td>
                </tr>
             </tbody>
         </table>
@@ -418,7 +439,7 @@ function toggleCore(el) {
             <table>
                 <tbody>
                 <tr>
-                    <td class="pub-contents">
+                    <td class="pub-contents patent-item">
                         <span class="text-patenttitle">Method and Apparatus for Inferring Stochastic Driving Characteristic of a Vehicle</span>
                         <div class="pub-description">
                             <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
@@ -428,7 +449,7 @@ function toggleCore(el) {
                     </td>
                 </tr>
                 <tr>
-                    <td class="pub-contents">
+                    <td class="pub-contents patent-item">
                         <span class="text-patenttitle">Apparatus and Method for Inferring Driving Characteristics of Vehicle</span>
                         <div class="pub-description">
                             <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
@@ -438,7 +459,7 @@ function toggleCore(el) {
                     </td>
                 </tr>
                 <tr>
-                    <td class="pub-contents">
+                    <td class="pub-contents patent-item">
                         <span class="text-patenttitle">Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles, Recording medium and device for performing this the method</span>
                         <div class="pub-description">
                             <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
