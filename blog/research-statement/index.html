@@ -2,26 +2,21 @@
 <!-- saved from url=(0033)https://dongsulee.github.io/blog/research-statement/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="./rs_files/js"></script>
+    <script async src="./rs_files/js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);} 
         gtag('js', new Date());
         gtag('config', 'G-3LQTW4VHRT');
     </script>
 
-    <title>Research Statement</title>
+    <title>Research Statement: Towards Generalizable Multi‑Agent Reinforcement Learning</title>
 
     <meta name="author" content="Dongsu Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--<base target="_blank">--><base href="." target="_blank">
+    <!-- Removed base href to avoid breaking relative paths -->
 
     <link rel="stylesheet" href="./rs_files/bootstrap.min.css">
     <link rel="stylesheet" href="./rs_files/font-awesome.min.css">
@@ -33,15 +28,62 @@
     <script src="./rs_files/jquery.min.js"></script>
     <script src="./rs_files/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
-        window.MathJax = {
-            loader: {load: ['[tex]/color']},
-            tex: {packages: {'[+]': ['color']}}
-        };
+        // Configure MathJax before the loader
+        window.MathJax = { loader: {load: ['[tex]/color']}, tex: {packages: {'[+]': ['color']}} };
     </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <script src="./rs_files/app.js"></script>
+    <!-- Page-local styles: unify with blog/fast-and-expressive-mac -->
+    <style>
+      :root {
+        --frame-max-width: 980px;
+        --frame-radius: 12px;
+        --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
+        --bg-muted: #f6f8fb;
+        --myorange: #BF5700; /* RGB(191,87,0) */
+      }
+      body {
+        background: var(--bg-muted);
+        font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        line-height: 1.6;
+      }
+      /* Ensure Palatino applies broadly overriding external styles */
+      body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
+        font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif !important;
+      }
+      /* Framed container */
+      #main {
+        max-width: var(--frame-max-width);
+        margin: 32px auto 56px auto;
+        background: #fff;
+        border-radius: var(--frame-radius);
+        box-shadow: var(--frame-shadow);
+        padding: 32px 28px;
+      }
+      /* Row spacing (modest) */
+      #main .row + .row { margin-top: 16px; }
+      .text-title { margin-top: 6px; margin-bottom: 2px; }
+      .text-toplink { color: var(--myorange); }
+      /* Headings: larger than body, no bold */
+      h2, h3, h4 { font-weight: 400; color: #222; }
+      h2 { font-size: 1.6em; margin-top: 36px; margin-bottom: 8px; }
+      h3 { font-size: 1.3em; margin-top: 24px; margin-bottom: 6px; }
+      p { margin-bottom: 0.8em; }
+      /* Links */
+      #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
+      #main a:hover { color: #d66b00 !important; text-decoration: none; }
+      /* Captions */
+      .text-caption-small { color: #9cadb7; display: block; }
+      /* Slightly larger body text (≈ +1pt) */
+      @media screen and (min-width: 992px) {
+        body, p, a, td, th, tr, li { font-size: 19px !important; }
+      }
+      @media screen and (max-width: 991px) {
+        body, p, a, td, th, tr, li { font-size: 17px !important; }
+      }
+    </style>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
 .CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
 .CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
@@ -877,223 +919,89 @@ mjx-c.mjx-c2E::before {
 }
 </style></head>
 
-<body data-new-gr-c-s-check-loaded="14.1220.0" data-gr-ext-installed="">
+<body>
 <div class="container" id="main">
-    <div class="row">
-        <h1 class="col-md-12 text-center text-title top20">
-            <b>
-                Why Is RL Still Stuck?
-            </b><br>
-            <small>
-                <b>Research statement</b>
-            </small>
-        </h1>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center text-title top20">Research Statement: Towards Generalizable Multi‑Agent Reinforcement Learning</h1>
     </div>
+  </div>
 
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <ul class="list-inline">
-                <li>
-                    <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> August 2025
-                </li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> August 2025
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div class="row top15 bottom30">
-        <div class="col-md-12 offset-md-2">
-<!--            <h2>-->
-<!--                What Does It Take to Accelerate MARL?</h2>-->
-            <p>
-            <strong>TL;DR</strong>: Machine learning crushed it by aligning data, compute, and training paradigms.
-                Control, especially in reinforcement learning (RL), hasn’t had that “GPT moment” because the problem is not trivial like sing-agent assumption.
-                If we want AI that blends into complex society, we need multi-agent RL (MARL) that generalizes:
-                (1) capture joint distributions,
-                (2) learn the representations in multi-agent systems,
-                (3) achieve rapid compatibility.
-                Below is a step-by-step roadmap, and a concrete call for research.
-            </p>
-        </div>
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <p><strong>TL;DR</strong> Machine learning achieved remarkable progress by aligning data, compute, and training paradigms. In contrast, control—especially in reinforcement learning (RL)—has not had its “GPT moment.” This is because control is inherently a multi‑agent problem, not a single‑agent one. To build AI that functions naturally in complex societies, we need multi‑agent reinforcement learning (MARL) that generalizes. This requires three capabilities: (i) capturing joint distributions, (ii) learning rich representations for multi‑agent systems, and (iii) achieving rapid role compatibility and adaptation. Below, I outline why control lags, what the core bottlenecks are, and how a research roadmap can address them.</p>
     </div>
-    <div class="row top15 bottom30">
-        <div class="col-md-12 offset-md-2">
-            <h2>
-                The contrast: Why control lags where LLMs soared </h2>
-            <p>
-                For decades, machine learning has been absolutely crushing it
-                whenever massive datasets, scalable compute, novel training paradigms,
-                and advanced architectures come together. Just look at large language models,
-                such as <a href="https://chatgpt.com/">GPT</a>, <a href="https://gemini.google.com/app">Gemini</a>,
-                and <a href="https://grok.com/">Grok</a>; they’ve completely redefined how we interact with AI,
-                from casual conversation to serious problem-solving. On the vision side,
-                <a href="https://arxiv.org/pdf/2403.09611?">multi-modal</a>
-                <a href="https://llava-vl.github.io/">models</a>
-                are pushing boundaries in image understanding and creative generation.
-            </p>
-            <p>
-                <i>But what about the control domain?</i>
-            </p>
-            <p>
-               Here the story changes. Despite years of research,
-                learning-based control hasn't had its "GPT moment." More recently, Sergey Levine highlights
-                in <a href="https://sergeylevine.substack.com/p/the-promise-of-generalist-robotic">The Promise of Generalist Robotic Policies</a>
-                that scaling to general-purpose control will require not only larger models, but also diverse,
-                cross-embodiment data and foundation-style training.
-                Following this instruction, we’ve seen exciting releases like
-                <a href="https://robotics-transformer-x.github.io/">RT-X</a> and
-                <a href="https://www.physicalintelligence.company/blog/pi0">\(\pi_0\)</a>, but so far
-                there’s no breakthrough that’s deeply embedded in everyday practice.
-            </p>
-            <p>
-                As several recent columns point out, this isn’t surprising.
-                <a href="https://ysymyth.github.io/The-Second-Half/">Second Half of AI</a> argues
-                that RL has long been constrained by benchmark-centric progress and limited
-                transfer to real-world impact. Silver and Sutton’s
-                <a href="https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf">
-                    Welcome to the Era of Experience</a> similarly highlights that the next leap will come
-                not from bigger datasets alone, but from agents that learn through their own interactions and experiences.
-                These perspectives capture precisely why learning-based control has lagged:
-                scaling model size or algorithmic tweaks isn’t enough
-                when the problem itself is about acting and adapting in complex, open environments.
-            </p>
-            <p>
-                I believe AI agents cannot be designed as isolated problem-solvers
-                built on strong assumptions if they are ever to integrate seamlessly into society.
-                The real world is inherently multi-agent system: environments are only partially observable,
-                agents constantly encounter diverse and unpredictable counterparts,
-                and the underlying dynamics are often ambiguous and shifting. Therefore, progress
-                in control won’t just come from scaling single-agent learning,
-                but from developing methods that let agents adapt, interact,
-                and evolve within the complex fabric of human society.
-            </p>
-        </div>
-    </div>
-    <div class="row top15 bottom30">
-        <div class="col-md-12 offset-md-2">
-            <h2>
-                The core bottlenecks of RL towards real-world</h2>
-            <p>
-                Meanwhile, generalizability has been a key challenge in RL
-                and its promising workarounds are self-play and representation learning,
-                achieving notable success in scalable problems.
-                We have already seen its power in the single-agent setting.
-                For example, landmark achievements like
-                <a href="https://www.nature.com/articles/nature16961.epdf?author_access_token=P3HwdfhgethMkcPAapNCwdRgN0jAjWel9jnR3ZoTv0OivKk3lXs6SxMz535byYwHuxqGq5vmEcS5N5QBJ1slzccjly0jMlAcdnFE0xdmBJ2_dzS9DvjIyJuCKT5mGOqL">
-                    AlphaGo</a>,
-                <a href="https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"> AlphaZero</a>,
-                and <a href="https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/">MuZero</a>
-                reached impressive generalization across games largely thanks to on-policy self-play,
-                which explored and exploited complete information environments to policies.
-                A longside this, awave of research on representation for RL, <i>e.g.</i>,
-                <a href="https://arxiv.org/abs/1606.05312">successor</a> <a href="https://arxiv.org/abs/2411.19418">features</a>,
-                <a href="https://arxiv.org/abs/2103.07945">forward-backward</a> <a href="https://kvfrans.com/successor-representations-explained/">representations</a>,
-                <a href="https://arxiv.org/abs/2006.10742">bisimulation</a>,
-                <a href="https://arxiv.org/abs/2304.01203">Quasimetric</a>,
-                <a href="https://arxiv.org/abs/2402.15567">Hilbert</a>,
-                <a href="https://arxiv.org/abs/2505.13144">temporal distance</a>,
-                and <a href="https://arxiv.org/pdf/2206.07568">contrastive learning</a>.
-                These approaches showed that better abstractions of the MDP could improve generalization and transfer,
-                turning narrow policies into more versatile ones.
-            </p>
-            <p>
-                Unfortunately, unlike single-agent RL, where
-                <i>(i)</i> the environment interact with a single agent and,
-                <i>(ii)</i> representations can be derived from fully observable dynamics,
-                extending this perspective to multi-agent systems is far from trivial.
-                That is because MARL requires
-                considering the more exploration and interactions as increase the number of agents, and
-                handling diverse information such as inter-agent relationships, their role structures,
-                and shared world dynamics under a partially observable MDP.
-                While some methods leverage one of these aspects in isolation,
-                there has been limited progress in integrating them into a unified representation
-                that captures the factors facilitating team coordination.
-                I’d argue that discovering this kind of omni-representation
-                for MARL is the biggest missing piece in modern machine learning.
-                Crack that puzzle, and suddenly we’re not just talking about better robotics or smarter agents:
-                we’re talking about a framework that could fuel everything from collaborative robots
-                to adaptive language models to any system making decisions in the wild.
-            </p>
-            <p>
-                To wrap things up,
-                I’d like to share a few thoughts on what it might take to make practical MARL with the reasoning
-                as sort of call for research.
-            </p>
-            <ul>
-                <li>How do we develop off-policy algorithm for multi-agent settings, instead of MAPPO, to leverage various datasets?
-                    Empirically, we have observed that MARL algorithms are mostly on-policy.
-                    We need to stop at this moment, and firstly,
-                    we should understand 'How comes?' to enhance its efficiency and practicality.
-                </li>
-                <li>
-                    How do we balance the trade-off between inference speed and expressiveness of multi-agent dataset's distributions?
-                    Although seminal research success to capture its expressiveness, but it requires heavy computation.
-                    To alleviate such trade-offs, I think it's the good start from one-step sampling of iterative methods,
-                    <i>e.g.</i>,
-                    <a href="https://arxiv.org/abs/2410.12557">shortcut diffusion</a>,
-                    <a href="https://arxiv.org/abs/2502.02538">flow Q-learning</a>,
-                    <a href="https://arxiv.org/abs/2505.13447">mean flow</a>.
-                </li>
-                <li>How can we leverage a representation learning framework from a single-agent to a multi-agent setting?
-                    Simple idea is a hierarchical representation,
-                    the lower level can serve each agent as an MDP-oriented embedding,
-                    while the higher level can be steered by inter-agent relational signals.
-                </li>
-                <li>Can we construct an omni-representation that jointly encodes diverse information in a scalable manner?
-                    Once we capture different information, we can combine them together in a unified space like world model.
-                    Good example is <a href="https://arxiv.org/pdf/2204.07120">dual encoder</a> or decoder pipeline.
-                </li>
-                <li>What information and mechanisms facilitate rapid role alignment and policy adaptation in multi-agent dynamics?
-                    After we have omni-representation and extract a policy, how do we adapt it quickly to unseen scenarios?
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row top15 bottom30">
-        <div class="col-md-12 offset-md-2">
-            <h2>Acknowledgement</h2>
-            <p>
-                I would like to thank Daehee Lee, Yaru Niu, and Amy Zhang for their helpful feedback on this post.
-            </p>
-        </div>
-    </div>
+  </div>
 
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <h2>1. Why Control Lags Where Learning Thrives</h2>
+      <p>Machine learning has consistently advanced when three ingredients align: large datasets, scalable compute, and new training paradigms. The success of large language models (LLMs)—such as GPT, Gemini, and Grok—illustrates this convergence. Similar progress is evident in multimodal models that integrate text, vision, and audio into coherent generative systems.</p>
+      <p>Control, however, tells a different story. Despite decades of research, learning‑based control has not experienced a transformative leap. As noted by Sergey Levine in <a href="https://sergeylevine.substack.com/p/the-promise-of-generalist-robotic">The Promise of Generalist Robotic Policies</a>, scaling control demands not only larger models but also diverse, cross‑embodiment data and foundation‑style training. While recent efforts such as <a href="https://robotics-transformer-x.github.io/">RT‑X</a> and <a href="https://www.physicalintelligence.company/blog/pi0">\(\pi_0\)</a> move in that direction, the field remains far from practical, general‑purpose deployment.</p>
+      <p>The limitation is structural. As Silver and Sutton argue in <a href="https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf">Welcome to the Era of Experience</a>, true progress in RL will not come from larger datasets alone, but from agents that learn through interaction and adaptation. The <a href="https://ysymyth.github.io/The-Second-Half/">Second Half of AI</a> perspective similarly notes that benchmark‑driven RL has failed to transfer its gains to real‑world impact. These insights converge on a central point: the bottleneck is not scale, but structure—control problems are inherently multi‑agent, partially observable, and dynamically coupled.</p>
+    </div>
+  </div>
 
-    <script>
-        if (navigator.userAgent.match(/Android/i)
-            || navigator.userAgent.match(/webOS/i)
-            || navigator.userAgent.match(/iPhone/i)
-            || navigator.userAgent.match(/iPad/i)
-            || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-            || navigator.userAgent.match(/iPod/i)
-            || navigator.userAgent.match(/BlackBerry/i)
-            || navigator.userAgent.match(/Windows Phone/i)) {
-            const cells = document.getElementsByTagName('video');
-            for (const cell of cells) {
-                cell.removeAttribute("controls");
-            }
-        }
-    </script>
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <h2>2. The Core Bottleneck: From Single‑Agent to Multi‑Agent Generalization</h2>
+      <p>In single‑agent RL, generalization has been achieved through self‑play and representation learning. Landmark systems such as <a href="https://www.nature.com/articles/nature16961.epdf?author_access_token=P3HwdfhgethMkcPAapNCwdRgN0jAjWel9jnR3ZoTv0OivKk3lXs6SxMz535byYwHuxqGq5vmEcS5N5QBJ1slzccjly0jMlAcdnFE0xdmBJ2_dzS9DvjIyJuCKT5mGOqL">AlphaGo</a>, <a href="https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/">AlphaZero</a>, and <a href="https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/">MuZero</a> demonstrate that self‑play combined with complete observability can yield transferable policies.</p>
+      <p>Complementary advances in representation learning—such as <a href="https://arxiv.org/abs/1606.05312">successor</a> <a href="https://arxiv.org/abs/2411.19418">features</a>, <a href="https://arxiv.org/abs/2103.07945">forward‑backward</a> <a href="https://kvfrans.com/successor-representations-explained/">representations</a>, <a href="https://arxiv.org/abs/2006.10742">bisimulation</a>, <a href="https://arxiv.org/abs/2304.01203">Quasimetric</a>, <a href="https://arxiv.org/abs/2402.15567">Hilbert</a>, <a href="https://arxiv.org/abs/2505.13144">temporal distance</a>, and <a href="https://arxiv.org/pdf/2206.07568">contrastive learning</a>—show that better state abstractions enable stronger generalization across related tasks.</p>
+      <p>However, extending these principles to multi‑agent settings is non‑trivial. In multi‑agent RL (MARL), the environment is partially observable and non‑stationary; interactions grow combinatorially with the number of agents; and agents must infer roles, relationships, and shared dynamics. Existing methods often model one of these aspects in isolation, but few integrate them into a unified representation that captures the relational and structural factors driving coordination. I argue that such an omni‑representation—a scalable embedding of multi‑agent structure—is the missing piece in modern learning‑based control. Solving this challenge would enable systems that reason jointly about perception, communication, and cooperation—bridging robotics, simulation, and adaptive decision‑making.</p>
+    </div>
+  </div>
+
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <h2>3. A Research Roadmap for Practical Multi‑Agent RL</h2>
+      <ul>
+        <li><strong>Off‑policy algorithms for multi‑agent systems:</strong> Current MARL methods are predominantly on‑policy (e.g., MAPPO). Off‑policy learning would permit broader dataset reuse and improved sample efficiency. We must first understand why existing methods fail under off‑policy training and identify principled modifications to stabilize learning.</li>
+        <li><strong>Balancing expressiveness and efficiency:</strong> Capturing complex inter‑agent distributions often requires heavy computation. Techniques inspired by <a href="https://arxiv.org/abs/2410.12557">shortcut diffusion</a>, <a href="https://arxiv.org/abs/2502.02538">flow Q‑learning</a>, or <a href="https://arxiv.org/abs/2505.13447">mean flow</a> can approximate iterative sampling in a single step, achieving faster yet expressive inference.</li>
+        <li><strong>Transferring representation learning to MARL:</strong> Hierarchical representation learning can provide a foundation: lower‑level embeddings model each agent’s MDP, while higher‑level representations encode inter‑agent relations. This structure can unify local reasoning and global coordination.</li>
+        <li><strong>Constructing omni‑representations:</strong> A unified model should encode agent states, interactions, and shared world dynamics within a scalable latent space. Dual‑encoder or dual‑decoder pipelines, inspired by world models (e.g., <a href="https://arxiv.org/pdf/2204.07120">dual encoder</a>), can combine multiple information streams into coherent joint representations.</li>
+        <li><strong>Rapid role alignment and adaptation:</strong> We must identify mechanisms that enable agents to align roles and adapt policies quickly in unseen settings. Once an omni‑representation exists, rapid adaptation becomes the critical step toward real‑world compatibility.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <h2>4. Outlook</h2>
+      <p>The path to practical, general‑purpose AI agents will not emerge from scaling single‑agent systems. It will require multi‑agent learning that understands, represents, and coordinates within complex, dynamic environments. Achieving this is not just an algorithmic challenge—it is a conceptual one. The next breakthrough in AI control will come from understanding the structure of interaction itself.</p>
+    </div>
+  </div>
+
+  <div class="row top15 bottom30">
+    <div class="col-md-12">
+      <h2>Acknowledgement</h2>
+      <p>I would like to thank Daehee Lee, Yaru Niu, and Amy Zhang for their helpful feedback on this post.</p>
+    </div>
+  </div>
+
+  <script>
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+      const cells = document.getElementsByTagName('video');
+      for (const cell of cells) { cell.removeAttribute("controls"); }
+    }
+  </script>
 </div>
 
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+</body></html>
