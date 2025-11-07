@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033)https://dongsulee.github.io/blog/macflow/ -->
+<!-- saved from url=(0033)https://dongsulee.github.io/projects/tempdata/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="./macflow_files/js"></script>
+    <script async="" src="./TempDATA_files/js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -16,22 +16,22 @@
         gtag('config', 'G-3LQTW4VHRT');
     </script>
 
-    <title>macflow</title>
+    <title>TempDATA</title>
 
     <meta name="author" content="Dongsu Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--<base target="_blank">--><base href="." target="_blank">
 
-    <link rel="stylesheet" href="./macflow_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./macflow_files/font-awesome.min.css">
-    <link rel="stylesheet" href="./macflow_files/stylesheet.css">
-    <link rel="stylesheet" href="./macflow_files/app.css">
+    <link rel="stylesheet" href="./TempDATA_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./TempDATA_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./TempDATA_files/stylesheet.css">
+    <link rel="stylesheet" href="./TempDATA_files/app.css">
     <link rel="icon" type="image/png" sizes="32x32" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
 
-    <script src="./macflow_files/jquery.min.js"></script>
-    <script src="./macflow_files/bootstrap.min.js"></script>
+    <script src="./TempDATA_files/jquery.min.js"></script>
+    <script src="./TempDATA_files/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
@@ -41,7 +41,7 @@
         };
     </script>
 
-    <script src="./macflow_files/app.js"></script>
+    <script src="./TempDATA_files/app.js"></script>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
 .CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
 .CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
@@ -882,8 +882,11 @@ mjx-c.mjx-c2E::before {
     <div class="row">
         <h1 class="col-md-12 text-center text-title top20">
             <b>
-                Fast and Expressive Multi-Agent Coordination
+                Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning
             </b><br>
+            <small>
+                <b>ICML 2025</b>
+            </small>
         </h1>
     </div>
 
@@ -891,7 +894,10 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12 text-center">
             <ul class="list-inline">
                 <li>
-                    <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> November 2025
+                    <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>Soongsil Univ.
+                </li>
+                <li>
+                    <a href="https://brainmil.wordpress.com/minhae/">Minhae Kwon</a><br>Soongsil Univ.
                 </li>
             </ul>
         </div>
@@ -901,56 +907,314 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12 text-center">
             <ul class="list-inline">
                 <li>
-                    This work was done under supervision from Amy Zhang and Ding Zhao.
+                    This work was partly completed at Carnegie Mellon University.
                 </li>
             </ul>
         </div>
     </div>
-    <div class="row top15 bottom30">
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <ul class="list-inline">
+                <li>
+                    <a href="https://arxiv.org/abs/2505.13144"><h4 class="top10"><b>Paper</b></h4></a>
+                </li>
+                <li>
+                    <a href="https://github.com/DongsuLeeTech/TempDATA"><h4 class="top10"><b>Code</b></h4></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-12">
-            <div class="col-md-12" style="display: none">
-                \(
-                \definecolor{myorange}{RGB}{191, 87, 0}
-                \definecolor{mygray}{RGB}{156, 173, 183}
-                \)
-            </div>
-            <p>
-                Multi-agent coordination is tricky because joint action distributions are inherently multi-modal.
-                Even in the simplest cooperative settings, the space of "what agents could do together" quickly branches
-                into many possible modes—tight formations, asymmetric roles, fallback behaviors, and everything in between.
-                The same state can lead to wildly different coordinated outcomes depending on subtle cues.
-            </p>
-            <p>
-                And this complexity puts us in an awkward spot. Most existing approaches force you to choose between two bad options:
-                - Capture the full multimodal structure (but suffer painfully slow inference),
-                - or run quickly (but collapse to brittle, poorly coordinated behavior).
-                This trade-off has been baked into multi-agent RL for a few years. But it doesn’t actually have to be.
-            </p>
-            <div class="col-md-12 no-padding-lr top15 bottom20">
+            <hr>
+            <h2>Why does prior offline MBRL fail in long-horizon tasks?</h2>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2 bottom10">
                 <p>
-                    <img src="assets/macflow-overview.png" style="width: 100%;">
+                    <img src="TempDATA_files/Motivation.jpg" style="width: 100%;">
                 </p>
-                <span class="text-center text-caption-small top5 bottom5">
-                    We first extract joint behaviors, which are multi-modal and complex, from offline data via flow-matching,
-                    and then distill them into fast individual policies using BC distillation.
+            </div>
+        </div>
+        <div class="col-md-12 top10">
+            <ul>
+                <li>
+                    <b>Inaccurate Value Estimation in Sparse Reward Settings</b>. Sparse rewards in long-horizon tasks lead to flat or noisy value estimates across distant states. This undermines the critic's ability to reflect meaningful progress, distorting temporal distance signals.
+                </li>
+                <li>
+                    <b>Unstable Policy Optimization</b>. When value targets are unreliable, policy gradients become erratic or misleading. This results in suboptimal or unstable policy updates during training.
+                </li>
+                <li>
+                    <b>Model Overgeneralization and Geometric Bias in Rollouts</b>. Learned models often overgeneralize in underexplored regions, generating unrealistic transitions. As a result, agents exploit geometrically short but temporally infeasible paths during planning.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+            <h2>Main Idea</h2>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2 bottom10">
+                <p>
+                    <img src="TempDATA_files/Temporal%20Encoder.jpg" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12 top10">
+            <ul>
+                <li>
+                    We propose a novel method to learn temporal distance representations from fixed offline data for transition augmentation in MBRL, which we dub <b>TempDATA</b>.
+                </li>
+                <li>
+                    Our key idea is <b>to build a latent space where distances reflect temporal separation</b>, enabling both trajectory-level and transition-level understanding of time.
+                </li>
+                <li>
+                    At the <b>trajectory level</b>, we approximate the temporal distance between two states by finding their closest alignment across dataset trajectories, capturing long-term structure.
+                </li>
+                <li>
+                    At the <b>transition level</b>, we control the latent space resolution by tuning a smoothing factor that defines the minimal unit of temporal or spatial progression captured between transitions.
+                </li>
+                <li>
+                    Here are remarkable properties of our method:
+                    <div class="info-block">
+                        <b>Modularity of representation space</b>
+                        : Our autoencoder is fully compatible with any off-the-shelf model-free or model-based RL algorithm. Moreover, its latent dynamics support a wide array of downstream objectives, including RL, skill RL, and GCRL, without requiring any modifications to the core encoding or planning modules.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="row">
+        <div class="col-md-12">
+            <hr>
+            <h2>TempDATA Framework</h2>
+        </div>
+        <div class="col-md-12">
+            <a data-toggle="collapse" href="#algo" aria-expanded="false" aria-controls="algo" id="toggle-link">
+                <h4 class="top10 bottom20" id="toggle-text">
+                    Show algorithm pseudocode
+                </h4>
+            </a>
+            <div class="collapse col-md-6 col-md-offset-3" id="algo">
+                <p>
+                    <img src="TempDATA_files/algorithm.jpg" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <script>
+          const toggleText = document.getElementById('toggle-text');
+          const algoCollapse = document.getElementById('algo');
+
+          $('#algo').on('show.bs.collapse', function () {
+            toggleText.textContent = 'Hide algorithm pseudocode';
+          });
+
+          $('#algo').on('hide.bs.collapse', function () {
+            toggleText.textContent = 'Show algorithm pseudocode';
+          });
+        </script>
+            <div class="col-md-12">
+            <ul>
+                <li>
+                    <b>Autoencoder</b> \(f_\theta, h_\theta\) is trained with the following loss:
+                    <span class="text-center text-equation desktop-only">
+                        $$\begin{aligned}
+                        \underbrace{\mathbb{E}_{s \sim \mathcal D}\Big[|| s - h \circ f(s;\theta)||\Big]}_{\texttt{Reconstruction}}
+                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}}
+                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}}.
+                        \end{aligned}$$
+                    </span>
+                    <span class="text-center text-equation mobile-only">
+                        $$\begin{aligned}
+                        \underbrace{\mathbb{E}_{s \sim \mathcal D}\Big[|| s - h \circ f(s;\theta)||\Big]}_{\texttt{Reconstruction}}
+                        + \eta_1 \cdot \underbrace{\mathbb{E}_{\substack{(s, s')\sim \mathcal{D}\\ s_{\mathrm{goal}}\sim p_{\mathrm{goal}}}}\bigg [L_2^\tau\Big(\mathcal{B}d - d\big(f(s;\theta), f(s_{\mathrm{goal}};\theta)\big)\Big)\bigg]}_{\texttt{Trajectory loss}}
+                        + \eta_2 \cdot \underbrace{\mathbb{E}_{(s, s')\sim \mathcal{D}}\bigg[L_2^{\tau=1}\Big(d\big(f(s;\theta), f(s';\theta)- d_0\big)\Big)\bigg]}_{\texttt{Transition loss}}.
+                        \end{aligned}$$
+                    </span>
+                </li>
+                <li>
+                    <b>Latent dynamics</b> \(\zeta(z'|z,a)\) is trained with following loss:
+                    <span class="text-center text-equation desktop-only">
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big].$$
+                    </span>
+                    <span class="text-center text-equation mobile-only">
+                        $$\mathcal{L} (\zeta) = \mathbb{E}_{(s,a,s^\prime) \sim \mathcal D, (z, z') \sim f(\cdot;\theta)} \big[-\log \zeta(z'|z,a) \big].$$
+                    </span>
+                </li>
+                <li>
+                    <b>Skill policy and value function</b> \(\phi_\pi, \phi_Q\) is trained by <a href="https://arxiv.org/abs/2110.06169">Implicit Q-learning</a> and <a href="https://arxiv.org/abs/2402.15567">unsupervised policy training</a>.
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+            <h2>Experiments</h2>
+        </div>
+                <div class="col-md-12">
+            <a data-toggle="collapse" href="#exp" aria-expanded="false" aria-controls="algo" id="toggle-link2">
+                <h4 class="top10 bottom20" id="toggle-text2">
+                    Show main table
+                </h4>
+            </a>
+            <div class="collapse col-md-10 col-md-offset-1" id="exp">
+                <p>
+                    <img src="TempDATA_files/Table.jpg" style="width: 100%;">
+                </p>
+            </div>
+        </div>
+        <script>
+          const toggleText = document.getElementById('toggle-text2');
+          const algoCollapse = document.getElementById('exp');
+
+          $('#exp').on('show.bs.collapse', function () {
+            toggleText.textContent = 'Hide main table';
+          });
+
+          $('#exp').on('hide.bs.collapse', function () {
+            toggleText.textContent = 'Show Main Table';
+          });
+        </script>
+        </div>
+            <div class="col-md-12 col-xs-12 top10">
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-medium-play.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-medium-play</span><br>
                 </span>
             </div>
-            <h2>Desiderata</h2>
-            <p>
-                When you think about deploying multi-agent systems in the control domain, you need both:
-            </p>
-            <li>
-                <b>Expressiveness</b>: a model that actually reflects what coordinated behavior looks like in real data.
-            </li>
-            <li>
-                <b>Efficiency</b>: something that runs fast enough in the real world.
-            </li>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-medium-diverse.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-medium-diverse</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-large-play.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-large-play</span><br>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 top10">
+                <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-large-diverse.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-large-diverse</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-ultra-play.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-ultra-play</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/antmaze-ultra-diverse.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">antmaze-ultra-diverse</span><br>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 top10">
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/Calvin_1.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">CALVIN (Traj 1)</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/Calvin_2.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">CALVIN (Traj 2)</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/kitchen-mixed.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">kitchen-mixed</span><br>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 top10">
+                <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/kitchen-partial.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">kitchen-partial</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/visualkitchen-mixed.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">visual-kitchen-mixed</span><br>
+                </span>
+            </div>
+            <div class="col-md-4 col-xs-3">
+                <p>
+                    <video class="center-block" width="100%" autoplay loop muted playsinline>
+                        <source src="video/visualkitchen-partial.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <span class="text-center text-caption bottom5">
+                    <span class="text-tt">visual-kitchen-partial</span><br>
+                </span>
+            </div>
+        </div>
 
             <div class="col-md-12">
             <hr>
             <h1> Citation</h1>
-            </div>
-
+        </div>
         <div class="col-md-12">
             <pre class="codebox-pre">
 <code class="codebox-code nohighlight"> @article{lee2025temporal,
