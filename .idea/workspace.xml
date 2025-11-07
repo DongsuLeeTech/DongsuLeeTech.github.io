@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/tempdata/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/tempdata/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/IWoL/Fig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/mac-flow" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/mac-flow" />
       <recent name="$PROJECT_DIR$/projects/IWoL/Fig" />
       <recent name="$PROJECT_DIR$/projects" />
       <recent name="$PROJECT_DIR$/blog/research-statement" />
       <recent name="$PROJECT_DIR$/projects/tempdata/TempDATA_files" />
-      <recent name="$PROJECT_DIR$/projects/tempdata" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/CV" />
@@ -157,13 +158,8 @@
       <workItem from="1758814488248" duration="35943000" />
       <workItem from="1761068107305" duration="2235000" />
       <workItem from="1761833203169" duration="2123000" />
-    </task>
-    <task id="LOCAL-00150" summary="Update">
-      <created>1758311692167</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1758311692168</updated>
+      <workItem from="1761877420645" duration="751000" />
+      <workItem from="1762455049237" duration="3546000" />
     </task>
     <task id="LOCAL-00151" summary="Update">
       <created>1758639602080</created>
@@ -501,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1761835707689</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="Update">
+      <created>1761877566412</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1761877566413</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
