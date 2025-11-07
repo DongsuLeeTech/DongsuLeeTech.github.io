@@ -60,6 +60,16 @@
   /* Link colors: myorange */
   #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
   #main a:hover { color: #d66b00 !important; text-decoration: none; }
+  /* Publications: author names show color only on hover */
+  .pub-description a.author-link,
+  .pub-description a.dongsu-link {
+    color: inherit !important;
+    transition: color .15s ease-in-out;
+  }
+  .pub-description a.author-link:hover,
+  .pub-description a.dongsu-link:hover {
+    color: var(--myorange) !important;
+  }
   /* Name and section headings */
   .text-name { letter-spacing: 0.2px; }
   .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
