@@ -63,6 +63,10 @@
   /* Name and section headings */
   .text-name { letter-spacing: 0.2px; }
   .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
+  /* Ensure Write-up titles match Publications titles */
+  .text-papertitle { font-size: 21px; font-weight: 400; line-height: 1.35; }
+  .text-papertitle a { font-size: inherit; font-weight: inherit; line-height: inherit; }
+  .section-writeup .text-papertitle, .section-writeup .text-papertitle a { font-size: 21px !important; font-weight: 400 !important; }
   /* Badge for blog posts */
   .badge { display: inline-block; padding: 2px 6px; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; vertical-align: middle; margin-right: 6px; }
   .badge-blog { color: var(--myorange); border: 1px solid rgba(191,87,0,0.5); background: rgba(191,87,0,0.06); }
@@ -97,7 +101,14 @@
   body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, body[data-theme="dark"] p, body[data-theme="dark"] li, body[data-theme="dark"] td, body[data-theme="dark"] th, body[data-theme="dark"] small { color: #ffffff; }
   body[data-theme="dark"] #main a, body[data-theme="dark"] #main a:visited, body[data-theme="dark"] #main a:focus { color: var(--myorange) !important; }
   body[data-theme="dark"] #main a:hover { color: #ff7a1a !important; }
-  body[data-theme="dark"] .pub-description { background: #12141b; }
+  /* Dark: elevate shaded box for premium feel */
+  body[data-theme="dark"] .pub-description {
+    background: linear-gradient(180deg, rgba(20,24,33,0.96), rgba(16,20,28,0.96));
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
+  }
+  /* Keep patents clean even in dark mode */
+  body[data-theme="dark"] .patent-item .pub-description { background: transparent; border: none; box-shadow: none; }
   body[data-theme="dark"] .text-caption, body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
   body[data-theme="dark"] .badge-blog { color: #ff9a3d; border-color: rgba(255,154,61,0.6); background: rgba(255,154,61,0.1); }
   /* Slightly larger body text on desktop */
