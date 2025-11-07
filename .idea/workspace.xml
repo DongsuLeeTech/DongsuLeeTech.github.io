@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/blog/mac-flow/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/mac-flow/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,14 +156,7 @@
       <workItem from="1761068107305" duration="2235000" />
       <workItem from="1761833203169" duration="2123000" />
       <workItem from="1761877420645" duration="751000" />
-      <workItem from="1762455049237" duration="6178000" />
-    </task>
-    <task id="LOCAL-00158" summary="Update">
-      <created>1758823492751</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1758823492752</updated>
+      <workItem from="1762455049237" duration="6526000" />
     </task>
     <task id="LOCAL-00159" summary="Update">
       <created>1758859943237</created>
@@ -503,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1762489339292</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Update">
+      <created>1762489607963</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1762489607965</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
