@@ -960,7 +960,7 @@ mjx-c.mjx-c2E::before {
                   </span>
               </div>
             </div>
-            <h2>Desiderata and Challenges</h2>
+            <h2>Desiderata for practical multi-agent coordination</h2>
             <p>
                 Offline MARL brings its own set of challenges.
                 Since you’re learning entirely from fixed demonstrations or logs,
@@ -981,6 +981,16 @@ mjx-c.mjx-c2E::before {
                 Do these two goals really have to be tied together as a learning objective?
                 Or can we learn rich joint behavior first and then convert it into something that runs fast at test time?
             </p>
+
+            <h2>The challenges</h2>
+            <p>
+                Most prior systems blend "representing the joint distribution" and "choosing an action quickly" into a single learning objective.
+                That’s the core bottleneck. More precisely, <b>diffusion-based models</b> give us rich, multimodal distributions. They are great!
+                But sampling requires an iterative denoising process—terrible for real-time use. On the other hand, <b>Gaussian policies</b> are fast!
+                But they oversimplify joint interactions, so agents often fail to coordinate under complexity.
+            </p>
+            <p>The mistake is treating <i>expressive</i> representation and <i>fast</i> per-agent policy as the same object. They don’t have to be.</p>
+
 <!--            <div class="col-md-12">-->
 <!--            <hr>-->
 <!--            <h1> Citation</h1>-->
