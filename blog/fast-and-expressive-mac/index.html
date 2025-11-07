@@ -98,6 +98,9 @@
       /* Link colors use myorange */
       #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
       #main a:hover { color: #d66b00 !important; text-decoration: none; }
+      /* Author list: default inherit (black/white), orange on hover only */
+      #main .author-list a, #main .author-list a:visited, #main .author-list a:focus { color: inherit !important; transition: color .15s ease-in-out; }
+      #main .author-list a:hover { color: var(--myorange) !important; }
       /* Slightly larger body text (≈ +1pt) overrides external css */
       @media screen and (min-width: 992px) {
         body, p, a, td, th, tr, li { font-size: 19px !important; }
@@ -954,7 +957,7 @@ mjx-c.mjx-c2E::before {
 
     <div class="row">
         <div class="col-md-12 text-center">
-            <ul class="list-inline">
+            <ul class="list-inline author-list">
                 <li>
                     <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> November 2025
                 </li>
