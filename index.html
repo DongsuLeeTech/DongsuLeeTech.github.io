@@ -61,13 +61,13 @@
   #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
   #main a:hover { color: #d66b00 !important; text-decoration: none; }
   /* Publications: author names show color only on hover */
-  .pub-description a.author-link,
-  .pub-description a.dongsu-link {
-    color: inherit !important;
+  #main .pub-description a.author-link,
+  #main .pub-description a.dongsu-link {
+    color: inherit !important; /* light: black, dark: white */
     transition: color .15s ease-in-out;
   }
-  .pub-description a.author-link:hover,
-  .pub-description a.dongsu-link:hover {
+  #main .pub-description a.author-link:hover,
+  #main .pub-description a.dongsu-link:hover {
     color: var(--myorange) !important;
   }
   /* Name and section headings */
@@ -76,7 +76,9 @@
   /* Ensure Write-up titles match Publications titles */
   .text-papertitle { font-size: 21px; font-weight: 400; line-height: 1.35; }
   .text-papertitle a { font-size: inherit; font-weight: inherit; line-height: inherit; }
-  .section-writeup .text-papertitle, .section-writeup .text-papertitle a { font-size: 21px !important; font-weight: 400 !important; }
+  /* Slight bump in Write-up to visually match Publications perceived size */
+  .section-writeup .text-papertitle,
+  .section-writeup .text-papertitle a { font-size: 22px !important; font-weight: 400 !important; }
   /* Badge for blog posts */
   .badge { display: inline-block; padding: 2px 6px; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; vertical-align: middle; margin-right: 6px; }
   .badge-blog { color: var(--myorange); border: 1px solid rgba(191,87,0,0.5); background: rgba(191,87,0,0.06); }
