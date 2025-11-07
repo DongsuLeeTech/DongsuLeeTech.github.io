@@ -85,6 +85,16 @@
       hr { border-top: 1px solid #eaecef; }
       /* Captions in "mygray" (RGB 156,173,183) */
       #main .text-caption-small { color: #9cadb7; }
+      /* Dark theme support */
+      .theme-toggle { position: sticky; top: 12px; float: right; border: 0; background: transparent; font-size: 20px; cursor: pointer; }
+      body[data-theme="dark"] { background: #0b0d10; color: #ffffff; }
+      body[data-theme="dark"] #main { background: #0f1117; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
+      body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, body[data-theme="dark"] p, body[data-theme="dark"] li { color: #ffffff; }
+      body[data-theme="dark"] #main a, body[data-theme="dark"] #main a:visited, body[data-theme="dark"] #main a:focus { color: var(--myorange) !important; }
+      body[data-theme="dark"] #main a:hover { color: #ff7a1a !important; }
+      body[data-theme="dark"] pre.codebox-pre { background: #0b0d10; color: #e6e9ef; }
+      body[data-theme="dark"] hr { border-top-color: #2a2f3a; }
+      body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
       /* Link colors use myorange */
       #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
       #main a:hover { color: #d66b00 !important; text-decoration: none; }
@@ -933,6 +943,7 @@ mjx-c.mjx-c2E::before {
 
 <body>
 <div class="container" id="main">
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-center text-title top20">
@@ -1099,6 +1110,24 @@ mjx-c.mjx-c2E::before {
     </div>
 
     <script>
+        // Theme toggle with localStorage
+        (function() {
+          try {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') document.body.setAttribute('data-theme', 'dark');
+          } catch (e) {}
+          const btn = document.getElementById('themeToggle');
+          if (btn) {
+            const updateIcon = () => btn.textContent = document.body.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+            updateIcon();
+            btn.addEventListener('click', () => {
+              const dark = document.body.getAttribute('data-theme') === 'dark';
+              if (dark) { document.body.removeAttribute('data-theme'); try { localStorage.setItem('theme','light'); } catch(e){} }
+              else { document.body.setAttribute('data-theme','dark'); try { localStorage.setItem('theme','dark'); } catch(e){} }
+              updateIcon();
+            });
+          }
+        })();
         if (navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
             || navigator.userAgent.match(/iPhone/i)
