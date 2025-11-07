@@ -1048,9 +1048,26 @@ mjx-c.mjx-c2E::before {
             <p>
                 The end result feels almost <i>counterintuitive</i>: the system understands complex group behavior
                 because it learned it in a rich joint space, yet each agent acts through a lightweight, single-step policy distilled from that knowledge.
-                Expressive during training, efficient at inference. Exactly the combination we’ve been looking for.
+                Expressive during training, efficient at inference.
             </p>
+            <p>Exactly the combination we’ve been looking for.</p>
             <h2>Why is this idea good and matters?</h2>
+            <p>By separating these roles, everything becomes simpler.</p>
+            <p>
+                During training, we allow the model to be as expressive as it needs to be.
+                It can explore the full multimodal structure of the dataset, capture nuanced coordination patterns,
+                and learn behaviors that are hard to represent with simple parametric forms. Nothing about training time demands that we be cheap.
+            </p>
+            <p>
+                But at deployment, the priorities flip entirely. Real systems care about latency, stability, and predictability.
+                A single-step per-agent policy, which is distilled from a richer joint model, fits that requirement perfectly.
+                You get fast inference, decentralized execution, and robustness in environments where timing matters.
+            </p>
+            <p>
+                This matters because coordination isn’t about individual agents behaving intelligently in isolation.
+                It's about the structure of the group. If that structure isn’t learned properly, no amount of local cleverness will fix the behavior.
+                Our approach recognizes this: learn the structure where it’s easiest (the joint space), and execute where it’s fastest (the per-agent policies).
+            </p>
 
 <!--            <div class="col-md-12">-->
 <!--            <hr>-->
