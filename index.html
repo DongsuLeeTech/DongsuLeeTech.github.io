@@ -60,9 +60,15 @@
   /* Link colors: myorange */
   #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
   #main a:hover { color: #d66b00 !important; text-decoration: none; }
-  /* Publications: author names show color only on hover */
+  /* Publications: author names inherit (black/white), orange on hover */
   #main .pub-description a.author-link,
-  #main .pub-description a.dongsu-link {
+  #main .pub-description a.author-link:visited,
+  #main .pub-description a.author-link:focus,
+  #main .pub-description a.author-link:active,
+  #main .pub-description a.dongsu-link,
+  #main .pub-description a.dongsu-link:visited,
+  #main .pub-description a.dongsu-link:focus,
+  #main .pub-description a.dongsu-link:active {
     color: inherit !important; /* light: black, dark: white */
     transition: color .15s ease-in-out;
   }

@@ -74,6 +74,9 @@
       /* Links */
       #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
       #main a:hover { color: #d66b00 !important; text-decoration: none; }
+      /* Author list: default inherit (black/white), orange on hover only */
+      #main .author-list a, #main .author-list a:visited, #main .author-list a:focus { color: inherit !important; transition: color .15s ease-in-out; }
+      #main .author-list a:hover { color: var(--myorange) !important; }
       /* Captions */
       .text-caption-small { color: #9cadb7; display: block; }
       /* Dark theme support */

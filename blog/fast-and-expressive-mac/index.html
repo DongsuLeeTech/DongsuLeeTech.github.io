@@ -101,6 +101,12 @@
       /* Author list: default inherit (black/white), orange on hover only */
       #main .author-list a, #main .author-list a:visited, #main .author-list a:focus { color: inherit !important; transition: color .15s ease-in-out; }
       #main .author-list a:hover { color: var(--myorange) !important; }
+      /* Ensure Dongsu's name is always my orange */
+      #main .author-list a.dongsu-link,
+      #main .author-list a.dongsu-link:visited,
+      #main .author-list a.dongsu-link:focus,
+      #main .author-list a.dongsu-link:active { color: var(--myorange) !important; }
+      #main .author-list a.dongsu-link:hover { color: #d66b00 !important; }
       /* Slightly larger body text (≈ +1pt) overrides external css */
       @media screen and (min-width: 992px) {
         body, p, a, td, th, tr, li { font-size: 19px !important; }
@@ -959,7 +965,7 @@ mjx-c.mjx-c2E::before {
         <div class="col-md-12 text-center">
             <ul class="list-inline author-list">
                 <li>
-                    <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> November 2025
+                    <a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a><br>UT Austin<br> October 2025
                 </li>
             </ul>
         </div>
