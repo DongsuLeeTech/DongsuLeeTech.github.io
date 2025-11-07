@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)https://dongsulee.github.io/blog/fast-and-expressive-mac/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="macflow_files/js"></script>
@@ -50,6 +50,7 @@
         --frame-radius: 12px;
         --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
         --bg-muted: #f6f8fb;
+        --myorange: #BF5700; /* RGB(191,87,0) */
       }
       body {
         background: var(--bg-muted);
@@ -72,7 +73,7 @@
       /* Section spacing (keep modest; we use h2 margins to separate sections) */
       #main .row + .row { margin-top: 16px; }
       .text-title { margin-top: 6px; margin-bottom: 2px; }
-      .text-toplink { color: #2c3e50; }
+      .text-toplink { color: var(--myorange); }
       /* Subheadings: larger than body, no bold */
       h2, h3, h4 { font-weight: 400; color: #222; }
       h2 { font-size: 1.6em; margin-top: 36px; margin-bottom: 8px; }
@@ -84,6 +85,9 @@
       hr { border-top: 1px solid #eaecef; }
       /* Captions in "mygray" (RGB 156,173,183) */
       #main .text-caption-small { color: #9cadb7; }
+      /* Link colors use myorange */
+      #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
+      #main a:hover { color: #d66b00 !important; text-decoration: none; }
       /* Slightly larger body text (≈ +1pt) overrides external css */
       @media screen and (min-width: 992px) {
         body, p, a, td, th, tr, li { font-size: 19px !important; }
@@ -1007,8 +1011,8 @@ mjx-c.mjx-c2E::before {
             <h2>The challenges</h2>
             <p>
                 Most prior systems blend "representing the joint distribution" and "choosing an action quickly" into a single learning objective.
-                That’s the core bottleneck. More precisely, <b>diffusion-based models</b> give us rich, multimodal distributions. They are great!
-                But sampling requires an iterative denoising process—terrible for real-time use. On the other hand, <b>Gaussian policies</b> are fast!
+                That’s the core bottleneck. More precisely, <a href="https://arxiv.org/abs/2305.17330">diffusion-based</a> <a href="https://openreview.net/forum?id=OTFKVkxSlL">model</a> give us rich, multimodal distributions. They are great!
+                But sampling requires an iterative denoising process—terrible for real-time use. On the other hand, <a href="https://proceedings.mlr.press/v162/pan22a/pan22a.pdf">Gaussian</a> <a href="https://arxiv.org/abs/2307.11620">policies</a> are fast!
                 But they oversimplify joint interactions, so agents often fail to coordinate under complexity.
             </p>
             <p>The mistake is treating <i>expressive</i> representation and <i>fast</i> per-agent policy as the same object. They don’t have to be.</p>
@@ -1019,6 +1023,10 @@ mjx-c.mjx-c2E::before {
                 Learn the joint action distribution in its full, expressive glory,
                 then distill that knowledge into decentralized one-step policies.
                 In other words, front-load the complexity, and make execution cheap.
+                This idea is motivated from
+                <a href="https://arxiv.org/abs/2209.03003">seminal research realted to</a>
+                <a href="https://arxiv.org/abs/2502.02538">flow</a>
+                <a href="https://arxiv.org/abs/2410.12557">short-cut</a>.
             </p>
             <div class="row">
               <div class="col-md-12 no-padding-lr top15 bottom20">
@@ -1032,7 +1040,7 @@ mjx-c.mjx-c2E::before {
               </div>
             </div>
             <p>
-                Thanks to the simple and efficient idea behind <b>flow matching</b>,
+                Thanks to the simple and efficient idea behind <a href="https://arxiv.org/abs/2412.06264">flow</a> <a href="https://arxiv.org/abs/2210.02747">matching</a>,
                 we can extract the expressiveness of complex multi-agent behavior without paying a heavy computational price.
                 Flow matching learns a continuous transformation between distributions, giving us a smooth ODE-based mapping from noise to actions.
                 This means we can model multi-modal joint action patterns without the iterative multi-step denoising loop that makes diffusion models slow.
@@ -1042,11 +1050,11 @@ mjx-c.mjx-c2E::before {
             <p>
                 Once this expressive joint policy is learned, the next step is to break it apart in a meaningful way.
                 Through flow distillation, we preserve the multi-modality and structure of the joint model while converting it into fast,
-                one-step policies for each agent. And with the help of the Individual-global-max principle,
+                one-step policies for each agent. And with the help of the <a href="https://arxiv.org/abs/1803.11485">Individual-global-max</a> <a href="https://arxiv.org/abs/1706.05296">principle</a>,
                 these per-agent policies remain aligned with the optimal joint behavior, even after decentralization.
             </p>
             <p>
-                The end result feels almost <i>counterintuitive</i>: the system understands complex group behavior
+                The end result feels almost counterintuitive: the system understands complex group behavior
                 because it learned it in a rich joint space, yet each agent acts through a lightweight, single-step policy distilled from that knowledge.
                 Expressive during training, efficient at inference.
             </p>
@@ -1068,7 +1076,7 @@ mjx-c.mjx-c2E::before {
                 It's about the structure of the group. If that structure isn’t learned properly, no amount of local cleverness will fix the behavior.
                 Our approach recognizes this: learn the structure where it’s easiest (the joint space), and execute where it’s fastest (the per-agent policies).
             </p>
-            <h2>Closing Thoughts</h2>
+            <h2>Closing thoughts</h2>
             <p>
                 I like this perspective because it cleans up the story we tell about multi-agent systems:
                 <ul>
