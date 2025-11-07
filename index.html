@@ -75,7 +75,10 @@
   .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
   /* Ensure Write-up titles match Publications titles */
   .text-papertitle { font-size: 21px; font-weight: 400; line-height: 1.35; }
-  .text-papertitle a { font-size: inherit; font-weight: inherit; line-height: inherit; }
+  /* Ensure anchor inside title is not downsized by global `a { font-size: ... !important; }` */
+  .text-papertitle a { font-size: inherit !important; font-weight: inherit; line-height: inherit; }
+  /* Make date clearly smaller than title and subtly colored */
+  .text-papertitle small { font-size: 0.85em; color: var(--mygray); }
   /* Slight bump in Write-up to visually match Publications perceived size */
   .section-writeup .text-papertitle,
   .section-writeup .text-papertitle a { font-size: 22px !important; font-weight: 400 !important; }
@@ -122,6 +125,7 @@
   /* Keep patents clean even in dark mode */
   body[data-theme="dark"] .patent-item .pub-description { background: transparent; border: none; box-shadow: none; }
   body[data-theme="dark"] .text-caption, body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
+  body[data-theme="dark"] .text-papertitle small { color: #c2cdd6; }
   body[data-theme="dark"] .badge-blog { color: #ff9a3d; border-color: rgba(255,154,61,0.6); background: rgba(255,154,61,0.1); }
   /* Slightly larger body text on desktop */
   @media (min-width: 992px) {
@@ -259,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td class="pub-contents">
                         <span class="text-papertitle">
                           <span class="badge badge-blog">Blog</span>
-                          <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">Fast and Expressive Multi‑Agent Coordination</a>
+                          <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">Fast and expressive multi‑agent coordination</a>
                           <small>(Oct 2025)</small>
                         </span>
                         <div class="pub-description">
@@ -271,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td class="pub-contents">
                         <span class="text-papertitle">
                           <span class="badge badge-blog">Blog</span>
-                          <a href="https://dongsuleetech.github.io/blog/research-statement">Research Statement: Towards Generalizable MARL</a>
+                          <a href="https://dongsuleetech.github.io/blog/research-statement">Research statement: Towards generalizable MARL</a>
                           <small>(Aug 2025)</small>
                         </span>
                         <div class="pub-description">
