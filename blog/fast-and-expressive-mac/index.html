@@ -54,7 +54,7 @@
       body {
         background: var(--bg-muted);
         font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-        line-height: 1.7;
+        line-height: 1.6; /* reduce line spacing; focus on section spacing */
       }
       /* Ensure Palatino applies to common text elements overriding external styles */
       body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
@@ -69,14 +69,14 @@
         box-shadow: var(--frame-shadow);
         padding: 32px 28px;
       }
-      /* Section spacing */
-      #main .row + .row { margin-top: 24px; }
+      /* Section spacing (keep modest; we use h2 margins to separate sections) */
+      #main .row + .row { margin-top: 16px; }
       .text-title { margin-top: 6px; margin-bottom: 2px; }
       .text-toplink { color: #2c3e50; }
       /* Subheadings: larger than body, no bold */
       h2, h3, h4 { font-weight: 400; color: #222; }
-      h2 { font-size: 1.6em; margin-top: 28px; margin-bottom: 6px; }
-      h3 { font-size: 1.3em; margin-top: 22px; margin-bottom: 4px; }
+      h2 { font-size: 1.6em; margin-top: 36px; margin-bottom: 8px; }
+      h3 { font-size: 1.3em; margin-top: 24px; margin-bottom: 6px; }
       p { margin-bottom: 0.8em; }
       /* Subtle polish for images and code blocks */
       #main img { border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
