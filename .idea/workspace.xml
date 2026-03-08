@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/assets/didactic_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/assets/main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/assets/observation_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/tex-mml-chtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/mac-flow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,13 +68,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes" />
+      <recent name="$PROJECT_DIR$/blog/lazy-borrowed-recipe" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/blog/mac-flow" />
       <recent name="$PROJECT_DIR$/projects/IWoL/Fig" />
-      <recent name="$PROJECT_DIR$/projects" />
-      <recent name="$PROJECT_DIR$/blog/research-statement" />
-      <recent name="$PROJECT_DIR$/projects/tempdata/TempDATA_files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/lazy-borrowed-recipe/assets" />
       <recent name="$PROJECT_DIR$/data/CV" />
       <recent name="$PROJECT_DIR$/images/profile" />
     </key>
@@ -168,13 +183,9 @@
       <workItem from="1763525530575" duration="3335000" />
       <workItem from="1765043134960" duration="646000" />
       <workItem from="1769623827074" duration="2966000" />
-    </task>
-    <task id="LOCAL-00196" summary="Update">
-      <created>1759347858505</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1759347858506</updated>
+      <workItem from="1769802171177" duration="1696000" />
+      <workItem from="1772840967570" duration="1853000" />
+      <workItem from="1772905165774" duration="15877000" />
     </task>
     <task id="LOCAL-00197" summary="Update">
       <created>1761833364028</created>
@@ -512,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1769623917467</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="Update">
+      <created>1769802225398</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1769802225400</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

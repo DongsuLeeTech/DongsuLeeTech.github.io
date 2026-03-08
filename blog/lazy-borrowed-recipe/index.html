@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script async="" src="macflow_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3LQTW4VHRT');
+    </script>
+
+    <title>A Lazy, Borrowed Recipe</title>
+    <meta name="author" content="Dongsu Lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="macflow_files/bootstrap.min.css">
+    <link rel="stylesheet" href="macflow_files/font-awesome.min.css">
+    <link rel="stylesheet" href="macflow_files/stylesheet.css">
+    <link rel="stylesheet" href="macflow_files/app.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
+
+    <script src="macflow_files/jquery.min.js"></script>
+    <script src="macflow_files/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            loader: {load: ['[tex]/color']},
+            tex: {packages: {'[+]': ['color']}}
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="macflow_files/app.js"></script>
+
+    <style>
+      /* === Theme Variables (matches main site) === */
+      :root {
+        --bg: #f6f8fb;
+        --bg-card: #ffffff;
+        --text-main: #35281f;
+        --text-muted: #7b6a5d;
+        --accent: #BF5700;
+        --accent-hover: #d66b00;
+        --border: rgba(0, 0, 0, 0.08);
+        --shadow: 0 14px 40px rgba(20, 24, 32, 0.08);
+        --frame-max-width: 860px;
+      }
+
+      body[data-theme="dark"] {
+        --bg: #191517;
+        --bg-card: #242024;
+        --text-main: #f1ede9;
+        --text-muted: #b5ada8;
+        --accent: #ffad5c;
+        --accent-hover: #ffc98d;
+        --border: rgba(255, 255, 255, 0.08);
+        --shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+      }
+
+      /* === Base === */
+      * { box-sizing: border-box; }
+      body {
+        font-family: 'Source Serif 4', serif;
+        background-color: var(--bg);
+        color: var(--text-main);
+        line-height: 1.6;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* === Main Content Card === */
+      #main {
+        max-width: var(--frame-max-width);
+        width: 100%;
+        margin: 28px auto 52px auto;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 32px 40px 42px;
+        transition: background-color 0.3s;
+      }
+      #main .row + .row { margin-top: 16px; }
+      @media (max-width: 768px) {
+        #main {
+          margin: 16px 12px 32px;
+          width: auto;
+          padding: 22px 18px 28px;
+        }
+      }
+
+      /* === Typography === */
+      h1 { color: var(--text-main); }
+      h2, h3, h4 { font-weight: 300; color: var(--text-main); }
+      h2 { font-size: 1.4em; margin-top: 36px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+      h3 { font-size: 1.2em; margin-top: 24px; margin-bottom: 6px; }
+      #main h1,
+      #main h2,
+      #main h3,
+      #main h4,
+      #main h5,
+      #main h6,
+      #main .author-list,
+      #main .demo-mono,
+      #main .demo-lbl,
+      #main .demo-gtitle,
+      #main .demo-rlbl,
+      #main .demo-clbl,
+      #main .demo-cv,
+      #main .demo-tbtn,
+      #main .demo-av,
+      #main .demo-info h4,
+      #main .demo-insight h4 {
+        font-family: 'DM Mono', monospace !important;
+      }
+      #main p,
+      #main li,
+      #main td,
+      #main th,
+      #main .text-caption-small {
+        font-family: 'Source Serif 4', serif;
+      }
+      #main .author-list,
+      #main .author-list li,
+      #main .author-list a,
+      #main .author-affil,
+      #main .author-date {
+        font-family: 'DM Mono', monospace !important;
+      }
+      p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
+      li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }
+      #main h1.text-title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #main p {
+        text-align: justify;
+        text-justify: inter-word;
+        text-wrap: pretty;
+        hyphens: auto;
+      }
+      #main li {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+      }
+      #main p.text-center { text-align: center; }
+      #main .text-caption-small { font-size: 0.98rem; }
+      .title-row {
+        text-align: center;
+        clear: both;
+      }
+      .author-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      .author-list li {
+        margin: 0;
+        font-size: 0.92rem;
+        line-height: 1.7;
+        list-style: none;
+        text-align: center !important;
+      }
+      .author-affil,
+      .author-date {
+        display: block;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      /* === Links === */
+      a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+      a:hover { color: var(--accent-hover); }
+      #main a, #main a:focus, #main a:visited { color: var(--accent); text-decoration: none; }
+      #main a:hover { color: var(--accent-hover); text-decoration: none; }
+      #main .author-list a,
+      #main .author-list a:visited,
+      #main .author-list a:focus { color: var(--text-main) !important; transition: color .15s ease-in-out; }
+      #main .author-list a:hover { color: var(--accent) !important; }
+      #main .author-list a.dongsu-link,
+      #main .author-list a.dongsu-link:visited,
+      #main .author-list a.dongsu-link:focus { color: var(--accent) !important; }
+      #main .author-list a.dongsu-link:hover { color: var(--accent-hover) !important; }
+
+      /* === Misc === */
+      #main img { border-radius: 10px; box-shadow: var(--shadow); }
+      pre.codebox-pre { background: #0f111a; color: #e6e9ef; border-radius: 8px; padding: 16px; overflow-x: auto; }
+      body[data-theme="dark"] pre.codebox-pre { background: #0b0d10; }
+      hr { border-top: 1px solid var(--border); }
+      #main .text-caption-small { color: var(--text-muted); }
+
+      /* === Theme Toggle === */
+      .theme-toggle {
+        position: sticky;
+        top: 12px;
+        margin-left: auto;
+        margin-bottom: 8px;
+        display: block;
+        width: fit-content;
+        border: 0;
+        background: transparent;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 5;
+      }
+
+      /* === Interactive demo styles === */
+      .demo-wrap {
+        background: #FFF1E6;
+        color: #4f382c;
+        border: 1px solid #f2d2b8;
+        border-radius: 14px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.65);
+        padding: 18px 18px 14px;
+        width: 100%;
+        max-width: 620px;
+        margin: 20px auto 12px;
+        font-family: 'DM Sans', sans-serif !important;
+      }
+      body[data-theme="dark"] .demo-wrap {
+        background: #211c1f;
+        color: #f2ebe5;
+        border-color: rgba(255,255,255,0.08);
+        box-shadow: none;
+      }
+      .demo-wrap * { font-family: 'DM Sans', sans-serif !important; }
+      .demo-wrap h3 { color: #6d2f1f !important; font-size: 18px !important; font-weight: 700 !important; margin: 0 0 6px !important; }
+      body[data-theme="dark"] .demo-wrap h3 { color: #ffd4b3 !important; }
+      .demo-wrap p.demo-desc { text-align: left !important; font-size: 13px !important; color: #7d6455 !important; line-height: 1.65; margin-bottom: 20px; }
+      body[data-theme="dark"] .demo-wrap p.demo-desc { color: #d8bfae !important; }
+      .demo-wrap .demo-hl { color: #bf5700; font-weight: 600; }
+      .demo-mono { font-family: 'DM Mono', monospace !important; }
+      .demo-lbl { font-family: 'DM Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55; }
+      body[data-theme="dark"] .demo-lbl { color: #e4b896; }
+      .demo-toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+      .demo-presets { display: flex; gap: 5px; margin-left: auto; }
+      .demo-pbtn {
+        font-family: 'DM Mono', monospace !important; font-size: 10px !important; padding: 4px 10px;
+        border-radius: 999px; border: 1px solid #ddb99b; background: #fff8f2; color: #8c6246; cursor: pointer; transition: .2s;
+      }
+      .demo-pbtn:hover { border-color: #bf5700; color: #bf5700; background: #fff0e3; }
+      body[data-theme="dark"] .demo-pbtn { background: #2c262a; border-color: #4b4348; color: #e8d6c7; }
+      body[data-theme="dark"] .demo-pbtn:hover { border-color: #ffc98d; color: #ffc98d; background: #353035; }
+      .demo-top { display: flex; gap: 24px; flex-wrap: nowrap; margin-bottom: 20px; align-items: center; }
+      .demo-info {
+        padding: 8px 14px 7px; background: rgba(255, 248, 240, 0.72); border-radius: 12px; border: 1px solid #ebcfb5;
+        min-width: 220px; max-width: 320px; flex: 0 0 320px; align-self: center;
+      }
+      body[data-theme="dark"] .demo-info { background: rgba(43, 37, 41, 0.88); border-color: #484147; }
+      .demo-info h4 { font-family: 'DM Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55 !important; margin: 0 0 6px !important; }
+      .demo-info-copy { display: flex; flex-direction: column; gap: 8px; }
+      .demo-info p {
+        text-align: left !important;
+        font-size: 11px !important;
+        color: #7f6558 !important;
+        line-height: 1.4;
+        margin: 0;
+        white-space: nowrap;
+        padding: 0 0 5px;
+        border-bottom: 1px solid rgba(191, 87, 0, 0.12);
+      }
+      .demo-info p:last-child { padding-bottom: 0; border-bottom: 0; }
+      body[data-theme="dark"] .demo-info h4 { color: #dfb492 !important; }
+      body[data-theme="dark"] .demo-info p { color: #e6c8b2 !important; }
+      .demo-main { display: flex; gap: 14px; align-items: flex-start; margin-top: 4px; flex-wrap: nowrap; }
+      .demo-grids { display: flex; gap: 4px; flex: 1 1 0; flex-wrap: nowrap; justify-content: center; min-width: 0; }
+      .demo-gblock {
+        min-width: 0;
+        width: 192px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+      }
+      body[data-theme="dark"] .demo-gblock { background: transparent; border-color: transparent; }
+      .demo-gtitle { font-family: 'DM Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-align: center; margin-bottom: 2px; }
+      .demo-gsub { font-size: 11px !important; color: #8b6c5b !important; text-align: center; margin-bottom: 10px; }
+      body[data-theme="dark"] .demo-gsub { color: #d4b39b !important; }
+      .demo-gcen .demo-gtitle { color: #4d433d !important; }
+      .demo-gvdn .demo-gtitle { color: #5b514b !important; }
+      .demo-gmix .demo-gtitle { color: #964208 !important; }
+      body[data-theme="dark"] .demo-gcen .demo-gtitle { color: #cbc0b7 !important; }
+      body[data-theme="dark"] .demo-gvdn .demo-gtitle { color: #b2a79f !important; }
+      body[data-theme="dark"] .demo-gmix .demo-gtitle { color: #ffc184 !important; }
+      .demo-row { display: flex; align-items: center; }
+      .demo-rlbl { width: 20px; text-align: right; padding-right: 3px; font-family: 'DM Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; }
+      .demo-clbl { width: 44px; text-align: center; font-family: 'DM Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; margin: 0 1px; }
+      body[data-theme="dark"] .demo-rlbl,
+      body[data-theme="dark"] .demo-clbl { color: #e1bfa7 !important; }
+      .demo-cell {
+        width: 44px; height: 36px; margin: 1px; border-radius: 5px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; transition: .25s;
+      }
+      .demo-cv { font-family: 'DM Mono', monospace !important; font-size: 11px !important; font-weight: 700; }
+      .demo-ct { font-size: 6px !important; margin-top: 1px; letter-spacing: .02em; }
+      .demo-click { cursor: pointer; user-select: none; }
+      .demo-tbtn {
+        font-family: 'DM Mono', monospace !important; font-size: 11px !important; padding: 5px 12px;
+        border-radius: 999px; cursor: pointer; transition: .2s; margin: 0;
+      }
+      .demo-toff { border: 1px solid #ddb99b; background: #fff9f4; color: #8f6a56; }
+      .demo-ton { border: 1px solid #c97757; background: #fce2d7; color: #9f4331; }
+      body[data-theme="dark"] .demo-toff { background: #2c262a; border-color: #4d454a; color: #ead8ca; }
+      body[data-theme="dark"] .demo-ton { background: rgba(201, 119, 87, 0.18); border-color: #d59a7c; color: #ffc5aa; }
+      .demo-action-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+        flex-wrap: nowrap;
+      }
+      .demo-insight {
+        padding: 14px 0 0; background: transparent;
+        border: 0; border-top: 1px solid rgba(191, 87, 0, 0.18); border-radius: 0; margin-top: 20px;
+      }
+      body[data-theme="dark"] .demo-insight { background: transparent; border-top-color: rgba(255, 201, 141, 0.18); }
+      .demo-insight h4 { font-family: 'DM Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #c4661f !important; margin: 0 0 6px !important; }
+      .demo-insight p { text-align: left !important; font-size: 13px !important; color: #6e5446 !important; line-height: 1.7; }
+      body[data-theme="dark"] .demo-insight h4 { color: #ffb36e !important; }
+      body[data-theme="dark"] .demo-insight p { color: #ecd0bc !important; }
+      @media (max-width: 860px) {
+        .demo-top { flex-wrap: wrap; }
+        .demo-info { flex-basis: auto; max-width: none; min-width: 0; }
+        .demo-info p { white-space: normal; }
+        .demo-action-row { flex-wrap: wrap; }
+        .demo-main { flex-direction: column; }
+        .demo-grids { flex-wrap: wrap; justify-content: center; }
+        .demo-gblock { width: 210px; }
+      }
+    </style>
+
+</head>
+
+<body>
+<div class="container" id="main">
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <div class="row title-row">
+        <div class="col-md-12">
+            <h1 class="text-title">
+                A Lazy, Borrowed Recipe
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <ul class="author-list">
+                <li>
+                    <a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a>
+                    <span class="author-affil">UT Austin</span>
+                    <span class="author-date">March 2026</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row top15 bottom30">
+        <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12" style="display: none">
+                \(
+                \definecolor{myorange}{RGB}{191, 87, 0}
+                \definecolor{mygray}{RGB}{156, 173, 183}
+                \)
+              </div>
+            </div>
+            <h2>Offline RL works, but...</h2>
+            <p>
+                Offline RL has achieved many successes in recent years.
+                The basic recipe here, <i>i.e.</i>, collect a static dataset, regularize the value function to avoid out-of-distribution actions, extract a conservative policy, and deploy.
+                Consider CQL, IQL, and BRAC — these methods have matured to the point where practitioners can reasonably expect them to work out of the box on standard benchmarks.
+            </p>
+            <p class="text-center" style="margin-top:4px;">
+                <b>When it comes to MARL, a simple conclusion is obvious. Just extend the single-agent recipe.</b>
+            </p>
+            <p>
+                Take a good offline RL recipe for value learning and policy extraction,
+                bolt on a simple value decomposition scheme like value decomposition network or a centralized critic, and call it a day.
+                Honestly, that is exactly what most of the field has done. If you look at the offline MARL literature from the past few years, there is a remarkably consistent pattern.
+                To be fair, these works do involve meaningful implementation effort, some clever multi-agent-specific ideas, and mathematical extensions.
+                But the backbone is borrowed directly from single-agent offline RL. The multi-agent structure?
+                Handled by the simplest decomposition, either a fully centralized or a linear sum of individual Q-values.
+            </p>
+            <p>
+                But I want to argue that it has not produced real understanding. We have been lazy, I think.
+                We keep asking "how do we make single-agent offline RL work in multi-agent settings?", but maybe...
+                the more honest question is: <b>"what actually makes offline MARL hard, and are we even looking at the right things?"</b>
+            </p>
+
+            <h2>A borrowed recipe</h2>
+            <p>
+                Let me be more specific about the pattern. Most offline MARL algorithms follow a three-part formula:
+                <i>i</i>) pick a value learning from offline RL, <i>ii</i>) pick a simple value decomposition method, <i>iii</i>) pick a policy extraction from offline RL.
+                So now, combine them, tune hyperparameters. There is nothing wrong with any individual step. The problem is <b>what gets skipeed</b>.
+            </p>
+            <p>
+                By defaulting to linear decomposition or centralization, these works sidestep the core structural question of MARL.
+                How should a global value function be composed from individual agents' contributions?
+                Credit assignment is arguably the defining challenge that separates multi-agent from single-agent RL.
+                And yet, most offline MARL papers treat it as an afterthought, something to be handled by the simplest available module.
+            </p>
+            <p>
+                As y'all already know, VDN is simple but fundamentally limited in its ability to capture complex coordination patterns.
+                Then, a natural objection: doesn't a fully centralized critic already handle this, since it conditions on all agents' states and actions?
+                In principle, yes.
+                But centralization comes with serious practical costs.
+            </p>
+            <p>
+                More subtly, I suspect centralized critics tend to rely on having observed specific joint patterns in the data, rather than learning composable individual behaviors.
+                Here is my hypothesis.
+                A centralized critic needs coverage of all joint combinations to generalize,
+                but a factored approach learns each agent's value structure individually and composes them through the mixer.
+                We might call this the multi-agent stitching (?) problem.
+                Just as offline RL must stitch together unseen trajectories from fragments in the dataset, offline MARL must stitch together unseen joint behaviors from individually observed agent patterns.
+                Factored decomposition has a structural advantage here that centralization may lack.
+                This is still a hypothesis, but the toy example below gives some intuition.
+            </p>
+            <!-- ====== INTERACTIVE DEMO ====== -->
+            <div class="demo-wrap" id="demo-app"></div>
+            <p class="text-caption-small text-center" style="margin-top:4px;">
+                click cells to toggle training data coverage and compare generalization
+            </p>
+
+            <p>
+                Why, then, has the field avoided non-linear value decomposition? Here are three reasons.
+            </p>
+            <ul>
+                <li>Because it has a well-earned reputation for instability. But instead of diagnosing and fixing that instability, the community has collectively decided to work around it. That is the lazy part.</li>
+                <li><a href="https://arxiv.org/abs/1803.11485">Hypernetwork</a>-<a href="https://arxiv.org/abs/2006.12010">based</a>
+                    <a href="https://arxiv.org/abs/2008.01062">mixer</a> has been used when value is considered as the policy itself.</li>
+                <li>Part of the reason this simple structure works at all is that most offline benchmarks assume fully cooperative tasks where all agents share the same team reward.</li>
+            </ul>
+
+            <!-- ======================== SECTION 3 ======================== -->
+            <h2>When the single-agent playbook breaks</h2>
+            <div class="row">
+              <div class="col-md-12 no-padding-lr top15 bottom20">
+                  <p class="text-center" style="margin-bottom:6px;">
+                      <img src="assets/observation_.jpg" style="width: 70%;" alt="recipe-observation">
+                  </p>
+                  <span class="text-center text-caption-small top5 bottom5" style="display:block;font-size:0.84rem;line-height:1.55;">
+                      Sampled action distribution and performance across BRAC and AWR. Convex hull denotes the dataset action support.
+                      BRAC's performance degrades as it pushes out of distribution, while AWR's mode-covering behavior allows it to stay within the dataset support.
+                  </span>
+              </div>
+            </div>
+            <p><b>Mode-covering and mode-seeking</b>. Consider the choice between two standard policy extraction methods:
+                <a href="https://arxiv.org/abs/2106.06860">BRAC</a> (a mode-seeking approach) and
+                <a href="https://arxiv.org/abs/1910.00177">AWR</a> (advantage-weighted regression, a mode-covering approach).
+                In single-agent offline RL, this choice is relatively inconsequential; <a href="https://arxiv.org/abs/2406.09329">BRAC is often even slightly preferred</a>.
+                But in MARL, BRAC frequently leads to severe performance degradation. The reason is intuitive.
+                BRAC's mode-seeking behavior pushes individual agents' actions slightly out of distribution.
+                In a single-agent setting, this is fine. A small deviation from the dataset is often beneficial, especially in dataset scaling up scenario.
+                But in a multi-agent setting, even minor individual deviations can compound into joint behaviors that are completely absent from the dataset.
+                The coordination pattern collapses.
+            </p>
+            <p>This is not a subtle effect. It is a qualitative failure mode that does not exist in single-agent RL.</p>
+            <div class="row">
+              <div class="col-md-12 no-padding-lr top15 bottom20">
+                  <p class="text-center" style="margin-bottom:6px;">
+                      <img src="assets/didactic_.jpg" style="width: 70%;" alt="recipe-didactic">
+                  </p>
+                  <span class="text-center text-caption-small top5 bottom5" style="display:block;font-size:0.84rem;line-height:1.55;">
+                      In \(s_1\), Agent A selects between a safe state \(s_{2-1}\) with a fixed suboptimal reward of \(7\) and a risky state \(s_{2-2}\) with an optimal reward of \(8\).
+                      The learned joint Q value matrices for each state.
+                  </span>
+              </div>
+            </div>
+            <p><b>Linear value decomposition is structurally blind to coordination.</b>
+                The linear decomposition that most offline MARL papers rely on; literally cannot represent the <a href="https://arxiv.org/abs/2302.02180">non-monotonic payoff</a> structure of the optimal strategy.
+                It is not that VDN performs a little worse. It is structurally incapable of capturing the value landscape that coordination creates.
+                By contrast, the non-linear decomposition identifies the global optimum correctly.
+            </p>
+            <p>This is the kind of failure that no amount of clever value regularization can fix, because the problem is not in the regularizer. It is in the decomposition.</p>
+
+            <!-- ======================== SECTION 4 ======================== -->
+            <h2>The instability of non-linear value decomposition</h2>
+            <p>
+                We traced the instability to two coupled problems. First, the mixer's Jacobian structurally couples per-agent approximation errors.
+                Unlike linear decomposition, the non-linear value decomposition amplifies errors through its state-dependent Jacobian.
+                When the operator norm of this exceeds a threshold, the TD operator loses its contraction property.
+                Value updates become expansive rather than contractive, and <b>Q-values could grow exponentially even on expert datasets!</b>
+            </p>
+            <p>
+                Second, this value-scale amplification propagates to the actor.
+                The policy gradient's magnitude becomes dominated by the absolute scale of Q-values.
+                The actor loss becomes miscalibrated, that is, it is optimizing scale rather than quality.
+                This creates a feedback loop: the critic amplifies values, the actor amplifies gradients, and the whole system spirals.
+            </p>
+            <p>
+                Sometimes the fix can be simple, normalization.
+                We try to normalize both the critic predictions and TD targets by their batch-level statistics, with a stop-gradient to ensure the Bellman fixed point is preserved.
+                That is it. The optimization objective remains theoretically identical, but the gradient magnitudes are reconditioned.
+            </p>
+            <p>
+                The point here is not that this normalization is a particularly deep contribution.
+                Maybe... the point is that this problem would be <i>fixable all along</i>. We were not blocked by a fundamental barrier. We were blocked by a lack of diagnosis.
+            </p>
+
+            <!-- ======================== SECTION 5 ======================== -->
+            <h2>What a proper analysis actually reveals</h2>
+            <div class="row">
+              <div class="col-md-12 no-padding-lr top15 bottom20">
+                  <p class="text-center" style="margin-bottom:6px;">
+                      <img src="assets/main.jpg" style="width: 90%;" alt="recipe-observation">
+                  </p>
+                  <span class="text-center text-caption-small top5 bottom5" style="display:block;font-size:0.84rem;line-height:1.55;">
+                      Each bar plot reports the best normalized return over 8 seeds.
+                      The top and right panels marginalize over policy extraction and value learning.
+                  </span>
+              </div>
+            </div>
+            <p>
+                With non-linear decomposition stabilized, we ran a comprehensive empirical study:
+                at least \(16,384\) independent runs across four value decomposition methods, three value learning objectives, two policy extraction methods, multiple datasets, hyperparameter sweeps, and eight random seeds per configuration.
+                The goal was simple: which design choices actually matter?
+            </p>
+            <p>
+                The answer was clear even if we consider fully cooperative tasks. <b>Value decomposition and policy extraction dominate performance. Value learning is secondary.</b>
+                The non-linear method achieved the best or runner-up performance in \(17\) out of \(24\) configurations.
+                AWR consistently outperformed BRAC (mode-seeking) in stability and reliability.
+                Meanwhile, the differences between TD, SARSA, and IQL were modest and never constituted a dominant factor.
+            </p>
+            <p>
+                Our analysis suggests that the <i>most impactful</i> design axis is how you decompose the global value and how you extract the policy.
+                The very components that most papers treat as fixed infrastructure turn out to be the ones that matter most. In a sense, this is the <b>uncomfortable, opposite lesson of our study against direction of prior works</b>.
+            </p>
+
+            <!-- ======================== SECTION 6 ======================== -->
+            <h2>Call to actions</h2>
+            <p>
+                So where should the field go from here? I have two concrete suggestions.
+            </p>
+            <p>
+                <b>First, treat value decomposition as a first-class research problem.</b>
+                The real bottleneck in offline MARL is not value learning itself. It is how we compose a global value function from individual contributions.
+                Non-linear mixing networks are just the beginning. We need to explore alternative architectural designs:
+                dueling mechanisms, attention-based aggregation, factored graph structures, and methods that go beyond the monotonicity constraint.
+            </p>
+            <p>
+                <b>Second, we need benchmarks and deeper analysis before we need more algorithms.</b>
+                The current standard testbeds, <i>e.g.</i>, MA-MuJoCo, SMAC, MPE, share a common limitation:
+                they mostly use team rewards distributed as individual rewards in dense reward settings. This setup creates relatively weak non-linear coupling among agents.
+                It makes the coordination problem look easier than it actually is, and it flatters methods that treat MARL as "single-agent RL with extra dimensions."
+                We need benchmarks that feature genuine coordination complexity: goal-conditioned tasks, skill-based coordination, mixed-motive settings, sparse rewards that require true credit assignment.
+            </p>
+            <p>
+                More broadly, I think we need a cultural shift toward diagnosis over novelty.
+                The field would benefit more from careful empirical analyses, rather than from yet another algorithmic variant that combines the latest single-agent trick with VDN.
+                Offline MARL's actual problem is coordination under partial observability with offline data.
+                We should be working on that directly, not on increasingly sophisticated ways to avoid it.
+            </p>
+
+            <!-- ======================== SECTION 7 ======================== -->
+            <h2>Stop borrowing. Start building.</h2>
+            <p>
+                The offline MARL community has, understandably, built on the shoulders of offline single-agent RL.
+                That was a reasonable starting point. But starting points are not destinations. The coordination structure that defines multi-agent systems is not a minor complication to be patched over.
+                And the tools we need to address it are not going to come from single-agent methods, no matter how cleverly we adapt them.
+            </p>
+            <p>
+                It is time to stop borrowing recipes and start writing our own.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+            <p class="text-justify">
+                This blog posting is from <a href="https://arxiv.org/abs/2503.xxxxx">A Recipe for Stable Offline Multi-agent Reinforcement Learning</a>, supervised by
+                <a href="https://midi-lab.github.io/index.html">Amy Zhang</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- ======================== INTERACTIVE DEMO SCRIPT ======================== -->
+    <script>
+    (function(){
+      var GT=[[2,5,1],[4,8,3],[1,3,7]];
+      var L=["A","B","C"];
+      var obs=[[true,true,false],[true,false,false],[false,false,true]];
+      var errMode=false;
+
+      function clamp(v){return Math.max(0,Math.min(10,v))}
+
+      function getPA(){
+        var q1s=[0,0,0],q1c=[0,0,0],q2s=[0,0,0],q2c=[0,0,0],all=[];
+        for(var i=0;i<3;i++)for(var j=0;j<3;j++)if(obs[i][j]){
+          q1c[i]++;q1s[i]+=GT[i][j];q2c[j]++;q2s[j]+=GT[i][j];all.push(GT[i][j]);
+        }
+        var q1=[],q2=[];
+        for(var i=0;i<3;i++)q1.push(q1c[i]>0?q1s[i]/q1c[i]:null);
+        for(var j=0;j<3;j++)q2.push(q2c[j]>0?q2s[j]/q2c[j]:null);
+        var m=all.length?all.reduce(function(a,b){return a+b},0)/all.length:0;
+        return{q1:q1,q2:q2,mean:m,n:all.length};
+      }
+
+      function compCen(){
+        var s=getPA(),e=[];
+        for(var i=0;i<3;i++){e.push([]);for(var j=0;j<3;j++){
+          if(obs[i][j])e[i].push(GT[i][j]);
+          else{var n=((i*7+j*13)%5-2)*0.6;e[i].push(clamp(s.mean+n));}
+        }}return e;
+      }
+
+      function compVDN(){
+        var s=getPA(),e=[];
+        for(var i=0;i<3;i++){e.push([]);for(var j=0;j<3;j++){
+          if(s.q1[i]!==null&&s.q2[j]!==null)e[i].push(clamp(s.q1[i]+s.q2[j]-s.mean));
+          else e[i].push(null);
+        }}return e;
+      }
+
+      function compMix(){
+        var s=getPA();
+        if(s.n===0)return{est:[[null,null,null],[null,null,null],[null,null,null]],q1:[null,null,null],q2:[null,null,null]};
+        var base=[];
+        for(var i=0;i<3;i++){base.push([]);for(var j=0;j<3;j++){
+          if(s.q1[i]!==null&&s.q2[j]!==null)base[i].push(s.q1[i]+s.q2[j]-s.mean);
+          else base[i].push(null);
+        }}
+        var rR=[[],[],[]],cR=[[],[],[]],aR=[];
+        for(var i=0;i<3;i++)for(var j=0;j<3;j++)if(obs[i][j]&&base[i][j]!==null){
+          var r=GT[i][j]-base[i][j];rR[i].push(r);cR[j].push(r);aR.push(r);
+        }
+        var gR=aR.length?aR.reduce(function(a,b){return a+b},0)/aR.length:0;
+        var e=[];
+        for(var i=0;i<3;i++){e.push([]);for(var j=0;j<3;j++){
+          if(base[i][j]===null){e[i].push(null);continue;}
+          if(obs[i][j]){e[i].push(GT[i][j]);continue;}
+          var ri=rR[i],rj=cR[j],inter;
+          if(ri.length>0&&rj.length>0){
+            inter=(ri.reduce(function(a,b){return a+b},0)/ri.length+rj.reduce(function(a,b){return a+b},0)/rj.length)/2;
+          }else if(ri.length>0){inter=ri.reduce(function(a,b){return a+b},0)/ri.length;}
+          else if(rj.length>0){inter=rj.reduce(function(a,b){return a+b},0)/rj.length;}
+          else{inter=gR;}
+          e[i].push(clamp(base[i][j]+inter));
+        }}
+        return{est:e,q1:s.q1,q2:s.q2};
+      }
+
+      function mae(est){
+        var t=0,c=0;
+        for(var i=0;i<3;i++)for(var j=0;j<3;j++)if(!obs[i][j]&&est[i][j]!==null){t+=Math.abs(est[i][j]-GT[i][j]);c++;}
+        return c>0?(t/c).toFixed(2):"\u2014";
+      }
+
+      function isDark(){
+        return document.body.getAttribute("data-theme")==="dark";
+      }
+      function mix(a,b,t){
+        return Math.round(a+(b-a)*t);
+      }
+      function gc(v,mx,gh){
+        if(v===null)return isDark() ? "rgba(255,241,230,0.08)" : "rgba(244,221,203,0.45)";
+        var t=Math.max(0,Math.min(1,v/mx));
+        var lo=isDark()?[111,76,60]:[246,223,204];
+        var hi=isDark()?[223,143,104]:[193,106,58];
+        return"rgba("+mix(lo[0],hi[0],t)+","+mix(lo[1],hi[1],t)+","+mix(lo[2],hi[2],t)+","+(gh?(isDark()?0.58:0.82):(isDark()?0.9:0.96))+")";
+      }
+      function ec(er){
+        if(er===null)return"transparent";
+        var t=Math.min(1,Math.abs(er)/4);
+        return isDark()
+          ? "rgba(232,134,108,"+(t*.42+.18)+")"
+          : "rgba(230,128,92,"+(t*.32+.16)+")";
+      }
+
+      function mkGrid(p,title,sub,est,cls){
+        var d=document.createElement("div");d.className="demo-gblock "+cls;
+        var h='<div class="demo-gtitle">'+title+'</div><div class="demo-gsub">'+sub+'</div>';
+        h+='<div style="display:flex;margin-left:30px">';
+        for(var j=0;j<3;j++)h+='<div class="demo-clbl">'+L[j]+'</div>';
+        h+='</div>';
+        for(var i=0;i<3;i++){
+          h+='<div class="demo-row"><div class="demo-rlbl">'+L[i]+'</div>';
+          for(var j=0;j<3;j++){
+            var v=est[i][j],o=obs[i][j],er=(v!==null)?(v-GT[i][j]):null;
+            var bg,bd,vt,vc,tt,tc;
+            if(errMode&&!o){
+              bg=ec(er);
+              bd=isDark()?"2px solid rgba(255,210,186,.16)":"2px solid rgba(199,138,104,.24)";
+              vt=er!==null?(er>=0?"+":"")+er.toFixed(1):"?";
+              vc=isDark()?"#fff4ea":"#7f2f24";
+              tt="error";
+              tc=isDark()?"rgba(255,228,208,.74)":"rgba(126,61,43,.64)";
+            }
+            else{
+              bg=gc(v,8,!o);
+              bd=o?(isDark()?"2px solid rgba(255,191,142,.82)":"2px solid rgba(191,87,0,.42)"):(isDark()?"2px solid rgba(255,214,188,.16)":"2px solid rgba(199,138,104,.22)");
+              vt=v!==null?v.toFixed(1):"?";
+              vc=o?(isDark()?"#fff7f1":"#fffaf6"):(isDark()?"rgba(255,240,228,.82)":"rgba(116,74,56,.78)");
+              tt=o?"data":"unseen";
+              tc=o?(isDark()?"rgba(255,214,180,.82)":"rgba(138,88,57,.68)"):(isDark()?"rgba(255,233,216,.52)":"rgba(135,99,79,.48)");
+            }
+            h+='<div class="demo-cell" style="background:'+bg+';border:'+bd+'"><span class="demo-cv" style="color:'+vc+'">'+vt+'</span><span class="demo-ct" style="color:'+tc+'">'+tt+'</span></div>';
+          }h+='</div>';
+        }d.innerHTML=h;p.appendChild(d);
+      }
+
+      function mkGT(p){
+        var d=document.createElement("div");
+        var h='<div style="display:flex;margin-left:30px">';
+        for(var j=0;j<3;j++)h+='<div class="demo-clbl">'+L[j]+'</div>';
+        h+='</div>';
+        for(var i=0;i<3;i++){
+          h+='<div class="demo-row"><div class="demo-rlbl">'+L[i]+'</div>';
+          for(var j=0;j<3;j++){
+            var v=GT[i][j],o=obs[i][j];
+            var bg=o?gc(v,8,false):(isDark()?"rgba(255,241,230,.08)":"rgba(244,221,203,.42)");
+            var bd=o?(isDark()?"2px solid rgba(255,191,142,.82)":"2px solid rgba(191,87,0,.42)"):(isDark()?"2px dashed rgba(255,214,188,.2)":"2px dashed rgba(199,138,104,.32)");
+            var vc=o?(isDark()?"#fff7f1":"#fffaf6"):(isDark()?"rgba(255,241,230,.34)":"rgba(129,95,77,.4)");
+            var tg=o?"remove":"add";
+            var tc=o?(isDark()?"rgba(255,214,180,.82)":"rgba(138,88,57,.68)"):(isDark()?"rgba(255,241,230,.18)":"rgba(135,99,79,.32)");
+            h+='<div class="demo-cell demo-click" data-i="'+i+'" data-j="'+j+'" style="background:'+bg+';border:'+bd+'"><span class="demo-cv" style="color:'+vc+'">'+v+'</span><span class="demo-ct" style="color:'+tc+'">'+tg+'</span></div>';
+          }h+='</div>';
+        }
+        h+='<div style="text-align:center;margin-top:4px;margin-left:30px;font-size:10px;color:'+(isDark()?'#dfb492':'#8f6e5c')+'">Ground Truth Q-values</div>';
+        d.innerHTML=h;
+        d.addEventListener("click",function(e){var c=e.target.closest(".demo-click");if(!c)return;obs[+c.dataset.i][+c.dataset.j]=!obs[+c.dataset.i][+c.dataset.j];render();});
+        p.appendChild(d);
+      }
+
+      function render(){
+        var a=document.getElementById("demo-app");a.innerHTML="";
+        var cnt=0;for(var i=0;i<3;i++)for(var j=0;j<3;j++)if(obs[i][j])cnt++;
+        var cen=compCen(),vdn=compVDN(),mx=compMix();
+
+        // Toolbar
+        var tb=document.createElement("div");tb.className="demo-toolbar";
+        tb.innerHTML='<span class="demo-lbl">Training Data</span><span style="font-size:11px;color:'+(isDark()?'#e1bfa7':'#8b6c5b')+'">('+cnt+'/9)</span>'
+          +'<div class="demo-presets"><button class="demo-pbtn" id="dp_d">Diagonal</button><button class="demo-pbtn" id="dp_s">Sparse</button><button class="demo-pbtn" id="dp_l">L-shape</button><button class="demo-pbtn" id="dp_f">Full</button></div>';
+        a.appendChild(tb);
+
+        // Top
+        var top=document.createElement("div");top.className="demo-top";
+        mkGT(top);
+        var info=document.createElement("div");info.className="demo-info";
+        info.innerHTML='<h4>How each method works</h4>'
+          +'<div class="demo-info-copy">'
+          +'<p><strong style="color:'+(isDark()?'#cbc0b7':'#4d433d')+'">Centralized:</strong> memorizes observed joint Q-values.</p>'
+          +'<p><strong style="color:'+(isDark()?'#b2a79f':'#5b514b')+'">VDN:</strong> adds agent values, missing interactions.</p>'
+          +'<p><strong style="color:'+(isDark()?'#ffc184':'#964208')+'">Mixer:</strong> adds agent values and residual coupling.</p>'
+          +'</div>';
+        top.appendChild(info);a.appendChild(top);
+
+        // Error toggle
+        var tbd=document.createElement("div");tbd.className="demo-action-row";
+        tbd.innerHTML='<button class="demo-tbtn '+(errMode?"demo-ton":"demo-toff")+'" id="demo_eb">'+(errMode?"\u25c9 Showing error":"\u25cb Show error on unseen")+'</button>';
+        a.appendChild(tbd);
+
+        // Grids
+        var main=document.createElement("div");main.className="demo-main";
+        var gr=document.createElement("div");gr.className="demo-grids";
+        mkGrid(gr,"Centralized","MAE: "+mae(cen),cen,"demo-gcen");
+        mkGrid(gr,"VDN (Linear)","MAE: "+mae(vdn),vdn,"demo-gvdn");
+        mkGrid(gr,"Mixer (Non-linear)","MAE: "+mae(mx.est),mx.est,"demo-gmix");
+        main.appendChild(gr);
+        a.appendChild(main);
+
+        // // Insight
+        // var ins=document.createElement("div");ins.className="demo-insight";
+        // ins.innerHTML='<h4>Key Insight</h4><p>Try <strong>"Diagonal"</strong>: 6 of 9 joints are unseen, but each action appears once. Centralized collapses to the mean. VDN generalizes additively but misses synergy peaks. Mixer captures interaction patterns from observed residuals.</p>';
+        // a.appendChild(ins);
+
+        // Bind
+        document.getElementById("dp_d").onclick=function(){obs=[[true,false,false],[false,true,false],[false,false,true]];render();};
+        document.getElementById("dp_s").onclick=function(){obs=[[true,false,false],[false,false,false],[false,false,true]];render();};
+        document.getElementById("dp_l").onclick=function(){obs=[[true,true,true],[true,false,false],[true,false,false]];render();};
+        document.getElementById("dp_f").onclick=function(){obs=[[true,true,true],[true,true,true],[true,true,true]];render();};
+        document.getElementById("demo_eb").onclick=function(){errMode=!errMode;render();};
+      }
+      render();
+    })();
+    </script>
+
+    <!-- Theme toggle -->
+    <script>
+        (function() {
+          try { const saved = localStorage.getItem('theme'); if (saved === 'dark') document.body.setAttribute('data-theme', 'dark'); } catch (e) {}
+          const btn = document.getElementById('themeToggle');
+          if (btn) {
+            const updateIcon = () => btn.textContent = document.body.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+            updateIcon();
+            btn.addEventListener('click', () => {
+              const dark = document.body.getAttribute('data-theme') === 'dark';
+              if (dark) { document.body.removeAttribute('data-theme'); try { localStorage.setItem('theme','light'); } catch(e){} }
+              else { document.body.setAttribute('data-theme','dark'); try { localStorage.setItem('theme','dark'); } catch(e){} }
+              updateIcon();
+            });
+          }
+        })();
+    </script>
+</div>
+</body></html>

@@ -1,693 +1,459 @@
 <!DOCTYPE html>
 <!-- saved from url=(0019)https://dongsuleetech.github.io/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dongsu Lee</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="data/js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-3LQTW4VHRT');
-    </script>
-
-    <title>Dongsu Lee</title>
-
-    <meta name="author" content="Dongsu Lee">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--<base target="_blank">--><base href="." target="_blank">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/Ds.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/Ds.png">
-</head>
-
-
-<style>
-  :root {
-    --frame-max-width: 1120px;
-    --frame-radius: 12px;
-    --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
-    --bg-muted: #f6f8fb;
-    --myorange: #BF5700; /* RGB(191,87,0) */
-    --mygray: #9CADB7;  /* RGB(156,173,183) */
-  }
-  /* Typography and base */
-  body {
-    background: var(--bg-muted);
-    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-    line-height: 1.6;
-  }
-  /* Ensure Palatino overrides external stack just for this page */
-  body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
-    font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif !important;
-  }
-  /* Frame the main content */
-  #main {
-    max-width: var(--frame-max-width);
-    margin: 32px auto 56px auto !important;
-    background: #fff;
-    border-radius: var(--frame-radius);
-    box-shadow: var(--frame-shadow);
-    padding: 28px 32px;
-  }
-  /* Link colors: myorange */
-  #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
-  #main a:hover { color: #d66b00 !important; text-decoration: none; }
-  /* Publications: author names inherit (black/white), orange on hover */
-  #main .pub-description a.author-link,
-  #main .pub-description a.author-link:visited,
-  #main .pub-description a.author-link:focus,
-  #main .pub-description a.author-link:active,
-  #main .pub-description a.dongsu-link,
-  #main .pub-description a.dongsu-link:visited,
-  #main .pub-description a.dongsu-link:focus,
-  #main .pub-description a.dongsu-link:active {
-    color: inherit !important; /* light: black, dark: white */
-    transition: color .15s ease-in-out;
-  }
-  #main .pub-description a.author-link:hover,
-  #main .pub-description a.dongsu-link:hover {
-    color: var(--myorange) !important;
-  }
-  /* Name and section headings */
-  .text-name { letter-spacing: 0.2px; }
-  .text-heading { font-size: 32px; font-weight: 400; margin-top: 26px; margin-bottom: 10px; }
-  /* Ensure Write-up titles match Publications titles */
-  .text-papertitle { font-size: 21px; font-weight: 400; line-height: 1.35; }
-  /* Ensure anchor inside title is not downsized by global `a { font-size: ... !important; }` */
-  .text-papertitle a { font-size: inherit !important; font-weight: inherit; line-height: inherit; }
-  /* Make date clearly smaller than title and subtly colored */
-  .text-papertitle small { font-size: 0.85em; color: var(--mygray); }
-  /* Slight bump in Write-up to visually match Publications perceived size */
-  .section-writeup .text-papertitle,
-  .section-writeup .text-papertitle a { font-size: 22px !important; font-weight: 400 !important; }
-  /* Badge for blog posts */
-  .badge { display: inline-block; padding: 2px 6px; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; vertical-align: middle; margin-right: 6px; }
-  .badge-blog { color: var(--myorange); border: 1px solid rgba(191,87,0,0.5); background: rgba(191,87,0,0.06); }
-  /* Subhead look for any h3s present */
-  h3 { font-weight: 400; color: #222; margin-top: 22px; margin-bottom: 6px; }
-  /* Profile image polish */
-  img.profile-photo, td img[alt="profile photo"] {
-    border: 2px solid rgba(191,87,0,0.15);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  }
-  /* Inline toggles adopt myorange */
-  .toggle-trigger {
-    cursor: pointer;
-    color: var(--myorange);
-    text-decoration: none;
-  }
-  .toggle-trigger:hover { color: #d66b00; }
-  .toggle-content { display: none; }
-  /* Fine-tune tables used for layout on this page */
-  table { border-collapse: separate; }
-  .pub-description { background: #fafafa; border-radius: 8px; }
-  .pub-contents .text-papertitle { display: inline-block; margin-bottom: 6px; }
-  /* Patents: keep clean without shaded box */
-  .patent-item .pub-description { background: transparent; border-radius: 0; padding-left: 0; padding-right: 0; }
-  .patent-item .text-conference { font-weight: 400; color: #444; }
-  /* Caption helper */
-  .text-caption { color: var(--mygray); font-size: 90%; display: block; }
-  /* Theme toggle and dark theme */
-  .theme-toggle { position: sticky; top: 12px; float: right; border: 0; background: transparent; font-size: 20px; cursor: pointer; }
-  body[data-theme="dark"] { background: #0b0d10; color: #ffffff; }
-  body[data-theme="dark"] #main { background: #0f1117; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
-  body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, body[data-theme="dark"] p, body[data-theme="dark"] li, body[data-theme="dark"] td, body[data-theme="dark"] th, body[data-theme="dark"] small { color: #ffffff; }
-  body[data-theme="dark"] #main a, body[data-theme="dark"] #main a:visited, body[data-theme="dark"] #main a:focus { color: var(--myorange) !important; }
-  body[data-theme="dark"] #main a:hover { color: #ff7a1a !important; }
-  /* Dark: elevate shaded box for premium feel */
-  body[data-theme="dark"] .pub-description {
-    background: linear-gradient(180deg, rgba(20,24,33,0.96), rgba(16,20,28,0.96));
-    border: 1px solid rgba(255,255,255,0.06);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
-  }
-  /* Keep patents clean even in dark mode */
-  body[data-theme="dark"] .patent-item .pub-description { background: transparent; border: none; box-shadow: none; }
-  body[data-theme="dark"] .text-caption, body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
-  body[data-theme="dark"] .text-papertitle small { color: #c2cdd6; }
-  body[data-theme="dark"] .badge-blog { color: #ff9a3d; border-color: rgba(255,154,61,0.6); background: rgba(255,154,61,0.1); }
-  /* Slightly larger body text on desktop */
-  @media (min-width: 992px) {
-    body, p, a, td, th, tr, li { font-size: 18.5px !important; }
-  }
-</style>
-
-<script defer>
-function toggleAff(el) {
-  const content = el.nextElementSibling;
-  const isVisible = content.style.display === 'inline';
-  content.style.display = isVisible ? 'none' : 'inline';
-  el.textContent = isVisible
-    ? 'Previous affiliation.'
-    : 'Previously,';}
-
-function toggleRes(el) {
-  const content = el.nextElementSibling;
-  const isVisible = content.style.display === 'inline';
-  content.style.display = isVisible ? 'none' : 'inline';
-  el.textContent = isVisible
-    ? 'Full research statement.'
-    : 'More specifically,';
-}
-
-function toggleCore(el) {
-  const content = el.nextElementSibling;
-  const isVisible = content.style.display === 'inline';
-  content.style.display = isVisible ? 'none' : 'inline';
-  el.textContent = isVisible
-    ? 'My guiding ethos.'
-    : 'Hide my guiding ethos.';
-}
-
-
-// Theme toggle with localStorage (run after DOM is ready)
-document.addEventListener('DOMContentLoaded', function () {
-  try {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark') document.body.setAttribute('data-theme', 'dark');
-  } catch (e) {}
-  const btn = document.getElementById('themeToggle');
-  if (!btn) return;
-  const updateIcon = () => {
-    btn.textContent = document.body.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
-  };
-  updateIcon();
-  btn.addEventListener('click', function () {
-    const isDark = document.body.getAttribute('data-theme') === 'dark';
-    if (isDark) {
-      document.body.removeAttribute('data-theme');
-      try { localStorage.setItem('theme', 'light'); } catch (e) {}
-    } else {
-      document.body.setAttribute('data-theme', 'dark');
-      try { localStorage.setItem('theme', 'dark'); } catch (e) {}
+  <style>
+    /* 2. Theme Variables (Day / Night Shift) */
+    :root {
+      --bg: #f6f8fb;
+      --bg-card: #ffffff;
+      --text-main: #35281f;
+      --text-muted: #7b6a5d;
+      --accent: #BF5700;
+      --accent-hover: #d66b00;
+      --border: rgba(0, 0, 0, 0.08);
+      --shadow: 0 14px 40px rgba(20, 24, 32, 0.08);
+      --badge-bg: rgba(133, 92, 56, 0.1);
+      --title-wood: #4b3628;
+      --meta-wood: #8b7567;
+      --badge-text: #8f4f17;
     }
-    updateIcon();
-  });
-});
-</script>
 
+    body[data-theme="dark"] {
+      --bg: #191517;
+      --bg-card: #242024;
+      --text-main: #f1ede9;
+      --text-muted: #b5ada8;
+      --accent: #ffad5c;
+      --accent-hover: #ffc98d;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+      --badge-bg: rgba(255, 173, 92, 0.12);
+      --title-wood: #dfc8b8;
+      --meta-wood: #b5a8a0;
+      --badge-text: #f0bf8b;
+    }
+
+    /* Base Typography & Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Mono', monospace;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-hover); }
+
+    /* 3. Top Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      z-index: 100;
+    }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      color: var(--text-main);
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .nav-links a:hover, .nav-links a.active-link { color: var(--accent); }
+    .theme-toggle {
+      background: none; border: none; font-size: 20px; cursor: pointer;
+    }
+
+    /* Layout Container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* SPA Section Hiding */
+    section { display: none; animation: fadeIn 0.4s ease-in-out; }
+    section.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* 4. Compact Main Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 60px;
+      background: var(--bg-card);
+      padding: 36px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .hero-text h1 { font-size: 2rem; margin-bottom: 16px; }
+    .hero-text p { margin-bottom: 20px; font-size: 0.95rem; }
+    .hero-links { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.9rem; }
+    .hero-image img {
+      width: 180px; height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(191, 87, 0, 0.24);
+    }
+    body[data-theme="dark"] .hero-image img { border-color: rgba(255, 173, 92, 0.28); }
+
+    /* Reusable Cards for Pubs/Write-ups */
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      color: var(--title-wood);
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .card-title {
+      font-size: 1.06rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+      color: var(--title-wood);
+    }
+    .card-title:hover { color: var(--accent); }
+    .card-meta {
+      font-size: 0.83rem;
+      color: var(--meta-wood);
+      margin-bottom: 0;
+      line-height: 1.14;
+    }
+    .card-meta strong { color: var(--text-main); font-weight: 500; }
+    .card-meta em { font-style: normal; color: var(--meta-wood); }
+    .card-links { margin-top: -1px; }
+    .card-links a { margin-right: 12px; font-size: 0.84rem; }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.74rem; background: var(--badge-bg); color: var(--badge-text);
+      margin-right: 8px; vertical-align: middle;
+    }
+
+    /* Affiliation expand toggle */
+    .toggle-trigger {
+      cursor: pointer;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .toggle-trigger:hover { color: var(--accent-hover); }
+    .toggle-content { display: none; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-links { justify-content: center; }
+      nav { flex-direction: column; gap: 16px; padding: 16px; }
+    }
+  </style>
+
+
+</head>
 <body>
-<table id="main" style="max-width: 1120px;">
-    <tbody>
-    <tr style="padding: 0px;">
-        <td style="padding: 0px;">
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-            <table>
-                <tbody>
-                <tr style="padding: 0px;">
-                    <td style="padding: 20px; width: 75%; vertical-align: middle;">
-                        <p style="margin-bottom: 0px; text-align: center;">
-                            <span class="text-name">Dongsu Lee</span>
-                            <p>
-                              Hello! I am a PhD student at the University of Texas at Austin,
-                              where I'm supervised by Prof. Amy Zhang in the
-                              <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
-                                <span class="toggle-trigger"
-                                onclick="toggleAff(this)">
-                                Previous affiliation.
-                                </span>
-                                <span class="toggle-content">
-                                  I collaborated with Prof. Ding Zhao in the
-                                  <a href="https://safeai-lab.github.io/">Safe AI Lab</a>,
-                                  Carnegie Mellon University (CMU); with Prof. Minhae Kwon in the
-                                  <a href="https://brainmil.wordpress.com/">BMIL</a>; and Prof. Sangsoo Kim in the
-                                  <a href="https://sites.google.com/site/sskimb/">Post-genome Informatics Lab</a> at Soongsil University in Seoul, South Korea.
-                                </span>
-                            </p>
 
-                        <p> The research question I focus on is simple these days: <b>Will reinforcement learning (RL) methods be applicable for practical deployment in realistic settings?</b>
-                            I’m interested in real-world challenges, <em>e.g</em>, partial observability, coordination with unseen partners, and human-robot collaboration.
-                            Then, I aim to make an RL algorithm applicable in <em>multi-agent, open-ended, and robotics settings</em> via both self-play and data-driven techniques.
-                            So, I work on multi-agent RL, representation learning, and offline-online RL.<br>
-<!--                            <a href="https://dongsuleetech.github.io/blog/research-statement/">Full research statement.</a>-->
-                        </p>
-                        <p>
-                            <span class="toggle-trigger"
-                                onclick="toggleCore(this)">
-                                My guiding ethos.
-                                </span>
-                                <span class="toggle-content">
-                                    <em>Speak truth, amid echoing scorn.<br>
-                                    Embrace adventure, born of conviction.<br>
-                                    Take responsibility, without retreat.</em>
-                                </span>
-                        </p>
-                <p style="margin-bottom: 0px; text-align: center;">
-                  <a href="mailto:dongsu.lee@utexas.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV/DongsuLee-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=v0hNlSUAAAAJ&hl=en&authuser=1">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/dongsulee/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/DongsuLeeTech">Github</a>
-                </p>
-              </td>
-                    <td style="padding: 20px 20px 20px 0px; width: 25%;">
-                <a href="images/profile/profile.JPG"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile/profile.JPG" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-            </tbody>
-          </table>
+  <nav>
+    <div class="nav-links">
+      <a class="nav-item active-link" onclick="switchTab('main', this)">main</a>
+      <a class="nav-item" onclick="switchTab('publications', this)">publications</a>
+      <a class="nav-item" onclick="switchTab('writeup', this)">write-up</a>
+    </div>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
 
-        <table>
-            <tbody>
-            <tr>
-                <td style="padding-bottom: 20px;" class="heading section-writeup">
-                    <span class="text-heading">Write-up</span><br>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <table>
-            <tbody>
-               <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">
-                          <span class="badge badge-blog">Blog</span>
-                          <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">Fast and expressive multi‑agent coordination</a>
-                          <small>(Oct 2025)</small>
-                        </span>
-                        <div class="pub-description">
-                          <span class="text-caption">Capturing complex joint behavior while keeping inference fast.</span>
-                        </div>
-                    </td>
-               </tr>
-               <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">
-                          <span class="badge badge-blog">Blog</span>
-                          <a href="https://dongsuleetech.github.io/blog/research-statement">Research statement: Towards generalizable MARL</a>
-                          <small>(Aug 2025)</small>
-                        </span>
-                        <div class="pub-description">
-                          <span class="text-caption">Control’s bottlenecks and a roadmap for generalizable MARL.</span>
-                        </div>
-                    </td>
-               </tr>
-            </tbody>
-        </table>
+  <div class="container">
 
-        <table>
-            <tbody>
-            <tr>
-                <td style="padding-bottom: 20px;" class="heading">
-                    <span class="text-heading">Publications</span><br>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+    <section id="main" class="active">
+      <div class="hero">
+        <div class="hero-image">
+          <img src="images/profile/profile.JPG" alt="Profile Photo" onerror="this.src='https://via.placeholder.com/180x180?text=Photo'">
+        </div>
+        <div class="hero-text">
+          <h1>Dongsu Lee</h1>
+          <p>
+            Hello! I am a PhD student at the University of Texas at Austin,
+            where I’m supervised by Prof. Amy Zhang in the
+            <a href="https://midi-lab.github.io/publications.html">MIDI Lab</a>.
+            <span class="toggle-trigger" onclick="toggleAff(this)">Previous affiliation.</span>
+            <span class="toggle-content">
+              I collaborated with Prof. Ding Zhao in the
+              <a href="https://safeai-lab.github.io/">Safe AI Lab</a>,
+              Carnegie Mellon University (CMU); with Prof. Minhae Kwon in the
+              <a href="https://brainmil.wordpress.com/">BMIL</a>; and Prof. Sangsoo Kim in the
+              <a href="https://sites.google.com/site/sskimb/">Post-genome Informatics Lab</a> at Soongsil University in Seoul, South Korea.
+            </span>
+          </p>
+          <p>I’m interested in realistic RL problems, <em>e.g</em>, partial observability, coordination with unseen partners, and human-robot collaboration.
+            Then, I aim to make an RL algorithm applicable in via both self-play and data-driven techniques.
+          </p>
+          <p>
+            I am always happy to talk about research, so feel free to reach out if you want to chat!
+          </p>
+          <div class="hero-links">
+            <a href="mailto:dongsu.lee@utexas.edu">Email</a>
+            <a href="data/CV/DongsuLee-CV.pdf" target="_blank">CV</a>
+            <a href="https://scholar.google.com/citations?user=v0hNlSUAAAAJ&hl=en" target="_blank">Scholar</a>
+            <a href="https://github.com/DongsuLeeTech" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
 
-        <table>
-            <tbody>
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Multi-agent Coordination via Flow Matching</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://l2dulgi.github.io/" class="author-link">Daehee Lee</a>,
-                            <a href="https://midi-lab.github.io/index.html" class="author-link">Amy Zhang</a>
-                            <br>
-                            <span class="text-conference">ICLR 2026</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2511.05005">paper</a> |
-                            <a href="https://github.com/DongsuLeeTech/mac-flow">code</a> |
-                            <a href="https://dongsuleetech.github.io/blog/fast-and-expressive-mac/">write-up</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Unifying Agent Interaction and World Information for Multi-agent Coordination</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://l2dulgi.github.io/" class="author-link">Daehee Lee</a>,
-                            <a href="https://yaruniu.com/" class="author-link">Yaru Niu</a>,
-                            <a href="https://sites.google.com/view/csi-agent-group/" class="author-link">Honguk Woo</a>,
-                            <a href="https://midi-lab.github.io/index.html" class="author-link">Amy Zhang</a>,
-                            <a href="https://safeai-lab.github.io/" class="author-link">Ding Zhao</a>
-                            <br>
-<!--                            <span class="text-conference">Preprint</span>-->
-<!--                            <br>-->
-                            <span class="text-conference">NeurIPS 2025 ARLET Workshop (Oral)</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2509.25550">paper</a> |
-                            <a href="https://github.com/DongsuLeeTech/IWoL">code</a> |
-                            <a href="https://dongsuleetech.github.io/projects/IWoL/">project page</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</span>
-                        <div class="pub-description">
-                            <a href="https://l2dulgi.github.io/" class="author-link">Daehee Lee</a>,
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            TaeYoon Kwack,
-                            Wonje Choi,
-                            <a href="https://sites.google.com/view/csi-agent-group/" class="author-link">Honguk Woo</a>
-                            <br>
-                            <span class="text-conference">NeurIPS 2025 (Spotlight)</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2509.20612">paper</a> |
-                            <a href="https://github.com/L2dulgi/SIL-C">code</a>
-                        </div>
-                    </td>
-                </tr>
-            <!--                <tr>-->
-<!--                    <td class="pub-contents">-->
-<!--                        <span class="text-papertitle">Vector-quantized Graph-attention Transformer for Multi-agent Communication</span>-->
-<!--                        <div class="pub-description">-->
-<!--                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,-->
-<!--                            <a href="https://yaruniu.com/" class="author-link">Yaru Niu</a>,-->
-<!--                            <a href="https://scholar.google.com/citations?user=uRvYtOgAAAAJ&hl=en" class="author-link">Yongkang Liu</a>,-->
-<!--                            <a href="https://safeai-lab.github.io/" class="author-link">Ding Zhao</a>-->
-<!--                            <br>-->
-<!--                            <span class="text-conference">Preprint</span>-->
-<!--                            <br>-->
-<!--                            <a href="https://dongsuleetech.github.io/projects/vq-gatco/">project page</a>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>
-                            <br>
-                            <span class="text-conference">IEEE Transactions on Intelligent Transportation Systems</span>
-                            <br>
-                            <a href="https://ieeexplore.ieee.org/document/11080103">paper</a> |
-                            <a href="https://github.com/DongsuLeeTech/O3RL.git">code</a>
-                        </div>
-                    </td>
-                </tr>
+      <h2 class="section-title">Selected Publications</h2>
 
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>
-                            <br>
-                            <span class="text-conference">ICML 2025</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2505.13144">paper</a> |
-                            <a href="https://dongsuleetech.github.io/projects/tempdata/">project page</a> |
-                            <a href="https://icml.cc/virtual/2025/poster/44612">talk (5min)</a>
-                        </div>
-                    </td>
-                </tr>
+      <div class="card">
+        <a href="https://arxiv.org/abs/2511.05005" class="card-title">A Recipe for Stable Offline Multi-agent Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>Preprint</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/offline-marl-recipe">code</a> |
+          <a href="blog/lazy-borrowed-recipe/">write-up</a>
+        </div>
+      </div>
 
-<!--                <tr>-->
-<!--                    <td class="pub-contents">-->
-<!--                        <span class="text-papertitle">Episodic Future Thinking With Offline Reinforcement Learning for Autonomous Driving</span>-->
-<!--                        <div class="pub-description">-->
-<!--                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,-->
-<!--                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>-->
-<!--                            <br>-->
-<!--                            <span class="text-conference">IEEE IoTJ 2025; IEEE ITSC 2023</span>-->
-<!--                            <br>-->
-<!--                            <a href="https://ieeexplore.ieee.org/document/10421808">paper (short)</a> |-->
-<!--                            <a href="https://sites.google.com/view/eft-pomdpieeeitsc2023/">project page</a> |-->
-<!--                            <a href="https://youtu.be/ocdnWtSJ0yM?feature=shared">talk (10min)</a>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
+      <div class="card">
+        <a href="https://arxiv.org/abs/2511.05005" class="card-title">Multi-agent Coordination via Flow Matching</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>ICLR 2026</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a> |
+          <a href="blog/fast-and-expressive-mac/">write-up</a>
+        </div>
+      </div>
 
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>
-                            <br>
-                            <span class="text-conference">NeurIPS 2024</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2410.17373">paper</a> |
-                            <a href="https://dongsuleetech.github.io/projects/eftm/">project page</a> |
-                            <a href="https://neurips.cc/virtual/2024/poster/93443">talk (5min)</a>
-                        </div>
-                    </td>
-                </tr>
+      <div class="card">
+        <a href="https://arxiv.org/abs/2509.25550" class="card-title">Unifying Agent Interaction and World Information for Multi-agent Coordination</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Yaru Niu, Honguk Woo, Amy Zhang, Ding Zhao <br> <em>NeurIPS 2025 ARLET Workshop (Oral)</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2509.25550">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/IWoL">code</a> |
+          <a href="projects/IWoL/">project page</a>
+        </div>
+      </div>
 
-                <tr>
-                    <td class="pub-contents">
-                        <span class="text-papertitle">AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://sites.google.com/view/chanineom/home" class="author-link">Chanin Eom</a>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>
-                            <br>
-                            <span class="text-conference">ICRA 2024</span>
-                            <br>
-                            <a href="https://arxiv.org/abs/2404.02429">paper</a> |
-                            <a href="https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha">project page</a> |
-                            <a href="https://www.youtube.com/watch?v=DGoxmBJrNRc">talk (5min)</a> |
-                            <a href="https://www.etnews.com/20240313000363">media</a>
-                        </div>
-                    </td>
-                </tr>
+      <div class="card">
+        <a href="https://arxiv.org/abs/2509.20612" class="card-title">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</a>
+        <div class="card-meta">Daehee Lee, <strong>Dongsu Lee</strong>, TaeYoon Kwack, Wonje Choi, Honguk Woo <br> <em>NeurIPS 2025 (Spotlight)</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2509.20612">paper</a> |
+          <a href="https://github.com/L2dulgi/SIL-C">code</a>
+        </div>
+      </div>
 
-<!--                <tr>-->
-<!--                    <td class="pub-contents">-->
-<!--                        <span class="text-papertitle">Instant Inverse Modeling of Stochastic Driving Behavior with Deep Reinforcement Learning</span>-->
-<!--                        <div class="pub-description">-->
-<!--                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,-->
-<!--                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>-->
-<!--                            <br>-->
-<!--                            <span class="text-conference">IEEE T-CE 2024</span>-->
-<!--                            <br>-->
-<!--                            <a href="https://ieeexplore.ieee.org/document/10684807">paper</a>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
+      <div class="card">
+        <a href="https://arxiv.org/abs/2410.17373" class="card-title">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>NeurIPS 2024</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2410.17373">paper</a> |
+          <a href="projects/eftm/">project page</a> |
+          <a href="https://neurips.cc/virtual/2024/poster/93443">talk</a>
+        </div>
+      </div>
+    </section>
 
-<!--                <tr>-->
-<!--                    <td class="pub-contents">-->
-<!--                        <span class="text-papertitle">Stability Analysis in Mixed-autonomous Traffic with Deep Reinforcement Learning</span>-->
-<!--                        <div class="pub-description">-->
-<!--                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,-->
-<!--                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>-->
-<!--                            <br>-->
-<!--                            <span class="text-conference">IEEE T-VT 2023; NeurIPS DeepRL Workshop 2022</span>-->
-<!--                            <br>-->
-<!--                            <a href="https://ieeexplore.ieee.org/document/10684807">paper</a> |-->
-<!--                            <a href="https://www.eiric.or.kr/util/pdsFileDownload.php?db=TB_Webinar&fileName=FN_23062274008111010972953.pdf">slides </a> |-->
-<!--                            <a href="https://www.youtube.com/watch?v=PA3yHFV3gXY&ab_channel=EIRIC%EC%9D%B4%EB%A6%AD">invited talk (korean)</a> |-->
-<!--                            <a href="https://www.dt.co.kr/contents.html?article_no=2022110102109919613004&ref=naver">media</a>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
+    <section id="publications">
+      <h2 class="section-title">All Publications & Patents</h2>
 
-<!--                <tr>-->
-<!--                    <td class="pub-contents">-->
-<!--                        <span class="text-papertitle">ADAS-RL: Safety Learning Approach for Stable Autonomous Driving</span>-->
-<!--                        <div class="pub-description">-->
-<!--                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,-->
-<!--                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>-->
-<!--                            <br>-->
-<!--                            <span class="text-conference">ICT Express 2022</span>-->
-<!--                            <br>-->
-<!--                            <a href="https://ieeexplore.ieee.org/document/10684807">paper</a>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2511.05005" class="card-title" style="display:inline-block; margin-bottom:6px;">Multi-agent Coordination via Flow Matching</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>ICLR 2026</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a> |
+          <a href="blog/fast-and-expressive-mac/">write-up</a>
+        </div>
+      </div>
 
-                </tbody>
-            </table>
-            <table>
-                <tbody>
-                <tr>
-                    <td class="heading">
-                        <span class="text-heading">Patents</span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody>
-                <tr>
-                    <td class="pub-contents patent-item">
-                        <span class="text-patenttitle">Method and Apparatus for Inferring Stochastic Driving Characteristic of a Vehicle</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>,
-                            <span class="text-conference">Apr 26, 2023. (Application no. US 18/139602), issued on December XX, 2025. (Patent no. US XX)</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pub-contents patent-item">
-                        <span class="text-patenttitle">Apparatus and Method for Inferring Driving Characteristics of Vehicle</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>,
-                            <span class="text-conference">Oct 4, 2022. (Application no. US 17/959515), issued on Aug 19, 2025. (Patent no. US 12,391,261)</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pub-contents patent-item">
-                        <span class="text-patenttitle">Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles, Recording medium and device for performing this the method</span>
-                        <div class="pub-description">
-                            <strong><a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a></strong>,
-                            <a href="https://brainmil.wordpress.com/minhae/" class="author-link">Minhae Kwon</a>,
-                            <span class="text-conference">Patent no. US 12,091,025 (Sep 2024)</span>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2509.25550" class="card-title" style="display:inline-block; margin-bottom:6px;">Unifying Agent Interaction and World Information for Multi-agent Coordination</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Daehee Lee, Yaru Niu, Honguk Woo, Amy Zhang, Ding Zhao <br> <em>NeurIPS 2025 ARLET Workshop (Oral)</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2509.25550">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/IWoL">code</a> |
+          <a href="projects/IWoL/">project page</a>
+        </div>
+      </div>
 
-            <table>
-                <tbody>
-                <tr>
-                    <td class="heading">
-                        <span class="text-heading">Honors and Awards</span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody>
-                <tr>
-                    <td class="threelevel contents">
-                        <h3>Scholarships</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel contents">
-                        <p>
-                            <strong>UT Austin Engineering Fellowship</strong> (Aug 2025 - Present)
-                        </p>
-                        <p class="three-inner">
-                            Cockrell School of Engineering and The University of Texas at Austin Graduate School
-                            (USD 6K / year)
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel contents">
-                        <p>
-                            <strong>AI Intensive Program at Carnegie Mellon University</strong> (Aug 2024 - Feb 2025)
-                        </p>
-                        <p class="three-inner">
-                            IITP & Sogang University
-                            (USD 41K)
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel contents">
-                        <p>
-                            <strong>Future Industrial Talent Scholarship</strong> (Aug 2023 - Feb 2025)
-                        </p>
-                        <p class="three-inner">
-                            CMK Hyundai Group
-                            (Full tuition + KRW 3,600K / year)
-                        </p>
-                    </td>
-                </tr>
-                    <td class="threelevel contents">
-                        <h3>Awards</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel-condensed contents">
-                        <p><strong>Global Excellence Scholarship</strong> (Prize: KRW 3,000K), CMK Hyundai Group (Mar, Dec, Dec 2024)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel-condensed contents">
-                        <p><strong>ICT Challenge IITP President’s Award</strong> (Prize: KRW 5,000K), IITP (Sep 2023)</p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2509.20612" class="card-title" style="display:inline-block; margin-bottom:6px;">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</a>
+        <div class="card-meta" style="margin-top:6px;">Daehee Lee, <strong>Dongsu Lee</strong>, TaeYoon Kwack, Wonje Choi, Honguk Woo <br> <em>NeurIPS 2025 (Spotlight)</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2509.20612">paper</a> |
+          <a href="https://github.com/L2dulgi/SIL-C">code</a>
+        </div>
+      </div>
 
-            <table>
-                <tbody>
-                <tr>
-                    <td class="heading">
-                        <span class="text-heading">Services</span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody>
-                <tr>
-                    <td class="threelevel contents">
-                        <h3>Reviews</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="threelevel-condensed contents">
-                        <p>
-                            <strong>Journals</strong>:
-                            Nature Communication, IEEE T-ITS, IEEE T-CE, IEEE T-VT, IEEE IoT-J
-                        </p>
-                        <p>
-                            <strong>Conferences</strong>:
-                            ICLR (2026),
-                            NeurIPS (2025),
-                            CoRL (2025),
-                            IRoS (2025),
-                            ICRA (2026, 2025),
-                            ICML (2022)
-                        </p>
-                        <p>
-                            <strong>Workshops</strong>:
-                            ICML Theory of Mind Workshop (2023; Program committee),
-                            NeurIPS ML4AD (2022)
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://ieeexplore.ieee.org/document/11080103" class="card-title" style="display:inline-block; margin-bottom:6px;">Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>IEEE Transactions on Intelligent Transportation Systems</em></div>
+        <div class="card-links">
+          <a href="https://ieeexplore.ieee.org/document/11080103">paper</a> |
+          <a href="https://github.com/DongsuLeeTech/O3RL.git">code</a>
+        </div>
+      </div>
 
-          </tbody></table>
-            <table>
-                <tbody>
-                <tr>
-                    <td style="padding: 0px;">
-                        <br>
-                        <p style="text-align:right;font-size:small;">
-                            <a href="https://github.com/jonbarron/website">Template</a>
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-</tbody></table>
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2505.13144" class="card-title" style="display:inline-block; margin-bottom:6px;">Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>ICML 2025</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2505.13144">paper</a> |
+          <a href="projects/tempdata/">project page</a> |
+          <a href="https://icml.cc/virtual/2025/poster/44612">talk (5min)</a>
+        </div>
+      </div>
 
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2410.17373" class="card-title" style="display:inline-block; margin-bottom:6px;">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>NeurIPS 2024</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2410.17373">paper</a> |
+          <a href="projects/eftm/">project page</a> |
+          <a href="https://neurips.cc/virtual/2024/poster/93443">talk (5min)</a>
+        </div>
+      </div>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
+      <div class="card">
+        <span class="badge">Paper</span>
+        <a href="https://arxiv.org/abs/2404.02429" class="card-title" style="display:inline-block; margin-bottom:6px;">AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset</a>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Chanin Eom, Minhae Kwon <br> <em>ICRA 2024</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2404.02429">paper</a> |
+          <a href="https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha">project page</a> |
+          <a href="https://www.youtube.com/watch?v=DGoxmBJrNRc">talk (5min)</a> |
+          <a href="https://www.etnews.com/20240313000363">media</a>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 40px;">Patents</h2>
+
+      <div class="card">
+        <span class="badge">Patent</span>
+        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Method and Apparatus for Inferring Stochastic Driving Characteristic of a Vehicle</span>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Application no. US 18/139602 (Apr 26, 2023), pending</em></div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Patent</span>
+        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Apparatus and Method for Inferring Driving Characteristics of Vehicle</span>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Patent no. US 12,391,261 (Issued Aug 19, 2025)</em></div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Patent</span>
+        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles</span>
+        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Patent no. US 12,091,025 (Sep 2024)</em></div>
+      </div>
+    </section>
+
+    <section id="writeup">
+      <h2 class="section-title">Write-ups & Blogs</h2>
+
+      <div class="card">
+        <span class="badge">Blog</span>
+        <a href="#" class="card-title" style="display:inline-block; margin-bottom:6px;">A lazy, borrowed recipe</a>
+        <div class="card-meta" style="margin-top:6px;">Mar 2026 • Discourse: right direction of the offline MARL community.</div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Blog</span>
+        <a href="#" class="card-title" style="display:inline-block; margin-bottom:6px;">Fast and expressive multi-agent coordination</a>
+        <div class="card-meta" style="margin-top:6px;">Oct 2025 • Capturing complex joint behavior while keeping inference fast.</div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Blog</span>
+        <a href="#" class="card-title" style="display:inline-block; margin-bottom:6px;">Research statement: Towards generalizable MARL</a>
+        <div class="card-meta" style="margin-top:6px;">Aug 2025 • Bottlenecks and a roadmap for generalizable MARL.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // --- 0. Bio Toggle Functions ---
+    function toggleAff(el) {
+      const content = el.nextElementSibling;
+      const isVisible = content.style.display === 'inline';
+      content.style.display = isVisible ? 'none' : 'inline';
+      el.textContent = isVisible ? 'Previous affiliation.' : 'Previously,';
+    }
+
+    function toggleRes(el) {
+      const content = el.nextElementSibling;
+      const isVisible = content.style.display === 'inline';
+      content.style.display = isVisible ? 'none' : 'inline';
+      el.textContent = isVisible ? 'Full research statement.' : 'More specifically,';
+    }
+
+    function toggleCore(el) {
+      const content = el.nextElementSibling;
+      const isVisible = content.style.display === 'inline';
+      content.style.display = isVisible ? 'none' : 'inline';
+      el.textContent = isVisible ? 'My guiding ethos.' : 'Hide my guiding ethos.';
+    }
+
+    // --- 1. Day / Night Theme Logic ---
+    const btn = document.getElementById('themeToggle');
+    const root = document.body;
+
+    // init theme
+    if (localStorage.getItem('theme') === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      btn.textContent = '☀️';
+    }
+
+    btn.addEventListener('click', () => {
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        root.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = '🌙';
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = '☀️';
       }
+    });
 
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+    // --- 2. SPA Tab Switching Logic ---
+    function switchTab(tabId, element) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      // Remove active class from all nav links
+      document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active-link'));
+
+      // Show selected section & highlight link
+      document.getElementById(tabId).classList.add('active');
+      element.classList.add('active-link');
+    }
+  </script>
+</body>
+</html>
