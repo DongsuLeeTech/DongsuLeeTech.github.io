@@ -16,6 +16,10 @@
     <meta name="author" content="Dongsu Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Removed base href to avoid breaking relative paths -->
 
     <link rel="stylesheet" href="./rs_files/bootstrap.min.css">
@@ -35,69 +39,151 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <script src="./rs_files/app.js"></script>
-    <!-- Page-local styles: unify with blog/fast-and-expressive-mac -->
     <style>
       :root {
-        --frame-max-width: 980px;
-        --frame-radius: 12px;
-        --frame-shadow: 0 12px 32px rgba(0,0,0,0.08);
-        --bg-muted: #f6f8fb;
-        --myorange: #BF5700; /* RGB(191,87,0) */
+        --bg: #f6f8fb;
+        --bg-card: #ffffff;
+        --text-main: #35281f;
+        --text-muted: #7b6a5d;
+        --accent: #BF5700;
+        --accent-hover: #d66b00;
+        --border: rgba(0, 0, 0, 0.08);
+        --shadow: 0 14px 40px rgba(20, 24, 32, 0.08);
+        --frame-max-width: 860px;
       }
+      body[data-theme="dark"] {
+        --bg: #191517;
+        --bg-card: #242024;
+        --text-main: #f1ede9;
+        --text-muted: #b5ada8;
+        --accent: #ffad5c;
+        --accent-hover: #ffc98d;
+        --border: rgba(255, 255, 255, 0.08);
+        --shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+      }
+      * { box-sizing: border-box; }
       body {
-        background: var(--bg-muted);
-        font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        font-family: 'Source Serif 4', serif;
+        background-color: var(--bg);
+        color: var(--text-main);
         line-height: 1.6;
+        transition: background-color 0.3s, color 0.3s;
       }
-      /* Ensure Palatino applies broadly overriding external styles */
-      body, p, a, td, th, tr, li, ul, ol, h1, h2, h3, h4, h5, h6 {
-        font-family: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif !important;
-      }
-      /* Framed container */
       #main {
         max-width: var(--frame-max-width);
-        margin: 32px auto 56px auto;
-        background: #fff;
-        border-radius: var(--frame-radius);
-        box-shadow: var(--frame-shadow);
-        padding: 32px 28px;
+        width: 100%;
+        margin: 28px auto 52px auto;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 32px 40px 42px;
+        transition: background-color 0.3s;
       }
-      /* Row spacing (modest) */
       #main .row + .row { margin-top: 16px; }
-      .text-title { margin-top: 6px; margin-bottom: 2px; }
-      .text-toplink { color: var(--myorange); }
-      /* Headings: larger than body, no bold */
-      h2, h3, h4 { font-weight: 400; color: #222; }
-      h2 { font-size: 1.6em; margin-top: 36px; margin-bottom: 8px; }
-      h3 { font-size: 1.3em; margin-top: 24px; margin-bottom: 6px; }
-      p { margin-bottom: 0.8em; }
-      /* Blog title bold to match Fast and Expressive style */
-      #main h1.text-title { font-weight: 700; }
-      /* Paragraphs justified for both blog posts */
-      #main p { text-align: justify; }
-      /* Links */
-      #main a, #main a:focus, #main a:visited { color: var(--myorange) !important; text-decoration: none; }
-      #main a:hover { color: #d66b00 !important; text-decoration: none; }
-      /* Author list: default inherit (black/white), orange on hover only */
-      #main .author-list a, #main .author-list a:visited, #main .author-list a:focus { color: inherit !important; transition: color .15s ease-in-out; }
-      #main .author-list a:hover { color: var(--myorange) !important; }
-      /* Captions */
-      .text-caption-small { color: #9cadb7; display: block; }
-      /* Dark theme support */
-      .theme-toggle { position: sticky; top: 12px; float: right; border: 0; background: transparent; font-size: 20px; cursor: pointer; }
-      body[data-theme="dark"] { background: #0b0d10; color: #ffffff; }
-      body[data-theme="dark"] #main { background: #0f1117; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
-      body[data-theme="dark"] h1, body[data-theme="dark"] h2, body[data-theme="dark"] h3, body[data-theme="dark"] p, body[data-theme="dark"] li { color: #ffffff; }
-      body[data-theme="dark"] #main a, body[data-theme="dark"] #main a:visited, body[data-theme="dark"] #main a:focus { color: var(--myorange) !important; }
-      body[data-theme="dark"] #main a:hover { color: #ff7a1a !important; }
-      body[data-theme="dark"] hr { border-top-color: #2a2f3a; }
-      body[data-theme="dark"] .text-caption-small { color: #c2cdd6; }
-      /* Slightly larger body text (≈ +1pt) */
-      @media screen and (min-width: 992px) {
-        body, p, a, td, th, tr, li { font-size: 19px !important; }
+      @media (max-width: 768px) {
+        #main {
+          margin: 16px 12px 32px;
+          width: auto;
+          padding: 22px 18px 28px;
+        }
       }
-      @media screen and (max-width: 991px) {
-        body, p, a, td, th, tr, li { font-size: 17px !important; }
+      h1 { color: var(--text-main); }
+      h2, h3, h4 { font-weight: 300; color: var(--text-main); }
+      h2 { font-size: 1.4em; margin-top: 36px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+      h3 { font-size: 1.2em; margin-top: 24px; margin-bottom: 6px; }
+      #main h1,
+      #main h2,
+      #main h3,
+      #main h4,
+      #main h5,
+      #main h6,
+      #main .author-list {
+        font-family: 'DM Mono', monospace !important;
+      }
+      #main p,
+      #main li,
+      #main td,
+      #main th,
+      #main .text-caption-small {
+        font-family: 'Source Serif 4', serif;
+      }
+      #main .author-list,
+      #main .author-list li,
+      #main .author-list a,
+      #main .author-affil,
+      #main .author-date {
+        font-family: 'DM Mono', monospace !important;
+      }
+      p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
+      li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }
+      #main h1.text-title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #main p {
+        text-align: justify;
+        text-justify: inter-word;
+        text-wrap: pretty;
+        hyphens: auto;
+      }
+      #main li {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+      }
+      #main p.text-center { text-align: center; }
+      #main .text-caption-small { font-size: 0.98rem; color: var(--text-muted); display: block; }
+      .title-row { text-align: center; clear: both; }
+      .author-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      .author-list li {
+        margin: 0;
+        font-size: 0.92rem;
+        line-height: 1.7;
+        list-style: none;
+        text-align: center !important;
+      }
+      .author-affil,
+      .author-date {
+        display: block;
+        color: var(--text-muted);
+        text-align: center;
+      }
+      a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+      a:hover { color: var(--accent-hover); }
+      #main a, #main a:focus, #main a:visited { color: var(--accent); text-decoration: none; }
+      #main a:hover { color: var(--accent-hover); text-decoration: none; }
+      #main .author-list a,
+      #main .author-list a:visited,
+      #main .author-list a:focus { color: var(--text-main) !important; transition: color .15s ease-in-out; }
+      #main .author-list a:hover { color: var(--accent) !important; }
+      #main .author-list a.dongsu-link,
+      #main .author-list a.dongsu-link:visited,
+      #main .author-list a.dongsu-link:focus { color: var(--accent) !important; }
+      #main .author-list a.dongsu-link:hover { color: var(--accent-hover) !important; }
+      #main img { border-radius: 10px; box-shadow: var(--shadow); }
+      hr { border-top: 1px solid var(--border); }
+      .theme-toggle {
+        position: sticky;
+        top: 12px;
+        margin-left: auto;
+        margin-bottom: 8px;
+        display: block;
+        width: fit-content;
+        border: 0;
+        background: transparent;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 5;
       }
     </style>
 <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
@@ -938,17 +1024,19 @@ mjx-c.mjx-c2E::before {
 <body>
 <div class="container" id="main">
   <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-  <div class="row">
+  <div class="row title-row">
     <div class="col-md-12">
-      <h1 class="text-center text-title top20">Research Statement: Towards Generalizable MARL</h1>
+      <h1 class="text-title">Research Statement: Towards Generalizable MARL</h1>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <ul class="list-inline">
+      <ul class="author-list">
         <li>
-          <a href="https://dongsuleetech.github.io/">Dongsu Lee</a><br>UT Austin<br> August 2025
+          <a href="https://dongsuleetech.github.io/" class="dongsu-link">Dongsu Lee</a>
+          <span class="author-affil">UT Austin</span>
+          <span class="author-date">August 2025</span>
         </li>
       </ul>
     </div>
