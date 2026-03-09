@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/research-statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/research-statement/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,17 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/outdatated.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/blog/lazy-borrowed-recipe/recipes/app.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/projects/IWoL/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/stylesheet.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/blog/research-statement/index.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -171,14 +185,7 @@
       <workItem from="1769623827074" duration="2966000" />
       <workItem from="1769802171177" duration="1696000" />
       <workItem from="1772840967570" duration="1853000" />
-      <workItem from="1772905165774" duration="16191000" />
-    </task>
-    <task id="LOCAL-00198" summary="Update">
-      <created>1761835707688</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1761835707689</updated>
+      <workItem from="1772905165774" duration="17588000" />
     </task>
     <task id="LOCAL-00199" summary="Update">
       <created>1761877566412</created>
@@ -516,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1773011781929</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="Update">
+      <created>1773012150727</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1773012150728</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

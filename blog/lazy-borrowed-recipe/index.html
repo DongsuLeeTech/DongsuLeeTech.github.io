@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <script async="" src="macflow_files/js"></script>
+    <script async="" src="recipes/js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -13,19 +13,9 @@
     <meta name="author" content="Dongsu Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="macflow_files/bootstrap.min.css">
-    <link rel="stylesheet" href="macflow_files/font-awesome.min.css">
-    <link rel="stylesheet" href="macflow_files/stylesheet.css">
-    <link rel="stylesheet" href="macflow_files/app.css">
     <link rel="icon" type="image/png" sizes="32x32" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
 
-    <script src="macflow_files/jquery.min.js"></script>
-    <script src="macflow_files/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
         window.MathJax = {
@@ -34,8 +24,6 @@
         };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="macflow_files/app.js"></script>
-
     <style>
       /* === Theme Variables (matches main site) === */
       :root {
@@ -64,12 +52,26 @@
       /* === Base === */
       * { box-sizing: border-box; }
       body {
-        font-family: 'Source Serif 4', serif;
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', serif;
         background-color: var(--bg);
         color: var(--text-main);
         line-height: 1.6;
         transition: background-color 0.3s, color 0.3s;
       }
+
+      /* === Lightweight Layout Utilities === */
+      .container { width: 100%; }
+      .row { display: block; width: 100%; }
+      .col-md-12 { display: block; width: 100%; }
+      .text-center { text-align: center; }
+      .text-justify { text-align: justify; }
+      .no-padding-lr { padding-left: 0; padding-right: 0; }
+      .top15 { margin-top: 15px; }
+      .bottom30 { margin-bottom: 30px; }
+      .bottom20 { margin-bottom: 20px; }
+      .top5 { margin-top: 5px; }
+      .bottom5 { margin-bottom: 5px; }
 
       /* === Main Content Card === */
       #main {
@@ -114,21 +116,21 @@
       #main .demo-av,
       #main .demo-info h4,
       #main .demo-insight h4 {
-        font-family: 'DM Mono', monospace !important;
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
       }
       #main p,
       #main li,
       #main td,
       #main th,
       #main .text-caption-small {
-        font-family: 'Source Serif 4', serif;
+        font-family: Georgia, 'Times New Roman', serif;
       }
       #main .author-list,
       #main .author-list li,
       #main .author-list a,
       #main .author-affil,
       #main .author-date {
-        font-family: 'DM Mono', monospace !important;
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
       }
       p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
       li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }
@@ -192,7 +194,7 @@
       #main .author-list a.dongsu-link:hover { color: var(--accent-hover) !important; }
 
       /* === Misc === */
-      #main img { border-radius: 10px; box-shadow: var(--shadow); }
+      #main img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow); }
       pre.codebox-pre { background: #0f111a; color: #e6e9ef; border-radius: 8px; padding: 16px; overflow-x: auto; }
       body[data-theme="dark"] pre.codebox-pre { background: #0b0d10; }
       hr { border-top: 1px solid var(--border); }
@@ -224,7 +226,7 @@
         width: 100%;
         max-width: 620px;
         margin: 20px auto 12px;
-        font-family: 'DM Sans', sans-serif !important;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
       }
       body[data-theme="dark"] .demo-wrap {
         background: #211c1f;
@@ -232,7 +234,7 @@
         border-color: rgba(255,255,255,0.08);
         box-shadow: none;
       }
-      .demo-wrap * { font-family: 'DM Sans', sans-serif !important; }
+      .demo-wrap * { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; }
       .demo-wrap h3 { color: #6d2f1f !important; font-size: 18px !important; font-weight: 700 !important; margin: 0 0 6px !important; }
       body[data-theme="dark"] .demo-wrap h3 { color: #ffd4b3 !important; }
       .demo-wrap p.demo-desc { text-align: left !important; font-size: 13px !important; color: #7d6455 !important; line-height: 1.65; margin-bottom: 20px; }
