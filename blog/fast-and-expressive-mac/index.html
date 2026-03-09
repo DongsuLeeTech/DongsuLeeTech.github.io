@@ -13,9 +13,15 @@
     <meta name="author" content="Dongsu Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="32x32" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
 
+    <script src="macflow_files/jquery.min.js"></script>
+    <script src="macflow_files/bootstrap.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
         window.MathJax = {
@@ -24,6 +30,7 @@
         };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="macflow_files/app.js"></script>
     <style>
       /* === Theme Variables (matches main site) === */
       :root {
@@ -52,26 +59,12 @@
       /* === Base === */
       * { box-sizing: border-box; }
       body {
-        margin: 0;
-        font-family: Georgia, 'Times New Roman', serif;
+        font-family: 'Source Serif 4', serif;
         background-color: var(--bg);
         color: var(--text-main);
         line-height: 1.6;
         transition: background-color 0.3s, color 0.3s;
       }
-
-      /* === Lightweight Layout Utilities === */
-      .container { width: 100%; }
-      .row { display: block; width: 100%; }
-      .col-md-12 { display: block; width: 100%; }
-      .text-center { text-align: center; }
-      .text-justify { text-align: justify; }
-      .no-padding-lr { padding-left: 0; padding-right: 0; }
-      .top15 { margin-top: 15px; }
-      .bottom30 { margin-bottom: 30px; }
-      .bottom20 { margin-bottom: 20px; }
-      .top5 { margin-top: 5px; }
-      .bottom5 { margin-bottom: 5px; }
 
       /* === Main Content Card === */
       #main {
@@ -106,21 +99,21 @@
       #main h5,
       #main h6,
       #main .author-list {
-        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+        font-family: 'DM Mono', monospace !important;
       }
       #main p,
       #main li,
       #main td,
       #main th,
       #main .text-caption-small {
-        font-family: Georgia, 'Times New Roman', serif;
+        font-family: 'Source Serif 4', serif;
       }
       #main .author-list,
       #main .author-list li,
       #main .author-list a,
       #main .author-affil,
       #main .author-date {
-        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+        font-family: 'DM Mono', monospace !important;
       }
       p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
       li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }
@@ -184,7 +177,7 @@
       #main .author-list a.dongsu-link:hover { color: var(--accent-hover) !important; }
 
       /* === Misc === */
-      #main img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: var(--shadow); }
+      #main img { border-radius: 10px; box-shadow: var(--shadow); }
       pre.codebox-pre { background: #0f111a; color: #e6e9ef; border-radius: 8px; padding: 16px; overflow-x: auto; }
       body[data-theme="dark"] pre.codebox-pre { background: #0b0d10; }
       hr { border-top: 1px solid var(--border); }
