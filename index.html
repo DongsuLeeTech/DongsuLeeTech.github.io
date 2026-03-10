@@ -136,6 +136,9 @@
       margin-bottom: 6px;
       display: block;
       color: var(--title-wood);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .card-title:hover { color: var(--accent); }
     .card-meta {
@@ -162,6 +165,18 @@
     }
     .toggle-trigger:hover { color: var(--accent-hover); }
     .toggle-content { display: none; }
+
+    /* Year label divider in publications */
+    .year-label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin: 28px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.04em;
+    }
+    .year-label:first-child { margin-top: 0; }
 
     /* Responsive */
     @media (max-width: 768px) {
@@ -227,8 +242,8 @@
         <a href="https://arxiv.org/abs/2511.05005" class="card-title">A Recipe for Stable Offline Multi-agent Reinforcement Learning</a>
         <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>Preprint</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
-          <a href="https://github.com/DongsuLeeTech/offline-marl-recipe">code</a> |
+          <a href="http://arxiv.org/abs/2603.08399">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/offline-marl-recipe">code</a>|
           <a href="blog/lazy-borrowed-recipe/">write-up</a>
         </div>
       </div>
@@ -237,8 +252,8 @@
         <a href="https://arxiv.org/abs/2511.05005" class="card-title">Multi-agent Coordination via Flow Matching</a>
         <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>ICLR 2026</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
-          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a> |
+          <a href="https://arxiv.org/abs/2511.05005">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a>|
           <a href="blog/fast-and-expressive-mac/">write-up</a>
         </div>
       </div>
@@ -247,8 +262,8 @@
         <a href="https://arxiv.org/abs/2509.25550" class="card-title">Unifying Agent Interaction and World Information for Multi-agent Coordination</a>
         <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Yaru Niu, Honguk Woo, Amy Zhang, Ding Zhao <br> <em>NeurIPS 2025 ARLET Workshop (Oral)</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2509.25550">paper</a> |
-          <a href="https://github.com/DongsuLeeTech/IWoL">code</a> |
+          <a href="https://arxiv.org/abs/2509.25550">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/IWoL">code</a>|
           <a href="projects/IWoL/">project page</a>
         </div>
       </div>
@@ -257,7 +272,7 @@
         <a href="https://arxiv.org/abs/2509.20612" class="card-title">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</a>
         <div class="card-meta">Daehee Lee, <strong>Dongsu Lee</strong>, TaeYoon Kwack, Wonje Choi, Honguk Woo <br> <em>NeurIPS 2025 (Spotlight)</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2509.20612">paper</a> |
+          <a href="https://arxiv.org/abs/2509.20612">paper</a>|
           <a href="https://github.com/L2dulgi/SIL-C">code</a>
         </div>
       </div>
@@ -266,110 +281,99 @@
         <a href="https://arxiv.org/abs/2410.17373" class="card-title">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</a>
         <div class="card-meta"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>NeurIPS 2024</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2410.17373">paper</a> |
-          <a href="projects/eftm/">project page</a> |
+          <a href="https://arxiv.org/abs/2410.17373">paper</a>|
+          <a href="projects/eftm/">project page</a>|
           <a href="https://neurips.cc/virtual/2024/poster/93443">talk</a>
         </div>
       </div>
     </section>
 
     <section id="publications">
-      <h2 class="section-title">All Publications & Patents</h2>
+      <h2 class="section-title">All Publications</h2>
+
+      <div class="year-label">2026</div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2511.05005" class="card-title" style="display:inline-block; margin-bottom:6px;">Multi-agent Coordination via Flow Matching</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>ICLR 2026</em></div>
+        <a href="https://arxiv.org/abs/2511.05005" class="card-title">A Recipe for Stable Offline Multi-agent Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>Preprint</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2511.05005">paper</a> |
-          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a> |
-          <a href="blog/fast-and-expressive-mac/">write-up</a>
+          <a href="http://arxiv.org/abs/2603.08399">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/offline-marl-recipe">code</a>|
+          <a href="blog/lazy-borrowed-recipe/">write-up</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2509.25550" class="card-title" style="display:inline-block; margin-bottom:6px;">Unifying Agent Interaction and World Information for Multi-agent Coordination</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Daehee Lee, Yaru Niu, Honguk Woo, Amy Zhang, Ding Zhao <br> <em>NeurIPS 2025 ARLET Workshop (Oral)</em></div>
+        <a href="https://arxiv.org/abs/2511.05005" class="card-title">Multi-agent Coordination via Flow Matching</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Amy Zhang <br> <em>ICLR 2026</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2509.25550">paper</a> |
-          <a href="https://github.com/DongsuLeeTech/IWoL">code</a> |
+          <a href="https://arxiv.org/abs/2511.05005">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/mac-flow">code</a>|
+          <a href="blog/fast-and-expressive-mac/">write-up</a>
+        </div>
+      </div>
+
+      <div class="year-label">2025</div>
+
+      <div class="card">
+        <a href="https://arxiv.org/abs/2509.25550" class="card-title">Unifying Agent Interaction and World Information for Multi-agent Coordination</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Daehee Lee, Yaru Niu, Honguk Woo, Amy Zhang, Ding Zhao <br> <em>NeurIPS 2025 ARLET Workshop (Oral)</em></div>
+        <div class="card-links">
+          <a href="https://arxiv.org/abs/2509.25550">paper</a>|
+          <a href="https://github.com/DongsuLeeTech/IWoL">code</a>|
           <a href="projects/IWoL/">project page</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2509.20612" class="card-title" style="display:inline-block; margin-bottom:6px;">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</a>
-        <div class="card-meta" style="margin-top:6px;">Daehee Lee, <strong>Dongsu Lee</strong>, TaeYoon Kwack, Wonje Choi, Honguk Woo <br> <em>NeurIPS 2025 (Spotlight)</em></div>
+        <a href="https://arxiv.org/abs/2509.20612" class="card-title">Policy Compatible Skill Incremental Learning via Lazy Learning Interface</a>
+        <div class="card-meta">Daehee Lee, <strong>Dongsu Lee</strong>, TaeYoon Kwack, Wonje Choi, Honguk Woo <br> <em>NeurIPS 2025 (Spotlight)</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2509.20612">paper</a> |
+          <a href="https://arxiv.org/abs/2509.20612">paper</a>|
           <a href="https://github.com/L2dulgi/SIL-C">code</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://ieeexplore.ieee.org/document/11080103" class="card-title" style="display:inline-block; margin-bottom:6px;">Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>IEEE Transactions on Intelligent Transportation Systems</em></div>
+        <a href="https://ieeexplore.ieee.org/document/11080103" class="card-title">Scenario-free Autonomous Driving with Multi-task Offline-to-online Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>IEEE Transactions on Intelligent Transportation Systems</em></div>
         <div class="card-links">
-          <a href="https://ieeexplore.ieee.org/document/11080103">paper</a> |
+          <a href="https://ieeexplore.ieee.org/document/11080103">paper</a>|
           <a href="https://github.com/DongsuLeeTech/O3RL.git">code</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2505.13144" class="card-title" style="display:inline-block; margin-bottom:6px;">Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>ICML 2025</em></div>
+        <a href="https://arxiv.org/abs/2505.13144" class="card-title">Temporal Distance-aware Transition Augmentation for Offline Model-based Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>ICML 2025</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2505.13144">paper</a> |
-          <a href="projects/tempdata/">project page</a> |
+          <a href="https://arxiv.org/abs/2505.13144">paper</a>|
+          <a href="projects/tempdata/">project page</a>|
           <a href="https://icml.cc/virtual/2025/poster/44612">talk (5min)</a>
         </div>
       </div>
 
+      <div class="year-label">2024</div>
+
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2410.17373" class="card-title" style="display:inline-block; margin-bottom:6px;">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>NeurIPS 2024</em></div>
+        <a href="https://arxiv.org/abs/2410.17373" class="card-title">Episodic Future Thinking Mechanism for Multi-agent Reinforcement Learning</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>NeurIPS 2024</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2410.17373">paper</a> |
-          <a href="projects/eftm/">project page</a> |
+          <a href="https://arxiv.org/abs/2410.17373">paper</a>|
+          <a href="projects/eftm/">project page</a>|
           <a href="https://neurips.cc/virtual/2024/poster/93443">talk (5min)</a>
         </div>
       </div>
 
       <div class="card">
-        <span class="badge">Paper</span>
-        <a href="https://arxiv.org/abs/2404.02429" class="card-title" style="display:inline-block; margin-bottom:6px;">AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset</a>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Chanin Eom, Minhae Kwon <br> <em>ICRA 2024</em></div>
+        <a href="https://arxiv.org/abs/2404.02429" class="card-title">AD4RL: Autonomous Driving Benchmarks for Offline Reinforcement Learning with Value-based Dataset</a>
+        <div class="card-meta"><strong>Dongsu Lee</strong>, Chanin Eom, Minhae Kwon <br> <em>ICRA 2024</em></div>
         <div class="card-links">
-          <a href="https://arxiv.org/abs/2404.02429">paper</a> |
-          <a href="https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha">project page</a> |
-          <a href="https://www.youtube.com/watch?v=DGoxmBJrNRc">talk (5min)</a> |
+          <a href="https://arxiv.org/abs/2404.02429">paper</a>|
+          <a href="https://sites.google.com/view/ad4rl/%ED%99%88#h.cekhbwvkngha">project page</a>|
+          <a href="https://www.youtube.com/watch?v=DGoxmBJrNRc">talk (5min)</a>|
           <a href="https://www.etnews.com/20240313000363">media</a>
         </div>
-      </div>
-
-      <h2 class="section-title" style="margin-top: 40px;">Patents</h2>
-
-      <div class="card">
-        <span class="badge">Patent</span>
-        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Method and Apparatus for Inferring Stochastic Driving Characteristic of a Vehicle</span>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Application no. US 18/139602 (Apr 26, 2023), pending</em></div>
-      </div>
-
-      <div class="card">
-        <span class="badge">Patent</span>
-        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Apparatus and Method for Inferring Driving Characteristics of Vehicle</span>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Patent no. US 12,391,261 (Issued Aug 19, 2025)</em></div>
-      </div>
-
-      <div class="card">
-        <span class="badge">Patent</span>
-        <span class="card-title" style="display:inline-block; margin-bottom:6px; color:var(--text-main);">Method for Combating Stop-and-Go Wave Problem Using Deep Reinforcement Learning based Autonomous Vehicles</span>
-        <div class="card-meta" style="margin-top:6px;"><strong>Dongsu Lee</strong>, Minhae Kwon <br> <em>Patent no. US 12,091,025 (Sep 2024)</em></div>
       </div>
     </section>
 
@@ -378,20 +382,20 @@
 
       <div class="card">
         <span class="badge">Blog</span>
-        <a href="blog/lazy-borrowed-recipe/" class="card-title" style="display:inline-block; margin-bottom:6px;">A lazy, borrowed recipe</a>
-        <div class="card-meta" style="margin-top:6px;">Mar 2026 • Discourse: right direction of the offline MARL community.</div>
+        <a href="blog/lazy-borrowed-recipe/" class="card-title">A lazy, borrowed recipe</a>
+        <div class="card-meta">Mar 2026 • Discourse: right direction of the offline MARL community.</div>
       </div>
 
       <div class="card">
         <span class="badge">Blog</span>
-        <a href="blog/fast-and-expressive-mac/" class="card-title" style="display:inline-block; margin-bottom:6px;">Fast and expressive multi-agent coordination</a>
-        <div class="card-meta" style="margin-top:6px;">Oct 2025 • Capturing complex joint behavior while keeping inference fast.</div>
+        <a href="blog/fast-and-expressive-mac/" class="card-title">Fast and expressive multi-agent coordination</a>
+        <div class="card-meta">Oct 2025 • Capturing complex joint behavior while keeping inference fast.</div>
       </div>
 
       <div class="card">
         <span class="badge">Blog</span>
-        <a href="blog/research-statement/" class="card-title" style="display:inline-block; margin-bottom:6px;">Research statement: Towards generalizable MARL</a>
-        <div class="card-meta" style="margin-top:6px;">Aug 2025 • Bottlenecks and a roadmap for generalizable MARL.</div>
+        <a href="blog/research-statement/" class="card-title">Research statement: Towards generalizable MARL</a>
+        <div class="card-meta">Aug 2025 • Bottlenecks and a roadmap for generalizable MARL.</div>
       </div>
     </section>
 
