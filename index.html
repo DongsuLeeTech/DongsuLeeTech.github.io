@@ -204,7 +204,7 @@
     <section id="main" class="active">
       <div class="hero">
         <div class="hero-image">
-          <img src="images/profile/profile.JPG" alt="Profile Photo" onerror="this.src='https://via.placeholder.com/180x180?text=Photo'">
+          <img id="profilePhoto" src="images/profile/Profile.JPG" alt="Profile Photo" onerror="this.src='https://via.placeholder.com/180x180?text=Photo'">
         </div>
         <div class="hero-text">
           <h1>Dongsu Lee</h1>
@@ -427,11 +427,17 @@
     // --- 1. Day / Night Theme Logic ---
     const btn = document.getElementById('themeToggle');
     const root = document.body;
+    const profilePhoto = document.getElementById('profilePhoto');
+
+    function updateProfilePhoto(isDark) {
+      profilePhoto.src = isDark ? 'images/profile/profile_night.JPG' : 'images/profile/Profile.JPG';
+    }
 
     // init theme
     if (localStorage.getItem('theme') === 'dark') {
       root.setAttribute('data-theme', 'dark');
       btn.textContent = '☀️';
+      updateProfilePhoto(true);
     }
 
     btn.addEventListener('click', () => {
@@ -440,10 +446,12 @@
         root.removeAttribute('data-theme');
         localStorage.setItem('theme', 'light');
         btn.textContent = '🌙';
+        updateProfilePhoto(false);
       } else {
         root.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         btn.textContent = '☀️';
+        updateProfilePhoto(true);
       }
     });
 

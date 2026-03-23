@@ -197,6 +197,41 @@
         cursor: pointer;
         z-index: 5;
       }
+
+        /* Table */
+      .table-wrap {
+        overflow-x: auto;
+        margin: 28px 0;
+      }
+
+      table {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        padding: 10px 14px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+
+      th {
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--text-secondary);
+        background: var(--code-bg);
+      }
+
+      td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+      td.highlight {
+        color: var(--accent);
+        font-weight: 600;
+      }
     </style>
 
 </head>
@@ -234,20 +269,138 @@
               </div>
             </div>
             <p>
-                Multi-agent coordination is tricky because joint action distributions are inherently multi-modal.
-                Even in the simplest cooperative settings, the space of "what agents could do together" quickly branches
-                into many possible modes, tight formations, asymmetric roles, fallback behaviors, and everything in between.
-                The same state can lead to wildly different coordinated outcomes depending on subtle cues.
+                Multi-agent coordination is not single-agent RL with more agents.
+                The real difficulty is structural: when multiple agents share an environment, the joint action space grows exponentially,
+                and the same observation can produce wildly different coordinated outcomes depending on subtle cues that no individual agent has full access to.
+                The space of 'what agents could do together' isn't a simple product of individual possibilities.
+                It's a combinatorial landscape of roles, formations, and strategies, all entangled through shared dynamics.
             </p>
             <p>
-                And this complexity puts us in an awkward spot. Most existing approaches force you to choose between two bad options:
+                This combinatorial structure is what makes offline MARL especially challenging.
+                In the offline setting, you can't explore.
+                You're stuck with whatever data you have, and that data reflects the full messiness of real coordination:
+                multiple behavioral policies, diverse quality levels, multi-modal joint action distributions.
+                A method that can't represent that diversity will simply fail to learn meaningful teamwork.
             </p>
-            <ul>
-                <li>Capture the full multimodal structure, but suffer painfully slow inference.</li>
-                <li>Do inference quickly, but collapse to brittle, poorly coordinated behavior.</li>
-            </ul>
             <p>
-                This trade-off has been baked into multi-agent RL for a few years. But it doesn't actually have to be.
+                Yet when it's time to deploy these policies, the requirements flip entirely.
+                Real systems need to act within a few milliseconds.
+                You cannot run a 200-step denoising chain to decide which direction to move at every decision point.
+                The training phase demands expressiveness; the deployment phase demands speed.
+            </p>
+            <h2>Two camps, same impasse</h2>
+            <p>
+                On one side, we have Gaussian policy-based methods (simple offline MARL),
+                e.g., <a href="https://arxiv.org/abs/2307.11620">OMIGA</a>,
+                <a href="https://arxiv.org/abs/2106.03400">ICQ</a>,
+                <a href="https://openreview.net/forum?id=wZYWwJvkneF">FACMAC</a>,
+                and extensions of offline RL like <a href="https://arxiv.org/abs/2106.06860">TD3+BC</a>,
+                <a href="https://arxiv.org/abs/2006.04779">CQL</a>, and
+                <a href="https://arxiv.org/abs/1812.02900">BCQ</a> into multi-agent settings.
+                These are fast. Inference is a single forward pass:
+                a few milliseconds, done. But the speed comes at a structural cost.
+                Gaussian policies model the action distribution as a unimodal curve.
+                In multi-agent tasks, these methods collapse them into an averaged behavior.
+                The agents move fast, but they should not coordinate.
+            </p>
+            <p>
+                On the other side, we have diffusion-based methods, e.g., <a href="https://arxiv.org/abs/2305.17330">MADiff</a>
+                and <a href="https://openreview.net/forum?id=OTFKVkxSlL">DoF</a>. These are genuinely powerful.
+                By modeling the joint action distribution through iterative denoising,
+                they can capture the complex multi-modal structure of coordinated behavior. But so is the cost.
+                MADiff in its decentralized variant requires \(O(I^2 K)\) computation per environment step,
+                where \(I\) is the number of agents and \(K\) is the number of denoising steps.
+                DoF improves this to \(O(IK)\) through factorization, but still needs the full iterative chain.
+            </p>
+            <p>
+                The empirical picture is stark. Across the 18 dataset-scenario pairs in SMACv1 and SMACv2,
+                Gaussian baselines like BC and MABCQ average 12.2 and 5.5 in reward, respectively.
+                Diffusion methods like DoF reach 15.6.
+                But DoF takes roughly 14.5× longer per inference step than methods in the Gaussian policy.
+            </p>
+            <h2>Decouple representation from execution</h2>
+            <p>
+                Prior methods force the same model to do two fundamentally different jobs:
+                (1) represent the rich, multi-modal joint action distribution present in offline data, and
+                (2) produce fast, decentralized actions at deployment.
+                These are different objectives with different computational profiles.
+                Merging them into a single learning target is what creates the trade-off.
+            </p>
+            <p>
+                The engineering principle is simple. Don't make the same object serve both purposes!
+                Instead, learn the joint behavior in its full expressive glory during training.
+                Specifically, take as many flow steps as you need, condition on global observations, and model the entire joint action space.
+                Then, distill that knowledge into decentralized one-step policies for deployment.
+            </p>
+            <p>
+                This isn't just an architectural trick.
+                It reflects something deeper about the structure of coordination problems.
+                Coordination is fundamentally about the group. On the other hand, each agent needs to produce an action quickly.
+                The joint space is where you learn. The individual space is where you act. Decoupling them is the move.
+            </p>
+            <h2>How MAC-Flow works</h2>
+            <p>
+                MAC-Flow implements this principle in two stages.
+            </p>
+            <div class="row">
+              <div class="col-md-12 no-padding-lr top15 bottom20">
+                  <p class="text-center" style="margin-bottom:6px;">
+                      <img src="assets/macflow-overview.png" style="width: 85%;" alt="macflow-overview-diagram">
+                  </p>
+                  <span class="text-center text-caption-small top5 bottom5" style="display:block;font-size:0.84rem;line-height:1.55;">
+                      MAC-Flow first extract joint behaviors, which are multi-modal and complex, from offline data via flow-matching,
+                      and then distill them into fast individual policies using BC distillation.
+                  </span>
+              </div>
+            </div>
+            <h3>Stage I: Capture the joint behavior via flow matching</h3>
+            <p>
+                First, we learn a flow-based joint policy \(\mu_\phi(\mathbf{o}, \mathbf{z})\)
+                that captures the joint action distribution from the offline dataset.
+                Flow matching provides the backbone here.
+                Unlike diffusion models, which rely on stochastic differential equations and require many iterative denoising steps,
+                flow matching learns a deterministic ODE-based transport from noise to actions via a simple velocity field as follows.
+            </p>
+            <div class="equation-block">
+                \[\mathcal{L}_{\text{Flow-BC}}(\phi) =
+                \mathbb{E}_{\mathbf{x}^0 \sim p_0, (\mathbf{o},\mathbf{a}) \sim \mathcal{D}, t \sim \text{Unif}([0,1])}
+                \left[ \| v_\phi(t, \mathbf{o}, \mathbf{x}^t) - (\mathbf{a} - \mathbf{x}^0) \|_2^2 \right] \]
+            </div>
+            <p>
+                The training is straightforward, but the result is expressive.
+                The learned flow captures the multi-modal structure of coordinated behaviors in the offline dataset.
+                This is where the expressiveness lives, and we don't compromise it.
+            </p>
+            <h3>Stage II: Distill into one-step decentralized policies</h3>
+            <p>
+                The joint flow policy is powerful but impractical for deployment, that is,
+                it conditions on global information and requires multiple Euler integration steps. So we factorize it.
+                For each agent \(i\), we learn a one-step sampling policy \(\mu_{w_i}(o_i, z_i)\) by jointly optimizing two objectives as follows.
+            </p>
+            <div class="equation-block">
+            \[
+            \mathcal{L}_\pi(\mathbf{w}) =
+                \mathbb{E}_{\mathbf{o} \sim \mathcal{D},\, \mathbf{a} \sim \pi_\mathbf{w},\, \mathbf{z} \sim p_0}
+                \left[ -Q_{\text{tot}}(\mathbf{o}, \mathbf{a}) + \alpha \sum_{i=1}^{I} \| \mu_{w_i}(o_i, z_i) - [\mu_\phi(\mathbf{o}, \mathbf{z})]_i \|_2^2 \right]
+            \]
+            </div>
+            <p>
+                The first term maximizes the global Q-function under the individual-global-max (IGM) principle,
+                ensuring that per-agent actions stay aligned with optimal joint behavior. The second term is BC distillation.
+                It keeps each agent's one-step policy close to what the full flow policy would have produced for that agent.
+                We can call it a projected policy. The balance coefficient \(\alpha\) mediates between value maximization and distributional fidelity.
+            </p>
+            <p>
+                Here is the result.
+                At deployment, each agent runs a single forward pass through a lightweight MLP.
+                Per-agent inference complexity is \(O(1)\), independent of both the number of agents and the number of flow steps used during training.
+                Total complexity scales linearly as \(O(I)\).
+            </p>
+            <h2>What the numbers say</h2>
+            <p>
+                We evaluated MAC-Flow across four widely-used MARL benchmarks,
+                including continuous and discrete action control, covering 12 environments and 34 datasets.
+                Here is our heading result.
             </p>
             <div class="row">
               <div class="col-md-12 no-padding-lr top15 bottom20">
@@ -261,112 +414,123 @@
                   </span>
               </div>
             </div>
-            <h2>Desiderata for practical multi-agent coordination</h2>
             <p>
-                Offline MARL brings its own set of challenges.
-                Since you're learning entirely from fixed demonstrations or logs,
-                the model really needs to capture the full range of behaviors present in the data, which are messy, diverse, and highly multi-modal.
-                If it can't represent those different coordination patterns, you simply won't see meaningful teamwork emerge.
+                <strong>MAC-Flow achieves approximately \(14.5\times \) faster inference than diffusion-based methods while maintaining comparable performance.</strong>
+                On SMACv1, MAC-Flow matches the best diffusion baseline in average reward, while running at a fraction of the computational cost.
+                On MA-MuJoCo, MAC-Flow achieves the highest average reward across all baselines.
             </p>
             <p>
-                But when it comes time to deploy a policy, the requirements flip.
-                Real systems need to act quickly within just a few milliseconds.
-                A method that requires dozens of iterative denoising steps, like diffusion-based policies,
-                just isn't practical (for "low-level decision-making") in environments where timing matters.
+                Additinoally, MAC-Flow matches the inference complexity of Gaussian methods while dramatically outperforming them in coordination quality.
+                And it matches or exceeds the performance of diffusion methods while being an order of magnitude faster.
             </p>
-            <p>
-                So we end up with this tension: the training phase demands expressiveness, while the deployment phase demands speed.
-                Which naturally leads to a simple but important question:
-            </p>
-            <p>
-                Do these two goals really have to be tied together as a learning objective?
-                Or can we learn rich joint behavior first and then convert it into something that runs fast at test time?
-            </p>
-
-            <h2>The challenges</h2>
-            <p>
-                Most prior systems blend "representing the joint distribution" and "choosing an action quickly" into a single learning objective.
-                That's the core bottleneck. More precisely, <a href="https://arxiv.org/abs/2305.17330">diffusion-based</a> <a href="https://openreview.net/forum?id=OTFKVkxSlL">model</a> give us rich, multimodal distributions. They are great!
-                But sampling requires an iterative denoising process, terrible for real-time use. On the other hand, <a href="https://proceedings.mlr.press/v162/pan22a/pan22a.pdf">Gaussian</a> <a href="https://arxiv.org/abs/2307.11620">policies</a> are fast!
-                But they oversimplify joint interactions, so agents often fail to coordinate under complexity.
-            </p>
-            <p>The mistake is treating <i>expressive</i> representation and <i>fast</i> per-agent policy as the same object. They don't have to be.</p>
-
-            <h2>Learn joint behavior first, then distill it</h2>
-            <p>
-                Here's the nugget as my favorite part of this whole framing.
-                Learn the joint action distribution in its full, expressive glory,
-                then distill that knowledge into decentralized one-step policies.
-                In other words, front-load the complexity, and make execution cheap.
-                This idea is motivated from
-                <a href="https://arxiv.org/abs/2209.03003">seminal research realted to</a>
-                <a href="https://arxiv.org/abs/2502.02538">flow</a>
-                <a href="https://arxiv.org/abs/2410.12557">short-cut</a>.
-            </p>
-            <div class="row">
-              <div class="col-md-12 no-padding-lr top15 bottom20">
-                  <p class="text-center" style="margin-bottom:6px;">
-                      <img src="assets/macflow-overview.png" style="width: 85%;" alt="macflow-overview-diagram">
-                  </p>
-                  <span class="text-center text-caption-small top5 bottom5" style="display:block;font-size:0.84rem;line-height:1.55;">
-                      MAC-Flow first extract joint behaviors, which are multi-modal and complex, from offline data via flow-matching,
-                      and then distill them into fast individual policies using BC distillation.
-                  </span>
-              </div>
+            <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Type</th>
+                  <th>Complexity per agent</th>
+                  <th>Total Complexity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="highlight">MAC-Flow</td>
+                  <td>Flow (one-step)</td>
+                  <td class="num">O(1)</td>
+                  <td class="num">O(I)</td>
+                </tr>
+                <tr>
+                  <td>DoF</td>
+                  <td>Diffusion</td>
+                  <td class="num">O(K)</td>
+                  <td class="num">O(IK)</td>
+                </tr>
+                <tr>
+                  <td>MADiff-D</td>
+                  <td>Diffusion</td>
+                  <td class="num">O(IK)</td>
+                  <td class="num">O(I²K)</td>
+                </tr>
+                <tr>
+                  <td>Gaussian baselines</td>
+                  <td>Gaussian</td>
+                  <td class="num">O(1)</td>
+                  <td class="num">O(I)</td>
+                </tr>
+              </tbody>
+            </table>
             </div>
+            <h2>Where it breaks, and what comes next</h2>
             <p>
-                Thanks to the simple and efficient idea behind <a href="https://arxiv.org/abs/2412.06264">flow</a> <a href="https://arxiv.org/abs/2210.02747">matching</a>,
-                we can extract the expressiveness of complex multi-agent behavior without paying a heavy computational price.
-                Flow matching learns a continuous transformation between distributions, giving us a smooth ODE-based mapping from noise to actions.
-                This means we can model multi-modal joint action patterns without the iterative multi-step denoising loop that makes diffusion models slow.
-                Despite being lightweight, the method captures the diverse coordination modes present in offline multi-agent datasets,
-                effectively modeling the joint structure we actually care about.
+                I want to be honest about the boundaries. The IGM principle is what makes factorization work.
+                In specific, the assumption that the global optimum can be decomposed into per-agent optima.
+                But there exist coordination structures where this assumption is provably violated.
             </p>
             <p>
-                Once this expressive joint policy is learned, the next step is to break it apart in a meaningful way.
-                Through flow distillation, we preserve the multi-modality and structure of the joint model while converting it into fast,
-                one-step policies for each agent. And with the help of the <a href="https://arxiv.org/abs/1803.11485">Individual-global-max</a> <a href="https://arxiv.org/abs/1706.05296">principle</a>,
-                these per-agent policies remain aligned with the optimal joint behavior, even after decentralization.
+                We tested this explicitly with an XOR coordination task: two agents whose optimal joint actions are anti-aligned \((−1, +1)\) and \((+1, −1)\).
+                In this setting, no per-agent Q-function can recover the optimal strategy.
+                The flow-based joint policy captures the structure perfectly, especially in reconstructing both modes.
+                But when we distill into projected policies, the representation collapses into a near-uniform product distribution.
+                The failure isn't due to training instability or insufficient capacity; it's because the coordination structure is fundamentally non-separable under IGM.
             </p>
             <p>
-                The end result feels almost counterintuitive: the system understands complex group behavior
-                because it learned it in a rich joint space, yet each agent acts through a lightweight, single-step policy distilled from that knowledge.
-                Expressive during training, efficient at inference.
+                This is an important boundary condition.
+                It tells us that the current approach works well when coordination admits some degree of decomposability,
+                but breaks down when inter-agent coupling is maximally entangled.
+                Understanding exactly when and why factorization degrades is an open problem that still needs more analysis.
             </p>
-            <p>Exactly the combination we've been looking for.</p>
-            <h2>Why is this idea good and matters?</h2>
-            <p>By separating these roles, everything becomes simpler.</p>
-            <p>
-                During training, we allow the model to be as expressive as it needs to be.
-                It can explore the full multimodal structure of the dataset, capture nuanced coordination patterns,
-                and learn behaviors that are hard to represent with simple parametric forms. Nothing about training time demands that we be cheap.
-            </p>
-            <p>
-                But at deployment, the priorities flip entirely. Real systems care about latency, stability, and predictability.
-                A single-step per-agent policy, which is distilled from a richer joint model, fits that requirement perfectly.
-                You get fast inference, decentralized execution, and robustness in environments where timing matters.
-            </p>
-            <p>
-                This matters because coordination isn't about individual agents behaving intelligently in isolation.
-                It's about the structure of the group. If that structure isn't learned properly, no amount of local cleverness will fix the behavior.
-                Our approach recognizes this: learn the structure where it's easiest (the joint space), and execute where it's fastest (the per-agent policies).
-            </p>
+            <p>Looking ahead, I see several directions that excite me and throw open questions:</p>
+            <ul>
+                <li>
+                    Is BRAC-style extraction really the best policy extraction for MARL? MAC-Flow follows simple structure of TD3+BC.
+                    Although this is simple and powerful, but we don't know is it optimal solution for MARL.
+                    We need more worth exploring, including
+                    <a href="https://arxiv.org/abs/1910.00177">AWR</a>,
+                    <a href="https://arxiv.org/abs/2209.14548">rejection sampling</a>,
+                    <a href="https://arxiv.org/abs/2112.09332">Best</a>-<a href="https://arxiv.org/abs/2401.01879">of</a>-
+                    <a href="https://arxiv.org/abs/2404.01730">N</a>
+                    <a href="https://arxiv.org/pdf/2506.04168">sampling</a>, and
+                    <a href="https://arxiv.org/abs/1608.04471">variational</a>
+                    <a href="https://proceedings.neurips.cc/paper/2020/file/30ee748d38e21392de740e2f9dc686b6-Paper.pdf">formulations</a>
+                </li>
+                <li>
+                    The recent surge of <a href="https://arxiv.org/abs/2504.16084">test-time RL</a>
+                    and <a href="https://arxiv.org/abs/2509.24510">test-time adaptation</a> in LLMs raises a natural question:
+                    Can agents improve their coordination at test time? How do we leverage
+                    <a href="https://arxiv.org/html/2505.04007v2">variational</a> <a href="https://openreview.net/pdf?id=oG0vTBw58ic">gradient</a>
+                    <a href="https://proceedings.mlr.press/v97/gao19b/gao19b.pdf">descent</a> on the flow prior and
+                    test-time RL via unsupervised manner
+                    (e.g., <a href="https://arxiv.org/abs/2504.07896">behavioral</a>
+                    <a href="https://arxiv.org/abs/2412.05718">foundation</a>
+                    <a href="https://arxiv.org/abs/2402.15567">model</a>) for multi-agent setting?
+                </li>
+                <li>
+                    How much does the mixer network matter? The progression from
+                    <a href="https://arxiv.org/abs/1706.05296">VDN</a>'s linear sum to
+                    <a href="https://arxiv.org/abs/1803.11901">QMIX</a>'s monotonic network, to
+                    <a href="https://arxiv.org/abs/2008.01062">QPLEX</a>'s duplex dueling decomposition and
+                    <a href="https://arxiv.org/abs/2002.03939">Qatten</a>'s attention-based mixing,
+                    has demonstrated that mixer architectures unlock more expressive credit assignment.
+                </li>
+            </ul>
             <h2>Closing thoughts</h2>
             <p>
-                I like this perspective because it cleans up the story we tell about multi-agent systems:
+                When you force the same model to both represent complex joint behavior and act quickly as individual agents,
+                you're asking it to solve two conflicting goals simultaneously. No wonder it struggles.
             </p>
-            <ul>
-                <li>First, learn the behavior of the group as a whole.</li>
-                <li>Then, convert that knowledge into something each agent can use quickly.</li>
-                <li>Avoid the false trade-off between smart and fast.</li>
-            </ul>
             <p>
-                If you're interested in designing multi-agent systems that actually scale into real-world settings,
+                The fix is an engineering principle.
+                <strong>Learn the structure where it's easiest to learn it, and execute where it's fastest to execute.</strong>
+                In our case, the joint space is where the coordination structure lives,
+                and the individual space is where fast inference happens.
+            </p>
+            <p>
+                If you're designing multi-agent systems that need to scale into real-world settings,
                 I think this separation of representation and execution is one of the cleanest ideas we have.
             </p>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
             <hr>
