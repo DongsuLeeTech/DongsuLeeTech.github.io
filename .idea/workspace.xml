@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profile/profile.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/profile/profile.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +73,9 @@
       <recent name="$PROJECT_DIR$/blog/mac-flow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/profile" />
       <recent name="$PROJECT_DIR$/blog/lazy-borrowed-recipe/assets" />
       <recent name="$PROJECT_DIR$/data/CV" />
-      <recent name="$PROJECT_DIR$/images/profile" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,14 +185,8 @@
       <workItem from="1772840967570" duration="1853000" />
       <workItem from="1772905165774" duration="23120000" />
       <workItem from="1773430832200" duration="1203000" />
-      <workItem from="1774194287336" duration="4662000" />
-    </task>
-    <task id="LOCAL-00202" summary="Update">
-      <created>1762488758664</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1762488758664</updated>
+      <workItem from="1774194287336" duration="7244000" />
+      <workItem from="1790969069434" duration="648000" />
     </task>
     <task id="LOCAL-00203" summary="Update">
       <created>1762489154671</created>
@@ -531,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1773155770908</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="Update">
+      <created>1774234473156</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1774234473158</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
