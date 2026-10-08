@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="52bf3f7c-e7ba-4b2e-9dc7-63c96e317e4e" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/fast-and-expressive-mac/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/lazy-borrowed-recipe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/research-statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/research-statement/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +190,8 @@
       <workItem from="1773430832200" duration="1203000" />
       <workItem from="1774194287336" duration="7244000" />
       <workItem from="1790969069434" duration="1429000" />
-      <workItem from="1791166038097" duration="605000" />
-    </task>
-    <task id="LOCAL-00204" summary="Update">
-      <created>1762489208116</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1762489208117</updated>
+      <workItem from="1791166038097" duration="1245000" />
+      <workItem from="1791428516022" duration="410000" />
     </task>
     <task id="LOCAL-00205" summary="Update">
       <created>1762489321650</created>
@@ -531,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1790969902968</updated>
     </task>
-    <option name="localTasksCounter" value="253" />
+    <task id="LOCAL-00253" summary="Update">
+      <created>1791217870652</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1791217870653</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

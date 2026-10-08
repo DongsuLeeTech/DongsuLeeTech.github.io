@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" sizes="32x32" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://dongsuleetech.github.io/images/favicon/Ds.png">
@@ -34,7 +34,7 @@
     <style>
       /* === Theme Variables (matches main site) === */
       :root {
-        --bg: #f6f8fb;
+        --bg: #f3f1ec;
         --bg-card: #ffffff;
         --text-main: #35281f;
         --text-muted: #7b6a5d;
@@ -71,10 +71,10 @@
         max-width: var(--frame-max-width);
         width: 100%;
         margin: 28px auto 52px auto;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        box-shadow: var(--shadow);
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
         padding: 32px 40px 42px;
         transition: background-color 0.3s;
       }
@@ -89,18 +89,18 @@
 
       /* === Typography === */
       h1 { color: var(--text-main); }
-      h2, h3, h4 { font-weight: 300; color: var(--text-main); }
+      h2, h3, h4 { font-weight: 600; color: var(--text-main); }
       h2 { font-size: 1.4em; margin-top: 36px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
       h3 { font-size: 1.2em; margin-top: 24px; margin-bottom: 6px; }
-      #main h1,
+      #main h1.text-title,
+      #main .author-list {
+        font-family: 'PT Mono', monospace !important;
+      }
       #main h2,
       #main h3,
       #main h4,
       #main h5,
       #main h6,
-      #main .author-list {
-        font-family: 'DM Mono', monospace !important;
-      }
       #main p,
       #main li,
       #main td,
@@ -113,7 +113,7 @@
       #main .author-list a,
       #main .author-affil,
       #main .author-date {
-        font-family: 'DM Mono', monospace !important;
+        font-family: 'PT Mono', monospace !important;
       }
       p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
       li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }

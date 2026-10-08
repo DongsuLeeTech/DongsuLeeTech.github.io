@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="macflow_files/bootstrap.min.css">
     <link rel="stylesheet" href="macflow_files/font-awesome.min.css">
@@ -39,7 +39,7 @@
     <style>
       /* === Theme Variables (matches main site) === */
       :root {
-        --bg: #f6f8fb;
+        --bg: #f3f1ec;
         --bg-card: #ffffff;
         --text-main: #35281f;
         --text-muted: #7b6a5d;
@@ -76,10 +76,10 @@
         max-width: var(--frame-max-width);
         width: 100%;
         margin: 28px auto 52px auto;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        box-shadow: var(--shadow);
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
         padding: 32px 40px 42px;
         transition: background-color 0.3s;
       }
@@ -94,15 +94,10 @@
 
       /* === Typography === */
       h1 { color: var(--text-main); }
-      h2, h3, h4 { font-weight: 300; color: var(--text-main); }
+      h2, h3, h4 { font-weight: 600; color: var(--text-main); }
       h2 { font-size: 1.4em; margin-top: 36px; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
       h3 { font-size: 1.2em; margin-top: 24px; margin-bottom: 6px; }
-      #main h1,
-      #main h2,
-      #main h3,
-      #main h4,
-      #main h5,
-      #main h6,
+      #main h1.text-title,
       #main .author-list,
       #main .demo-mono,
       #main .demo-lbl,
@@ -114,8 +109,13 @@
       #main .demo-av,
       #main .demo-info h4,
       #main .demo-insight h4 {
-        font-family: 'DM Mono', monospace !important;
+        font-family: 'PT Mono', monospace !important;
       }
+      #main h2,
+      #main h3,
+      #main h4,
+      #main h5,
+      #main h6,
       #main p,
       #main li,
       #main td,
@@ -128,7 +128,7 @@
       #main .author-list a,
       #main .author-affil,
       #main .author-date {
-        font-family: 'DM Mono', monospace !important;
+        font-family: 'PT Mono', monospace !important;
       }
       p { margin-bottom: 0.95em; font-size: 1.03rem; color: var(--text-main); line-height: 1.82; }
       li { font-size: 1.02rem; color: var(--text-main); margin-bottom: 6px; line-height: 1.8; }
@@ -238,13 +238,13 @@
       .demo-wrap p.demo-desc { text-align: left !important; font-size: 13px !important; color: #7d6455 !important; line-height: 1.65; margin-bottom: 20px; }
       body[data-theme="dark"] .demo-wrap p.demo-desc { color: #d8bfae !important; }
       .demo-wrap .demo-hl { color: #bf5700; font-weight: 600; }
-      .demo-mono { font-family: 'DM Mono', monospace !important; }
-      .demo-lbl { font-family: 'DM Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55; }
+      .demo-mono { font-family: 'PT Mono', monospace !important; }
+      .demo-lbl { font-family: 'PT Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55; }
       body[data-theme="dark"] .demo-lbl { color: #e4b896; }
       .demo-toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
       .demo-presets { display: flex; gap: 5px; margin-left: auto; }
       .demo-pbtn {
-        font-family: 'DM Mono', monospace !important; font-size: 10px !important; padding: 4px 10px;
+        font-family: 'PT Mono', monospace !important; font-size: 10px !important; padding: 4px 10px;
         border-radius: 999px; border: 1px solid #ddb99b; background: #fff8f2; color: #8c6246; cursor: pointer; transition: .2s;
       }
       .demo-pbtn:hover { border-color: #bf5700; color: #bf5700; background: #fff0e3; }
@@ -256,7 +256,7 @@
         min-width: 220px; max-width: 320px; flex: 0 0 320px; align-self: center;
       }
       body[data-theme="dark"] .demo-info { background: rgba(43, 37, 41, 0.88); border-color: #484147; }
-      .demo-info h4 { font-family: 'DM Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55 !important; margin: 0 0 6px !important; }
+      .demo-info h4 { font-family: 'PT Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #9a6f55 !important; margin: 0 0 6px !important; }
       .demo-info-copy { display: flex; flex-direction: column; gap: 8px; }
       .demo-info p {
         text-align: left !important;
@@ -282,7 +282,7 @@
         padding: 0;
       }
       body[data-theme="dark"] .demo-gblock { background: transparent; border-color: transparent; }
-      .demo-gtitle { font-family: 'DM Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-align: center; margin-bottom: 2px; }
+      .demo-gtitle { font-family: 'PT Mono', monospace !important; font-size: 12px !important; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-align: center; margin-bottom: 2px; }
       .demo-gsub { font-size: 11px !important; color: #8b6c5b !important; text-align: center; margin-bottom: 10px; }
       body[data-theme="dark"] .demo-gsub { color: #d4b39b !important; }
       .demo-gcen .demo-gtitle { color: #4d433d !important; }
@@ -292,19 +292,19 @@
       body[data-theme="dark"] .demo-gvdn .demo-gtitle { color: #b2a79f !important; }
       body[data-theme="dark"] .demo-gmix .demo-gtitle { color: #ffc184 !important; }
       .demo-row { display: flex; align-items: center; }
-      .demo-rlbl { width: 20px; text-align: right; padding-right: 3px; font-family: 'DM Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; }
-      .demo-clbl { width: 44px; text-align: center; font-family: 'DM Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; margin: 0 1px; }
+      .demo-rlbl { width: 20px; text-align: right; padding-right: 3px; font-family: 'PT Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; }
+      .demo-clbl { width: 44px; text-align: center; font-family: 'PT Mono', monospace !important; font-size: 11px !important; color: #8f6e5c !important; margin: 0 1px; }
       body[data-theme="dark"] .demo-rlbl,
       body[data-theme="dark"] .demo-clbl { color: #e1bfa7 !important; }
       .demo-cell {
         width: 44px; height: 36px; margin: 1px; border-radius: 5px;
         display: flex; flex-direction: column; align-items: center; justify-content: center; transition: .25s;
       }
-      .demo-cv { font-family: 'DM Mono', monospace !important; font-size: 11px !important; font-weight: 700; }
+      .demo-cv { font-family: 'PT Mono', monospace !important; font-size: 11px !important; font-weight: 700; }
       .demo-ct { font-size: 6px !important; margin-top: 1px; letter-spacing: .02em; }
       .demo-click { cursor: pointer; user-select: none; }
       .demo-tbtn {
-        font-family: 'DM Mono', monospace !important; font-size: 11px !important; padding: 5px 12px;
+        font-family: 'PT Mono', monospace !important; font-size: 11px !important; padding: 5px 12px;
         border-radius: 999px; cursor: pointer; transition: .2s; margin: 0;
       }
       .demo-toff { border: 1px solid #ddb99b; background: #fff9f4; color: #8f6a56; }
@@ -323,7 +323,7 @@
         border: 0; border-top: 1px solid rgba(191, 87, 0, 0.18); border-radius: 0; margin-top: 20px;
       }
       body[data-theme="dark"] .demo-insight { background: transparent; border-top-color: rgba(255, 201, 141, 0.18); }
-      .demo-insight h4 { font-family: 'DM Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #c4661f !important; margin: 0 0 6px !important; }
+      .demo-insight h4 { font-family: 'PT Mono', monospace !important; font-size: 10px !important; font-weight: 700 !important; letter-spacing: .08em; text-transform: uppercase; color: #c4661f !important; margin: 0 0 6px !important; }
       .demo-insight p { text-align: left !important; font-size: 13px !important; color: #6e5446 !important; line-height: 1.7; }
       body[data-theme="dark"] .demo-insight h4 { color: #ffb36e !important; }
       body[data-theme="dark"] .demo-insight p { color: #ecd0bc !important; }
